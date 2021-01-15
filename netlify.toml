@@ -1,4 +1,4 @@
 [build]
   functions = "functions"
   publish = "dist"
-  command = "yarn dev"
+  command = "yarn build"
