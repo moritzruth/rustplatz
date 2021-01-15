@@ -1,15 +1,20 @@
 <template>
-  <main class="content">
+  <header>
     <ProjectLogo/>
     <div class="project-description">
       Rust-Streamerserver von Bonjwa, RocketBeans und Dhalucard.
     </div>
+  </header>
+  <main class="content">
     <h1 class="heading">Teams</h1>
     <span v-if="teams === null">Lädt...</span>
     <div v-else class="teams">
       <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
     </div>
   </main>
+  <footer class="footer">
+    Created by <a href="https://moritzruth.de">Moritz Ruth</a>.
+  </footer>
 </template>
 
 <style>
@@ -61,6 +66,19 @@
       column-count: 1;
     }
   }
+
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .footer > a {
+    text-decoration: none;
+    color: #7EFF93;
+  }
 </style>
 
 <script>
@@ -74,7 +92,10 @@
       teams: null
     }),
     async created() {
-      this.teams = await (await fetch("/.netlify/functions/teams")).json()
+      // eslint-disable-next-line no-undef
+      this.teams = process.env.NODE_ENV === "development"
+        ? []
+        : await (await fetch("/.netlify/functions/teams")).json()
     }
   }
 </script>
