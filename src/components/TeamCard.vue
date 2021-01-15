@@ -1,7 +1,7 @@
 <template>
   <div class="team-card">
     <span class="team-name">{{ team.name }}</span>
-    <TeamMemberList :online="team.members.slice(0, 1)" :offline="team.members.slice(1)"/>
+    <TeamMemberList :online="team.online" :offline="team.offline"/>
   </div>
 </template>
 
