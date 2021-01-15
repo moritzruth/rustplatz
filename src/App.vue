@@ -74,7 +74,7 @@
       teams: null
     }),
     async created() {
-      this.teams = await fetch("/.netlify/functions/teams")
+      this.teams = await (await fetch("/.netlify/functions/teams")).json()
     }
   }
 </script>
