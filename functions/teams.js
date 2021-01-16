@@ -9,11 +9,15 @@ async function run() {
     authProvider: new ClientCredentialsAuthProvider(process.env.TWITCH_CLIENT_ID, process.env.TWITCH_CLIENT_SECRET)
   })
 
-  const streamers = rawTeams.flatMap(team => team.members)
+  const streamers = rawTeams
+    .flatMap(team => team.members)
+    .map(member => Array.isArray(member) ? member[1] : member)
+
   const rustStreamsIterator = await client.helix.streams.getStreamsPaginated({
     userName: streamers,
     game: RUST_GAME_ID.toString()
   })
+
   const rustStreams = []
   for await (const stream of rustStreamsIterator) {
     rustStreams.push(stream)
@@ -25,8 +29,8 @@ async function run() {
   for (const team of rawTeams) {
     teams.push({
       name: team.name,
-      online: team.members.filter(name => activeStreamers.has(name)),
-      offline: team.members.filter(name => !activeStreamers.has(name))
+      online: team.members.filter(member => activeStreamers.has(Array.isArray(member) ? member[1] : member)),
+      offline: team.members.filter(member => !activeStreamers.has(Array.isArray(member) ? member[1] : member))
     })
   }
 

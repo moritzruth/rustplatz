@@ -3,8 +3,9 @@
     "name": "FRUST",
     "members": [
       "Dhalucard",
-      "Bonjwa",
-      "Dadosch",
+      ["Matteo (Bonjwa)", "Bonjwa"],
+      ["Leon (Bonjwa)", "Bonjwa"],
+      ["Dadosch", "DadoschYT"],
       "GippiGaming",
       "TrilluXe"
     ]
@@ -26,7 +27,7 @@
       "PietSmiet",
       "fisHC0p",
       "aSmoogl",
-      "DoktorFroid",
+      ["Paul (DoktorFroid)", "DoktorFroid"],
       "LOST"
     ]
   }

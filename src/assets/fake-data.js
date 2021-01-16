@@ -9,6 +9,8 @@ export const getFakeData = async () => {
   return teams.map(team => {
     const count = team.members.length
     const lastOnlineIndex = Math.round(Math.random() * count)
+    // Members with the same twitch name can theoretically be split on online and offline
+    // (which will not happen with the real data)
 
     return {
       name: team.name,

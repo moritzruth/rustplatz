@@ -1,6 +1,6 @@
 <template>
   <transition-group name="list" tag="div" class="team-members-list">
-    <template v-for="item in items" :key="item">
+    <template v-for="item in items" :key="Array.isArray(item) ? item[0] : item">
       <div>
         <span
           v-if="item === 'ONLINE'"
@@ -20,12 +20,12 @@
         </span>
         <a
           v-else
-          :href="`https://twitch.tv/${item}`"
+          :href="`https://twitch.tv/${Array.isArray(item) ? item[1] : item}`"
           class="team-member"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {{ item }}
+          {{ Array.isArray(item) ? item[0] : item }}
           <ExternalLinkIcon size="15" stroke-width="4"/>
         </a>
       </div>
