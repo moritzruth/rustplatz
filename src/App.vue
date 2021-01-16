@@ -94,7 +94,7 @@
   import ProjectLogo from "./components/ProjectLogo.vue"
   import TeamCard from "./components/TeamCard.vue"
 
-  const UPDATE_INTERVAL = 60 * 1000
+  const UPDATE_INTERVAL = 2 * 1000
 
   export default {
     name: "App",

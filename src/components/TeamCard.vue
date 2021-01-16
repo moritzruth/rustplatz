@@ -2,6 +2,13 @@
   <div class="team-card-container">
     <div class="team-card">
       <span class="team-name">{{ team.name }}</span>
+      <a
+        class="multitwitch"
+        :class="{ show: team.online.length !== 0 }"
+        :href="`https://multitwitch.tv/${onlineTwitchNames.join('/')}`"
+      >
+        Multitwitch
+      </a>
       <TeamMemberList :online="team.online" :offline="team.offline"/>
     </div>
   </div>
@@ -18,6 +25,7 @@
     padding: 20px;
 
     transition: 400ms ease;
+    position: relative;
   }
 
   .team-card:hover {
@@ -27,7 +35,23 @@
   .team-name {
     display: block;
     font-size: 1.6rem;
-    margin-bottom: -5px;
+  }
+
+  .multitwitch {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    font-size: 1rem;
+    text-decoration: none;
+    color: #7EFF93;
+
+    transition: 200ms ease opacity;
+    opacity: 0;
+  }
+
+  .multitwitch.show {
+    opacity: 1;
   }
 </style>
 
@@ -41,6 +65,11 @@
       team: {
         type: Object,
         required: true
+      }
+    },
+    computed: {
+      onlineTwitchNames() {
+        return this.team.online.map(member => Array.isArray(member) ? member[1] : member)
       }
     }
   }
