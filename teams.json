@@ -72,6 +72,13 @@
     ]
   },
   {
+    "name": "Varion",
+    "members": [
+      "varion",
+      ["Luk", "lucky_iluke"]
+    ]
+  },
+  {
     "name": "(Kein Name)",
     "members": [
       "Ginoswelt",
@@ -79,7 +86,14 @@
     ]
   },
   {
-    "name": "(Name unbekannt)",
+    "name": "(Kein Name)",
+    "members": [
+      "HighscoreHeroes",
+      "Lime7ime"
+    ]
+  },
+  {
+    "name": "(Kein Name)",
     "members": [
       "Vlesk",
       "Baso",
@@ -90,17 +104,10 @@
     ]
   },
   {
-    "name": "(Name unbekannt 2)",
+    "name": "(Kein Name)",
     "members": [
       "timobornheim",
       "KROGMANN"
-    ]
-  },
-  {
-    "name": "Varion",
-    "members": [
-      "varion",
-      ["Luk", "lucky_iluke"]
     ]
   },
   {
@@ -110,16 +117,15 @@
       "kleinstadtstreamer",
       "AndiDev",
       "MaxiMcFlyy",
-      "Divi"
+      "Divi",
+      "edopeh",
+      ["Jens (Bonjwa)", "Bonjwa"]
     ]
   },
   {
     "name": "(Unbekannt)",
     "members": [
-      "HighscoreHeroes",
-      "LaraLoft",
-      "edopeh",
-      ["Jens (Bonjwa)", "Bonjwa"]
+      "LaraLoft"
     ]
   }
 ]

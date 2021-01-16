@@ -20,7 +20,7 @@
         Lädt...
       </div>
       <div v-else class="teams">
-        <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
+        <TeamCard v-for="(team, index) in teams" :key="index" :team="team"/>
       </div>
       <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
     </section>
