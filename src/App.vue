@@ -31,6 +31,10 @@
 </template>
 
 <style>
+  ::selection {
+    background: rgba(242, 92, 120, 0.7);
+  }
+
   body {
     background: #212121;
     color: #E9E9E9;
