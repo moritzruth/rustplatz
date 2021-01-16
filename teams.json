@@ -1,18 +1,33 @@
 [
   {
-    "name": "Team-Name 1",
+    "name": "FRUST",
     "members": [
-      "Trymacs",
-      "Moondye7",
-      "Dhalucard"
+      "Dhalucard",
+      "Bonjwa",
+      "Dadosch",
+      "GippiGaming",
+      "TrilluXe"
     ]
   },
   {
-    "name": "Team-Name 2",
+    "name": "GemüseGeschwister",
     "members": [
-      "Baso",
+      "AnniTheDuck",
+      "Kalle",
       "Shurjoka",
-      "Vlesk"
+      "BehaartMitBart",
+      "einPapo",
+      "Mowkyfox"
+    ]
+  },
+  {
+    "name": "AutobahnRUSTstätte",
+    "members": [
+      "PietSmiet",
+      "fisHC0p",
+      "aSmoogl",
+      "DoktorFroid",
+      "LOST"
     ]
   }
 ]

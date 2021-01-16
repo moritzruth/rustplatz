@@ -13,6 +13,7 @@
     <div v-else class="teams">
       <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
     </div>
+    <span>Aktualisiert sich alle 60 Sekunden automatisch.</span>
   </main>
   <footer class="footer">
     Inoffizielle Seite von <a href="https://moritzruth.de">Moritz Ruth</a>.
@@ -53,7 +54,7 @@
   }
 
   .teams {
-    column-count: 4;
+    column-count: 3;
     column-gap: 20px;
   }
 
@@ -61,13 +62,17 @@
     break-inside: avoid;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1500px) {
     .teams {
       column-count: 2;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
+    body {
+      padding: 40px 20px;
+    }
+
     .teams {
       column-count: 1;
     }

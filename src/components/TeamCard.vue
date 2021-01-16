@@ -26,7 +26,7 @@
 
   .team-name {
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: -5px;
   }
 </style>
