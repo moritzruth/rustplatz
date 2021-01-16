@@ -23,7 +23,6 @@
         <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
       </div>
       <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
-      <p>Da ich noch keine offizielle Liste finden konnte, ist diese hier sehr wahrscheinlich unvollständig.</p>
     </section>
   </main>
   <footer class="footer">
@@ -119,7 +118,7 @@
   import ProjectLogo from "./components/ProjectLogo.vue"
   import TeamCard from "./components/TeamCard.vue"
 
-  const UPDATE_INTERVAL = 2 * 1000
+  const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",

@@ -1,6 +1,6 @@
 [
   {
-    "name": "FRUST",
+    "name": "fRUST",
     "members": [
       "Dhalucard",
       ["Matteo (Bonjwa)", "Bonjwa"],
@@ -37,7 +37,10 @@
     "members": [
       "Kapuzenwurm",
       "Juliversal",
-      "Items4Sacred"
+      "Items4Sacred",
+      "Graenz",
+      ["Balui", "BaluiLP"],
+      ["Kundran", "Sofa__Gaming"]
     ]
   },
   {
@@ -45,6 +48,7 @@
     "members": [
       "Miamouz",
       "AsterPewPew",
+      ["PhunkRoyal", "RoyalPhunk"],
       ["Touri", "TouristHistories"]
     ]
   },
@@ -62,12 +66,13 @@
   {
     "name": "RocketBeans",
     "members": [
-      "RocketBeansTV",
+      ["Nils/Valentin", "RocketBeansTV"],
+      ["Kiara", "JustGiggles"],
       ["Viet", "PixelViet"]
     ]
   },
   {
-    "name": "(kein Name)",
+    "name": "(Kein Name)",
     "members": [
       "Ginoswelt",
       ["beed", "beedTV"]
@@ -80,7 +85,22 @@
       "Baso",
       "veylt",
       "Shantao",
-      "kutcherlol"
+      "kutcherlol",
+      "starletnova"
+    ]
+  },
+  {
+    "name": "(Name unbekannt 2)",
+    "members": [
+      "timobornheim",
+      "KROGMANN"
+    ]
+  },
+  {
+    "name": "Varion",
+    "members": [
+      "varion",
+      ["Luk", "lucky_iluke"]
     ]
   },
   {
@@ -89,16 +109,17 @@
       "izzi",
       "kleinstadtstreamer",
       "AndiDev",
-      "MaxiMcFlyy"
+      "MaxiMcFlyy",
+      "Divi"
     ]
   },
   {
-    "name": "(unbekannt)",
+    "name": "(Unbekannt)",
     "members": [
       "HighscoreHeroes",
-      "varion",
-      ["PhunkRoyal", "RoyalPhunk"],
-      "LaraLoft"
+      "LaraLoft",
+      "edopeh",
+      ["Jens (Bonjwa)", "Bonjwa"]
     ]
   }
 ]
