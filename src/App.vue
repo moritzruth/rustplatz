@@ -42,6 +42,7 @@
 
     font-family: "Goldman", sans-serif;
     overflow-x: hidden;
+    font-size: 20px;
   }
 
   .content {
@@ -63,7 +64,7 @@
 
   .heading {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 20px;
   }
 
@@ -90,7 +91,7 @@
   @media (max-width: 800px) {
     body {
       padding: 40px 20px;
-      font-size: 1.1rem;
+      font-size: 18px;
     }
 
     .teams {
@@ -113,6 +114,7 @@
   }
 
   .footer > a {
+    display: inline-block;
     text-decoration: none;
     color: #7EFF93;
   }

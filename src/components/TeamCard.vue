@@ -9,7 +9,11 @@
       >
         Multitwitch
       </a>
-      <TeamMemberList :online="team.online" :offline="team.offline"/>
+      <TeamMemberList
+        :online="team.online"
+        :offline="team.offline"
+        :style="{ marginBottom: team.offline.length === 0 || team.online.length === 0 ? '-40px' : '10px' }"
+      />
     </div>
   </div>
 </template>

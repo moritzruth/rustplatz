@@ -45,7 +45,7 @@
   }
 
   .team-member {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: inherit;
     text-decoration: none;
@@ -64,7 +64,7 @@
   .separator {
     display: block;
     font-size: 1.1em;
-    margin-top: 15px;
+    margin-top: 0.4em;
     text-transform: uppercase;
 
     transition: 500ms ease opacity;

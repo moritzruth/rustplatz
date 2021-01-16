@@ -74,7 +74,7 @@
   {
     "name": "Varion",
     "members": [
-      "varion",
+      ["Varion", "varion"],
       ["Luk", "lucky_iluke"]
     ]
   },
