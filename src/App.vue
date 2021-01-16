@@ -23,6 +23,12 @@
         <TeamCard v-for="(team, index) in teams" :key="index" :team="team"/>
       </div>
       <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
+      <p>Mitspieler erscheinen als online, sobald ihr Kanal live mit Rust ist.</p>
+      <p>
+        Manche Teams (z. B. Bonjwa) haben nur einen Kanal, aber mehrere Mitspieler. Da es allerdings keine
+        einfach Möglichkeit gibt, herauszufinden, wer gerade streamt, erscheinen (fälschlicherweise)
+        alle Mitspieler des Teams als online.
+      </p>
     </section>
   </main>
   <footer class="footer">
@@ -50,6 +56,11 @@
     width: 1500px;
     margin: 0 auto;
     font-size: 1.3rem;
+  }
+
+  .content p {
+    display: block;
+    max-width: 800px;
   }
 
   .content > section {
@@ -108,7 +119,7 @@
   }
 
   .footer {
-    margin-top: 20px;
+    margin-top: 100px;
     width: 100%;
     text-align: center;
   }

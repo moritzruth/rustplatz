@@ -79,6 +79,33 @@
     ]
   },
   {
+    "name": "RUSTlos",
+    "members": [
+      "knechtungtv",
+      "Divi",
+      ["Olli (DoktorFroid)", "DoktorFroid"],
+      "KugelmagnetEddie",
+      "NieRaus"
+    ]
+  },
+  {
+    "name": "The Strangers",
+    "members": [
+      "Lumenti",
+      "Zeno"
+    ]
+  },
+  {
+    "name": "(Name unbekannt)",
+    "members": [
+      "Mahluna",
+      ["Broeki", "Broeki1"],
+      "RvNxMango",
+      "JuliMii",
+      "Solaaaa"
+    ]
+  },
+  {
     "name": "(Kein Name)",
     "members": [
       "Ginoswelt",
@@ -107,7 +134,8 @@
     "name": "(Kein Name)",
     "members": [
       "timobornheim",
-      "KROGMANN"
+      "KROGMANN",
+      ["BellBell", "unstoppabell"]
     ]
   },
   {
@@ -117,15 +145,20 @@
       "kleinstadtstreamer",
       "AndiDev",
       "MaxiMcFlyy",
-      "Divi",
       "edopeh",
-      ["Jens (Bonjwa)", "Bonjwa"]
+      ["Jens (Bonjwa)", "Bonjwa"],
+      "ItsVeX",
+      "Smithhiller",
+      "Sturmwaffel"
     ]
   },
   {
     "name": "(Unbekannt)",
     "members": [
-      "LaraLoft"
+      "LaraLoft",
+      "Shushu",
+      "teischEnte",
+      "Zayuri"
     ]
   }
 ]
