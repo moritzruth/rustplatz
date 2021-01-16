@@ -1,14 +1,25 @@
 <template>
-  <ul class="team-members-list">
+  <transition-group name="list" tag="div" class="team-members-list">
     <template v-for="item in items" :key="item">
-      <li v-if="item === 'ONLINE'" class="separator-online">
-        Online
-      </li>
-      <li v-else-if="item === 'OFFLINE'" class="separator-offline">
-        Offline
-      </li>
-      <li v-else>
+      <div>
+        <span
+          v-if="item === 'ONLINE'"
+          class="separator online"
+          :data-was-shown="last.showOnline"
+          :data-show="showOnline"
+        >
+          Online
+        </span>
+        <span
+          v-else-if="item === 'OFFLINE'"
+          class="separator offline"
+          :data-was-shown="last.showOffline"
+          :data-show="showOffline"
+        >
+          Offline
+        </span>
         <a
+          v-else
           :href="`https://twitch.tv/${item}`"
           class="team-member"
           target="_blank"
@@ -17,12 +28,16 @@
           {{ item }}
           <ExternalLinkIcon size="15" stroke-width="4"/>
         </a>
-      </li>
+      </div>
     </template>
-  </ul>
+  </transition-group>
 </template>
 
 <style scoped>
+  .list-move {
+    transition: 1s ease transform;
+  }
+
   .team-members-list {
     list-style: none;
     margin: 0;
@@ -46,19 +61,48 @@
     opacity: 1;
   }
 
-  .separator-online, .separator-offline {
+  .separator {
     display: block;
     font-size: 1.1em;
     margin-top: 15px;
     text-transform: uppercase;
+
+    transition: 500ms ease opacity;
+    opacity: 0;
   }
 
-  .separator-online {
+  .online {
     color: #7EFF93;
   }
 
-  .separator-offline {
+  .offline {
     color: #F25C78;
+  }
+
+  .separator[data-show="true"][data-was-shown="false"] {
+    animation: 1s ease fade-in normal both;
+  }
+
+  .separator[data-show="false"][data-was-shown="true"] {
+    animation: 1s ease fade-in reverse both;
+  }
+
+  .separator[data-show="true"][data-was-shown="true"] {
+    opacity: 1;
+  }
+
+  .separator[data-show="false"][data-was-shown="false"] {
+    opacity: 0;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 </style>
 
@@ -78,9 +122,37 @@
         required: true
       }
     },
+    data: () => ({
+      showOnline: false,
+      showOffline: false,
+      last: {
+        showOnline: false,
+        showOffline: false
+      }
+    }),
     computed: {
       items() {
-        return ["ONLINE", ...this.online, "OFFLINE", ...this.offline]
+        const start = []
+        const end = []
+
+        if (this.online.length === 0) end.push("ONLINE")
+        else start.push("ONLINE", ...this.online)
+
+        if (this.offline.length === 0) end.push("OFFLINE")
+        else start.push("OFFLINE", ...this.offline)
+
+        return [...start, ...end]
+      }
+    },
+    watch: {
+      items() {
+        this.last = {
+          showOnline: this.showOnline,
+          showOffline: this.showOffline
+        }
+
+        this.showOffline = this.offline.length !== 0
+        this.showOnline = this.online.length !== 0
       }
     }
   }

@@ -7,7 +7,9 @@
   </header>
   <main class="content">
     <h1 class="heading">Teams</h1>
-    <span v-if="teams === null">Lädt...</span>
+    <div v-if="teams === null" class="loading-text">
+      Lädt...
+    </div>
     <div v-else class="teams">
       <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
     </div>
@@ -45,13 +47,17 @@
     margin-bottom: 20px;
   }
 
+  .loading-text {
+    height: 200px;
+    font-size: 2rem;
+  }
+
   .teams {
     column-count: 4;
     column-gap: 20px;
   }
 
-  .team-card {
-    margin-bottom: 20px;
+  .team-card-container {
     break-inside: avoid;
   }
 
@@ -68,10 +74,8 @@
   }
 
   .footer {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
+    margin-top: 20px;
+    width: 100%;
     text-align: center;
   }
 
@@ -85,6 +89,8 @@
   import ProjectLogo from "./components/ProjectLogo.vue"
   import TeamCard from "./components/TeamCard.vue"
 
+  const UPDATE_INTERVAL = 60 * 1000
+
   export default {
     name: "App",
     components: { TeamCard, ProjectLogo },
@@ -92,10 +98,20 @@
       teams: null
     }),
     async created() {
-      // eslint-disable-next-line no-undef
-      this.teams = process.env.NODE_ENV === "development"
-        ? []
-        : await (await fetch("/.netlify/functions/teams")).json()
+      await this.loop()
+    },
+    methods: {
+      async loop() {
+        await this.fetchTeams()
+        setTimeout(() => {
+          this.loop()
+        }, UPDATE_INTERVAL)
+      },
+      async fetchTeams() {
+        this.teams = process.env.NODE_ENV === "development"
+          ? await import("./assets/fake-data").then(m => m.getFakeData())
+          : await (await fetch("/.netlify/functions/teams")).json()
+      }
     }
   }
 </script>
