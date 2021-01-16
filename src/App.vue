@@ -15,7 +15,7 @@
     </div>
   </main>
   <footer class="footer">
-    Created by <a href="https://moritzruth.de">Moritz Ruth</a>.
+    Inoffizielle Seite von <a href="https://moritzruth.de">Moritz Ruth</a>.
   </footer>
 </template>
 
@@ -48,7 +48,7 @@
   }
 
   .loading-text {
-    height: 200px;
+    height: 400px;
     font-size: 2rem;
   }
 
