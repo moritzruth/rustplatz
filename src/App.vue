@@ -2,18 +2,28 @@
   <header>
     <ProjectLogo/>
     <div class="project-description">
-      Rust-Streamerserver von Bonjwa, RocketBeans und Dhalucard.
+      Rust-Streamerserver von Bonjwa, RocketBeans und Dhalucard
     </div>
   </header>
   <main class="content">
-    <h1 class="heading">Teams</h1>
-    <div v-if="teams === null" class="loading-text">
-      Lädt...
-    </div>
-    <div v-else class="teams">
-      <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
-    </div>
-    <span>Aktualisiert sich alle 60 Sekunden automatisch.</span>
+    <section>
+      <h1 class="heading">Informationen</h1>
+      <ul>
+        <li>Der Server ist täglich von 15 Uhr bis 3 Uhr (morgens) online.</li>
+        <li>Andere Spieler zu töten ist nur mit Roleplay erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
+        <li>Um mitspielen zu können, muss ein Streamer eingeladen werden von einem der Teilnehmer.</li>
+      </ul>
+    </section>
+    <section>
+      <h1 class="heading">Teams</h1>
+      <div v-if="teams === null" class="loading-text">
+        Lädt...
+      </div>
+      <div v-else class="teams">
+        <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
+      </div>
+      <span>Aktualisiert sich alle 60 Sekunden automatisch.</span>
+    </section>
   </main>
   <footer class="footer">
     Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a>.
@@ -34,6 +44,11 @@
     max-width: 100%;
     width: 1500px;
     margin: 0 auto;
+    font-size: 1.3rem;
+  }
+
+  .content > section {
+    margin-bottom: 2em;
   }
 
   .project-description {
@@ -71,11 +86,20 @@
   @media (max-width: 800px) {
     body {
       padding: 40px 20px;
+      font-size: 1.1rem;
     }
 
     .teams {
       column-count: 1;
     }
+
+    .heading {
+      font-size: 2.4rem;
+    }
+  }
+
+  ul {
+    padding-left: 30px;
   }
 
   .footer {
