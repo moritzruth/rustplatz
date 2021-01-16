@@ -69,7 +69,7 @@
     },
     computed: {
       onlineTwitchNames() {
-        return this.team.online.map(member => Array.isArray(member) ? member[1] : member)
+        return [...new Set(this.team.online.map(member => Array.isArray(member) ? member[1] : member))]
       }
     }
   }
