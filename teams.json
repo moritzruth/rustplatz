@@ -24,11 +24,80 @@
   {
     "name": "AutobahnRUSTstätte",
     "members": [
-      "PietSmiet",
+      ["Sep (PietSmiet)", "PietSmiet"],
+      ["Peter (PietSmiet)", "PietSmiet"],
       "fisHC0p",
       "aSmoogl",
       ["Paul (DoktorFroid)", "DoktorFroid"],
       "LOST"
+    ]
+  },
+  {
+    "name": "4/6",
+    "members": [
+      "Kapuzenwurm",
+      "Juliversal",
+      "Items4Sacred"
+    ]
+  },
+  {
+    "name": "Blümchenpflücker",
+    "members": [
+      "Miamouz",
+      "AsterPewPew",
+      ["Touri", "TouristHistories"]
+    ]
+  },
+  {
+    "name": "Pepega Police",
+    "members": [
+      "MAiHOPAWANGO",
+      "itzz_chrizz",
+      "GThang"
+    ]
+  },
+  {
+    "name": "RocketBeans",
+    "members": [
+      "RocketBeansTV",
+      ["Viet", "PixelViet"]
+    ]
+  },
+  {
+    "name": "(kein Name)",
+    "members": [
+      "Ginozockt",
+      ["beed", "beedTV"]
+    ]
+  },
+  {
+    "name": "(Name unbekannt)",
+    "members": [
+      "Vlesk",
+      "Baso",
+      "veylt",
+      "Shantao",
+      "kutcherlol",
+      "Nova (?)"
+    ]
+  },
+  {
+    "name": "(Kein Team)",
+    "members": [
+      "izzi",
+      "kleinstadtstreamer",
+      "AndiDev",
+      "MaxiMcFlyy"
+    ]
+  },
+  {
+    "name": "(unbekannt)",
+    "members": [
+      "Moondye7",
+      "HighscoreHeroes",
+      "Varion",
+      ["PhunkRoyal", "RoyalPhunk"],
+      "LaraLoft"
     ]
   }
 ]

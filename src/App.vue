@@ -16,7 +16,7 @@
     <span>Aktualisiert sich alle 60 Sekunden automatisch.</span>
   </main>
   <footer class="footer">
-    Inoffizielle Seite von <a href="https://moritzruth.de">Moritz Ruth</a>.
+    Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a>.
   </footer>
 </template>
 
