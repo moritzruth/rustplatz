@@ -10,8 +10,10 @@
       <h1 class="heading">Informationen</h1>
       <ul>
         <li>Der Server ist täglich von 15 Uhr bis 3 Uhr (morgens) online.</li>
-        <li>Andere Spieler zu töten ist nur mit Roleplay erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
-        <li>Um mitspielen zu können, muss ein Streamer eingeladen werden von einem der Teilnehmer.</li>
+        <li>Andere Spieler zu töten ist nur mit Role-Play erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
+        <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
+        <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
+        <li>Teams umfassen maximal 6 Personen.</li>
       </ul>
     </section>
     <section>
