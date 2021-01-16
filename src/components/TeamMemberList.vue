@@ -123,12 +123,9 @@
       }
     },
     data: () => ({
-      showOnline: false,
-      showOffline: false,
-      last: {
-        showOnline: false,
-        showOffline: false
-      }
+      showOnline: true,
+      showOffline: true,
+      last: null
     }),
     computed: {
       items() {
@@ -145,14 +142,22 @@
       }
     },
     watch: {
-      items() {
-        this.last = {
-          showOnline: this.showOnline,
-          showOffline: this.showOffline
-        }
+      items: {
+        immediate: true,
+        handler() {
+          if (this.last !== null) this.last = {
+            showOnline: this.showOnline,
+            showOffline: this.showOffline
+          }
 
-        this.showOffline = this.offline.length !== 0
-        this.showOnline = this.online.length !== 0
+          this.showOffline = this.offline.length !== 0
+          this.showOnline = this.online.length !== 0
+
+          if (this.last === null) this.last = {
+            showOnline: this.showOnline,
+            showOffline: this.showOffline
+          }
+        }
       }
     }
   }
