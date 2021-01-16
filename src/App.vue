@@ -22,7 +22,8 @@
       <div v-else class="teams">
         <TeamCard v-for="team in teams" :key="team.name" :team="team"/>
       </div>
-      <span>Aktualisiert sich alle 60 Sekunden automatisch.</span>
+      <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
+      <p>Da ich noch keine offizielle Liste finden konnte, ist diese hier sehr wahrscheinlich unvollständig.</p>
     </section>
   </main>
   <footer class="footer">
