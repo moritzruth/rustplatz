@@ -109,12 +109,12 @@
     height: 145px;
     width: 400px;
     margin: 20px auto;
+    max-width: 100%;
   }
 
   .viewers {
     height: 100%;
     text-align: center;
-    max-width: 100%;
     border: 4px dashed #C95847;
     overflow: hidden;
   }
