@@ -79,7 +79,7 @@
         let value = 0
 
         if (this.team.offline.length === 0 || this.team.online.length === 0) value -= 35
-        if (this.showMultitwitch) value += 5
+        if (this.showMultitwitch) value += 10
 
         return value + "px"
       }

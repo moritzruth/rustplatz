@@ -7,6 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^18.6.4",
     "@zhuowenli/vue-feather-icons": "^5.0.2",
     "modern-normalize": "^1.0.0",
     "twitch": "^4.4.0",

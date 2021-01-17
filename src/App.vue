@@ -4,6 +4,14 @@
     <div class="project-description">
       Rust-Streamerserver von Bonjwa, RocketBeans und Dhalucard
     </div>
+    <transition name="slide-y">
+      <div v-if="viewers > 1000" class="viewers-container">
+        <div class="viewers">
+          <span class="heading">total viewers</span>
+          <span class="value"><TweenedNumber :value="viewers"/></span>
+        </div>
+      </div>
+    </transition>
   </header>
   <main class="content">
     <section>
@@ -19,11 +27,11 @@
     </section>
     <section>
       <h1 class="heading">Teams</h1>
-      <div v-if="teams === null" class="loading-text">
+      <div v-if="data === null" class="loading-text">
         Lädt...
       </div>
       <div v-else class="teams">
-        <TeamCard v-for="(team, index) in teams" :key="index" :team="team"/>
+        <TeamCard v-for="(team, index) in data.teams" :key="index" :team="team"/>
       </div>
       <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
       <p>Mitspieler erscheinen als online, sobald ihr Kanal live mit Rust ist.</p>
@@ -42,8 +50,28 @@
 </template>
 
 <style>
+  .slide-y-enter-active,
+  .slide-y-leave-active {
+    transition: 1s ease-out;
+    transition-property: opacity, max-height;
+  }
+
+  .slide-y-enter-to, .slide-y-leave {
+    max-height: 145px;
+  }
+
+  .slide-y-enter-from,
+  .slide-y-leave-to {
+    opacity: 0;
+    max-height: 0;
+  }
+
   ::selection {
     background: rgba(242, 92, 120, 0.7);
+  }
+
+  html {
+    font-size: 16px;
   }
 
   body {
@@ -53,7 +81,6 @@
 
     font-family: "Goldman", sans-serif;
     overflow-x: hidden;
-    font-size: 20px;
   }
 
   .content {
@@ -76,6 +103,34 @@
     text-align: center;
     margin-top: 40px;
     font-size: 1.5rem;
+  }
+
+  .viewers-container {
+    height: 145px;
+    width: 400px;
+    margin: 20px auto;
+  }
+
+  .viewers {
+    height: 100%;
+    text-align: center;
+    max-width: 100%;
+    border: 4px dashed #C95847;
+    overflow: hidden;
+  }
+
+  .viewers > .heading {
+    margin-top: 1.4rem;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .viewers > .value {
+    font-size: 4rem;
+    display: block;
+    color: #7EFF93;
+    margin-bottom: -10px;
   }
 
   .heading {
@@ -105,9 +160,12 @@
   }
 
   @media (max-width: 800px) {
+    html {
+      font-size: 15px;
+    }
+
     body {
       padding: 40px 20px;
-      font-size: 18px;
     }
 
     .teams {
@@ -139,15 +197,19 @@
 <script>
   import ProjectLogo from "./components/ProjectLogo.vue"
   import TeamCard from "./components/TeamCard.vue"
+  import TweenedNumber from "./components/TweenedNumber.vue"
 
   const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",
-    components: { TeamCard, ProjectLogo },
+    components: { TweenedNumber, TeamCard, ProjectLogo },
     data: () => ({
-      teams: null
+      data: null
     }),
+    computed: {
+      viewers: vm => vm.data === null ? 0 : vm.data.totalViewers
+    },
     async created() {
       await this.loop()
     },
@@ -159,7 +221,7 @@
         }, UPDATE_INTERVAL)
       },
       async fetchTeams() {
-        this.teams = process.env.NODE_ENV === "development"
+        this.data = process.env.NODE_ENV === "development"
           ? await import("./assets/fake-data").then(m => m.getFakeData())
           : await (await fetch("/.netlify/functions/teams")).json()
       }

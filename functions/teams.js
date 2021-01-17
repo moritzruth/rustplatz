@@ -34,7 +34,10 @@ async function run() {
     })
   }
 
-  return teams
+  return {
+    teams,
+    totalViewers: rustStreams.reduce((total, stream) => total + stream.viewers)
+  }
 }
 
 exports.handler = async function handler() {

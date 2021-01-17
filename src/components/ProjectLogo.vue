@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     filter: brightness(140%);
+    transform: translateX(40px);
   }
 
   .logo-container {
@@ -45,6 +46,10 @@
   }
 
   @media (max-width: 1200px) {
+    .project-logo {
+      transform: translateX(-5px);
+    }
+
     .rust-logo {
       width: 300px;
     }
@@ -57,6 +62,7 @@
   @media (max-width: 860px) {
     .project-logo {
       flex-direction: column;
+      transform: none;
     }
 
     .separator {
