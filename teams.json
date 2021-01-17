@@ -132,11 +132,11 @@
     ]
   },
   {
-    "name": "(Kein Name)",
+    "name": "Another One Bites the Rust",
     "members": [
       "timobornheim",
       "KROGMANN",
-      ["BellBell", "UnstoppaBell"]
+      "UnstoppaBell"
     ]
   },
   {

@@ -14,6 +14,7 @@
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
         <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
         <li>Teams umfassen maximal 6 Personen.</li>
+        <li>Der Server wird monatlich zurückgesetzt.</li>
       </ul>
     </section>
     <section>
