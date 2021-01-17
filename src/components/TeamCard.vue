@@ -74,7 +74,7 @@
     },
     computed: {
       onlineTwitchNames: vm => [...new Set(vm.team.online.map(member => Array.isArray(member) ? member[1] : member))],
-      showMultitwitch: vm => vm.team.online.length > 1,
+      showMultitwitch: vm => vm.onlineTwitchNames.length > 1,
       marginBottom() {
         let value = 0
 
