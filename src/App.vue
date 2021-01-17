@@ -26,6 +26,9 @@
       </ul>
     </section>
     <section>
+      <ServerStatus server-is-online/>
+    </section>
+    <section>
       <h1 class="heading">Teams</h1>
       <div v-if="data === null" class="loading-text">
         Lädt...
@@ -198,12 +201,13 @@
   import ProjectLogo from "./components/ProjectLogo.vue"
   import TeamCard from "./components/TeamCard.vue"
   import TweenedNumber from "./components/TweenedNumber.vue"
+  import ServerStatus from "./components/ServerStatus.vue"
 
   const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",
-    components: { TweenedNumber, TeamCard, ProjectLogo },
+    components: { ServerStatus, TweenedNumber, TeamCard, ProjectLogo },
     data: () => ({
       data: null
     }),
