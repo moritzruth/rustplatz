@@ -30,7 +30,8 @@
       <p>
         Manche Teams (z. B. Bonjwa) haben nur einen Kanal, aber mehrere Mitspieler. Da es allerdings keine
         einfach Möglichkeit gibt, herauszufinden, wer gerade streamt, erscheinen (fälschlicherweise)
-        alle Mitspieler des Teams als online.
+        alle Mitspieler des Teams als live. Nachtrag: Es gibt eine Möglichkeit, aber die würde alles um einiges
+        komplizierter machen, weswegen ich es erst mal lasse. Vielleicht habe ich irgendwann ja mal Langeweile...
       </p>
     </section>
   </main>
