@@ -97,30 +97,6 @@
     ]
   },
   {
-    "name": "(Name unbekannt)",
-    "members": [
-      "Mahluna",
-      ["Broeki", "Broeki1"],
-      "RvNxMango",
-      "JuliMii",
-      "Solaaaa"
-    ]
-  },
-  {
-    "name": "(Kein Name)",
-    "members": [
-      "Ginoswelt",
-      ["beed", "beedTV"]
-    ]
-  },
-  {
-    "name": "(Kein Name)",
-    "members": [
-      "HighscoreHeroes",
-      "Lime7ime"
-    ]
-  },
-  {
     "name": "Superbekanntenkreis",
     "members": [
       "Vlesk",
@@ -146,13 +122,43 @@
     ]
   },
   {
+    "name": "(Name unbekannt)",
+    "members": [
+      "Mahluna",
+      ["Broeki", "Broeki1"],
+      "RvNxMango",
+      "JuliMii",
+      "Solaaaa"
+    ]
+  },
+  {
+    "name": "(Kein Name)",
+    "members": [
+      "edopeh",
+      ["Beam", "BeamTwitch"]
+    ]
+  },
+  {
+    "name": "(Kein Name)",
+    "members": [
+      "Ginoswelt",
+      ["beed", "beedTV"]
+    ]
+  },
+  {
+    "name": "(Kein Name)",
+    "members": [
+      "HighscoreHeroes",
+      "Lime7ime"
+    ]
+  },
+  {
     "name": "(Kein Team)",
     "members": [
       "izzi",
       "kleinstadtstreamer",
       "AndiDev",
       "MaxiMcFlyy",
-      "edopeh",
       "ItsVeX",
       "Smithhiller",
       "Sturmwaffel"
