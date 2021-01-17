@@ -36,7 +36,7 @@ async function run() {
 
   return {
     teams,
-    totalViewers: rustStreams.reduce((total, stream) => total + stream.viewers)
+    totalViewers: rustStreams.reduce((total, stream) => total + stream.viewers, 0)
   }
 }
 
