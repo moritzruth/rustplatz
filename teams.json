@@ -140,6 +140,12 @@
     ]
   },
   {
+    "name": "KerragsWaffe(l)nHandel",
+    "members": [
+      ["Jens (Bonjwa)", "Bonjwa"]
+    ]
+  },
+  {
     "name": "(Kein Team)",
     "members": [
       "izzi",
@@ -147,7 +153,6 @@
       "AndiDev",
       "MaxiMcFlyy",
       "edopeh",
-      ["Jens (Bonjwa)", "Bonjwa"],
       "ItsVeX",
       "Smithhiller",
       "Sturmwaffel"
