@@ -34,7 +34,8 @@
     </section>
   </main>
   <footer class="footer">
-    Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a>.
+    Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a> |
+    <a href="https://github.com/moritzruth/rustplatz">Source Code</a>
   </footer>
 </template>
 
@@ -88,7 +89,7 @@
 
   .teams {
     column-count: 3;
-    column-gap: 20px;
+    column-gap: 30px;
   }
 
   .team-card-container {

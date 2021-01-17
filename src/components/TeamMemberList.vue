@@ -8,7 +8,7 @@
           :data-was-shown="last.showOnline"
           :data-show="showOnline"
         >
-          Online
+          Live
         </span>
         <span
           v-else-if="item === 'OFFLINE'"

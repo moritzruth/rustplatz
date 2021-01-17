@@ -4,7 +4,7 @@
       <span class="team-name">{{ team.name }}</span>
       <a
         class="multitwitch"
-        :class="{ show: team.online.length !== 0 }"
+        :class="{ show: showMultitwitch }"
         :href="`https://multitwitch.tv/${onlineTwitchNames.join('/')}`"
       >
         Multitwitch
@@ -12,7 +12,7 @@
       <TeamMemberList
         :online="team.online"
         :offline="team.offline"
-        :style="{ marginBottom: team.offline.length === 0 || team.online.length === 0 ? '-40px' : '10px' }"
+        :style="{ marginBottom }"
       />
     </div>
   </div>
@@ -20,7 +20,7 @@
 
 <style scoped>
   .team-card-container {
-    padding-top: 2px;
+    padding-top: 5px;
     padding-bottom: 30px;
   }
 
@@ -34,6 +34,7 @@
 
   .team-card:hover {
     box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
   }
 
   .team-name {
@@ -72,8 +73,15 @@
       }
     },
     computed: {
-      onlineTwitchNames() {
-        return [...new Set(this.team.online.map(member => Array.isArray(member) ? member[1] : member))]
+      onlineTwitchNames: vm => [...new Set(vm.team.online.map(member => Array.isArray(member) ? member[1] : member))],
+      showMultitwitch: vm => vm.team.online.length > 1,
+      marginBottom() {
+        let value = 0
+
+        if (this.team.offline.length === 0 || this.team.online.length === 0) value -= 35
+        if (this.showMultitwitch) value += 5
+
+        return value + "px"
       }
     }
   }
