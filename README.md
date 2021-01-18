@@ -18,7 +18,6 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - Baso
 - KROGMANN
 - AndiDev
-- Smithhiller
 - Sturmwaffel
 - Sterzik
 
