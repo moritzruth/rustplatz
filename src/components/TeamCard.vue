@@ -62,6 +62,7 @@
 
 <script>
   import TeamMemberList from "./TeamMemberList.vue"
+  import { getMemberProperty } from "../assets/get-member-property"
 
   export default {
     name: "TeamCard",
@@ -73,7 +74,7 @@
       }
     },
     computed: {
-      onlineTwitchNames: vm => [...new Set(vm.team.online.map(member => Array.isArray(member) ? member[1] : member))],
+      onlineTwitchNames: vm => [...new Set(vm.team.online.map(member => getMemberProperty(member, "twitch")))],
       showMultitwitch: vm => vm.onlineTwitchNames.length > 1,
       marginBottom() {
         let value = 0
