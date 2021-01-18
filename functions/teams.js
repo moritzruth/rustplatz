@@ -27,7 +27,6 @@ async function getOnlinePlayers() {
 }
 
 async function getActiveStreamsAndTotalViewers(channelNames) {
-  console.log(channelNames)
   const rustStreamsIterator = await twitchClient.helix.streams.getStreamsPaginated({
     userName: channelNames,
     game: RUST_GAME_ID.toString()
@@ -54,8 +53,8 @@ async function run() {
   const teams = []
   for (const team of rawTeams) {
     const onlineMembers = team.members
-      .filter(member => streams.has(getMemberProperty(member, "twitch") &&
-        onlinePlayers.has(getMemberProperty(member, "game"))))
+      .filter(member => streams.has(getMemberProperty(member, "twitch")) &&
+        onlinePlayers.has(getMemberProperty(member, "game")))
 
     teams.push({
       name: team.name,
@@ -69,6 +68,10 @@ async function run() {
     totalViewers
   }
 }
+
+(async () => {
+  console.log(await run())
+})()
 
 exports.handler = async function handler() {
   return {
