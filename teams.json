@@ -165,8 +165,8 @@
     "members": [
       {
         "twitch": "RocketBeansTV",
-        "game": "",
-        "displayed": "Nils/Valentin"
+        "game": "Valentin",
+        "displayed": "Valentin"
       },
       {
         "twitch": "JustGiggles",
@@ -175,7 +175,7 @@
       },
       {
         "twitch": "PixelViet",
-        "game": "PixelViet",
+        "game": "Viet",
         "displayed": "Viet"
       }
     ]
@@ -260,7 +260,7 @@
       "KROGMANN",
       {
         "twitch": "UnstoppaBell",
-        "game": "BellBell",
+        "game": "Giggles",
         "displayed": "UnstoppaBell"
       },
       "DoomDesign"
@@ -345,7 +345,11 @@
         "game": "Kleinstadtstreamer",
         "displayed": "Kleinstadtstreamer"
       },
-      "AndiDev",
+      {
+        "twitch": "AndiDev",
+        "game": "Andi",
+        "displayed": "AndiDev"
+      },
       {
         "twitch": "MaxiMcFlyy",
         "game": "MaxiMcFly",
@@ -359,7 +363,13 @@
         "twitch": "maxim",
         "game": "Maxim",
         "displayed": "Maxim"
-      }
+      },
+      {
+        "twitch": "Hasi",
+        "game": "hasi_ttv",
+        "displayed": "Hasi"
+      },
+      "JenNyan"
     ]
   },
   {
