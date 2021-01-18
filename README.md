@@ -5,3 +5,21 @@
 
 Die Seite listet die Teams auf und zeigt, welche Streamer gerade mit Rust live sind.
 Außerdem gibt es für jedes Team einen multitwitch.tv Link.
+
+## In-Game Name nicht überprüft:
+- Graenz
+- PhunkRoyal
+- Fishcop
+- PixelViet
+- JustGiggles
+- RocketBeans Valentin und Nils
+- Varion
+- Luk
+- Baso
+- KROGMANN
+- AndiDev
+- Smithhiller
+- Sturmwaffel
+- Sterzik
+
+In Team "The Strangers" fehlen noch "Luna Lovegood" und "Opfermagnet" (In-Game Namen).
