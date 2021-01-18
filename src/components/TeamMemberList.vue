@@ -1,6 +1,6 @@
 <template>
   <transition-group name="list" tag="div" class="team-members-list">
-    <template v-for="item in items" :key="Array.isArray(item) ? item[0] : item">
+    <template v-for="item in items" :key="getMemberProperty(item, 'displayed')">
       <div>
         <span
           v-if="item === 'ONLINE'"
@@ -20,12 +20,12 @@
         </span>
         <a
           v-else
-          :href="`https://twitch.tv/${Array.isArray(item) ? item[1] : item}`"
+          :href="`https://twitch.tv/${getMemberProperty(item, 'twitch')}`"
           class="team-member"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {{ Array.isArray(item) ? item[0] : item }}
+          {{ getMemberProperty(item, 'displayed') }}
           <ExternalLinkIcon size="15" stroke-width="4"/>
         </a>
       </div>
@@ -108,6 +108,7 @@
 
 <script>
   import { ExternalLinkIcon } from "@zhuowenli/vue-feather-icons"
+  import { getMemberProperty } from "../assets/get-member-property"
 
   export default {
     name: "TeamMemberList",
@@ -159,6 +160,9 @@
           }
         }
       }
+    },
+    methods: {
+      getMemberProperty
     }
   }
 </script>

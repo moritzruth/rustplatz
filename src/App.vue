@@ -22,7 +22,7 @@
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
         <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
         <li>Teams umfassen maximal 6 Personen.</li>
-        <li>Der Server wird monatlich zurückgesetzt.</li>
+        <li>Der Server wird monatlich zurückgesetzt (bedingt durch Updates).</li>
       </ul>
     </section>
     <section>
@@ -34,12 +34,10 @@
         <TeamCard v-for="(team, index) in data.teams" :key="index" :team="team"/>
       </div>
       <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
-      <p>Mitspieler erscheinen als online, sobald ihr Kanal live mit Rust ist.</p>
       <p>
-        Manche Teams (z. B. Bonjwa) haben nur einen Kanal, aber mehrere Mitspieler. Da es allerdings keine
-        einfach Möglichkeit gibt, herauszufinden, wer gerade streamt, erscheinen (fälschlicherweise)
-        alle Mitspieler des Teams als live. Nachtrag: Es gibt eine Möglichkeit, aber die würde alles um einiges
-        komplizierter machen, weswegen ich es erst mal lasse. Vielleicht habe ich irgendwann ja mal Langeweile...
+        Update: Inzwischen werden Spieler eines Twitch-Kanals nur noch als online angezeigt, wenn sie tatsächlich auf
+        dem Server online sind. Das hat leider zur Folge, dass die Liste immer gegen 15 Uhr (Server-Start) etwas
+        verzögert reagiert.
       </p>
     </section>
   </main>

@@ -10,6 +10,7 @@
     "@tweenjs/tween.js": "^18.6.4",
     "@zhuowenli/vue-feather-icons": "^5.0.2",
     "modern-normalize": "^1.0.0",
+    "node-fetch": "^2.6.1",
     "twitch": "^4.4.0",
     "twitch-auth": "^4.4.0",
     "vue": "^3.0.5"
