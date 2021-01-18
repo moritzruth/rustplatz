@@ -39,6 +39,11 @@
         dem Server online sind. Das hat leider zur Folge, dass die Liste immer gegen 15 Uhr (Server-Start) etwas
         verzögert reagiert.
       </p>
+      <p class="donation">
+        rustplatz.m0.is kostet mich monatlich ca. 20 €. Über
+        <a href="https://www.buymeacoffee.com/moritzruth">eine kleine Spende</a>
+        würde ich mich deshalb sehr freuen :)
+      </p>
     </section>
   </main>
   <footer class="footer">
@@ -81,6 +86,10 @@
     overflow-x: hidden;
   }
 
+  .donation {
+    font-size: 1.4rem;
+  }
+
   .content {
     max-width: 100%;
     width: 1500px;
@@ -90,7 +99,7 @@
 
   .content p {
     display: block;
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   .content > section {
@@ -185,7 +194,7 @@
     text-align: center;
   }
 
-  .footer > a {
+  a {
     display: inline-block;
     text-decoration: none;
     color: #7EFF93;
