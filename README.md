@@ -14,11 +14,9 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - JustGiggles
 - RocketBeans Valentin und Nils
 - Varion
-- Luk
 - Baso
 - KROGMANN
 - AndiDev
-- Smithhiller
 - Sturmwaffel
 - Sterzik
 
