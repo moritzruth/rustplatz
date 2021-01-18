@@ -222,11 +222,7 @@
         "game": "Zeno",
         "displayed": "Zeno"
       },
-      {
-        "twitch": "Lumenti",
-        "game": "Hermine Stranger",
-        "displayed": "Lumenti"
-      },
+      "Lumenti",
       {
         "twitch": "Zayuri",
         "game": "Luna Lovegood",
@@ -353,7 +349,12 @@
       "Smithhiller",
       "Sturmwaffel",
       "Sterzik",
-      "ThanhSchaefer"
+      "ThanhSchaefer",
+      {
+        "twitch": "maxim",
+        "game": "Maxim",
+        "displayed": "Maxim"
+      }
     ]
   },
   {
