@@ -277,7 +277,7 @@
     ]
   },
   {
-    "name": "(Name unbekannt)",
+    "name": "Small People Club",
     "members": [
       "Mahluna",
       "RvNxMango",
@@ -295,11 +295,16 @@
         "twitch": "BurritoOfDoom",
         "game": "Burrito Of Doom",
         "displayed": "BurritoOfDoom"
+      },
+      {
+        "twitch": "Broeki1",
+        "game": "Broeki",
+        "displayed": "Broeki"
       }
     ]
   },
   {
-    "name": "Rust Coast Custom",
+    "name": "Rust Coast Customs",
     "members": [
       "edopeh",
       {
@@ -334,6 +339,17 @@
         "displayed": "HighscoreHeroes"
       },
       "Lime7ime"
+    ]
+  },
+  {
+    "name": "(Name unbekannt)",
+    "members": [
+      "Jiwa",
+      {
+        "twitch": "AmateurB0HNE",
+        "game": "AmateurBOHNE",
+        "displayed": "AmateurB0HNE"
+      }
     ]
   },
   {
@@ -373,27 +389,11 @@
     ]
   },
   {
-    "name": "(Name unbekannt)",
-    "members": [
-      "Jiwa",
-      {
-        "twitch": "AmateurB0HNE",
-        "game": "AmateurBOHNE",
-        "displayed": "AmateurB0HNE"
-      }
-    ]
-  },
-  {
     "name": "(Unbekannt)",
     "members": [
       "Shushu",
       "teischEnte",
-      "CrunchyCupcakex3",
-      {
-        "twitch": "Broeki1",
-        "game": "Broeki",
-        "displayed": "Broeki"
-      }
+      "CrunchyCupcakex3"
     ]
   }
 ]
