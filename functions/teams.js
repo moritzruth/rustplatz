@@ -44,17 +44,23 @@ async function getActiveStreamsAndTotalViewers(channelNames) {
 }
 
 async function run() {
-  const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(rawTeams
-    .flatMap(team => team.members)
-    .map(member => getMemberProperty(member, "twitch")))
-
   const onlinePlayers = await getOnlinePlayers()
+
+  const onlineStreams = rawTeams
+    .flatMap(team => team.members)
+    .filter(member => onlinePlayers.has(getMemberProperty(member, "game")))
+    .map(member => getMemberProperty(member, "twitch"))
+
+  if (onlineStreams.length === 0) return {
+    teams: rawTeams.map(team => ({ name: team.name, online: [], offline: team.members })),
+    totalViewers: 0
+  }
+
+  const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(onlineStreams)
 
   const teams = []
   for (const team of rawTeams) {
-    const onlineMembers = team.members
-      .filter(member => streams.has(getMemberProperty(member, "twitch")) &&
-        onlinePlayers.has(getMemberProperty(member, "game")))
+    const onlineMembers = team.members.filter(member => streams.has(getMemberProperty(member, "twitch")))
 
     teams.push({
       name: team.name,
@@ -69,16 +75,14 @@ async function run() {
   }
 }
 
-(async () => {
-  console.log(await run())
-})()
+run().then(console.log).catch(console.error)
 
 exports.handler = async function handler() {
   return {
     statusCode: 200,
     body: JSON.stringify(await run()),
     headers: {
-      "Cache-Control": "public, max-age=90"
+      "Cache-Control": "public, max-age=60"
     }
   }
 }

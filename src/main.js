@@ -1,4 +1,4 @@
-import "modern-normalize/modern-normalize.css"
+import "./assets/tailwind.css"
 
 import { createApp } from "vue"
 import App from "./App.vue"
