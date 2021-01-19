@@ -56,7 +56,7 @@ async function run() {
     totalViewers: 0
   }
 
-  const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(a)
+  const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(onlineStreams)
 
   const teams = []
   for (const team of rawTeams) {
@@ -82,7 +82,7 @@ exports.handler = async function handler() {
     statusCode: 200,
     body: JSON.stringify(await run()),
     headers: {
-      "Cache-Control": "public, max-age=90"
+      "Cache-Control": "public, max-age=60"
     }
   }
 }
