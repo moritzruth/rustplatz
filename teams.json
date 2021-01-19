@@ -237,7 +237,7 @@
       "Baso",
       {
         "twitch": "veylt",
-        "game": "mina | veylt",
+        "game": "mina (veylt)",
         "displayed": "veylt"
       },
       "Shantao",
@@ -277,7 +277,7 @@
     ]
   },
   {
-    "name": "Small People Club",
+    "name": "Small PP Club",
     "members": [
       "Mahluna",
       "RvNxMango",
@@ -311,6 +311,16 @@
         "twitch": "BeamTwitch",
         "game": "Beam",
         "displayed": "Beam"
+      },
+      {
+        "twitch": "Radlerauge",
+        "game": "radlerauge",
+        "displayed": "Radlerauge"
+      },
+      {
+        "twitch": "kaaaay",
+        "game": "kay",
+        "displayed": "kaaaay"
       }
     ]
   },
@@ -353,6 +363,17 @@
     ]
   },
   {
+    "name": "Die Überbelichteten",
+    "members": [
+      {
+        "twitch": "hc_diZee",
+        "game": "Willy Wetzlav",
+        "displayed": "hc_diZee"
+      },
+      "CHEFKOCHx"
+    ]
+  },
+  {
     "name": "(Kein Team)",
     "members": [
       "izzi",
@@ -390,6 +411,11 @@
         "twitch": "TORRO",
         "game": "Torro",
         "displayed": "Torro"
+      },
+      {
+        "twitch": "MikeLS_91",
+        "game": "Mike Stiefelhagen",
+        "displayed": "Mike Stiefelhagen"
       }
     ]
   },
@@ -407,6 +433,11 @@
         "twitch": "CHIMPnSALMON",
         "game": "Lachsmann",
         "displayed": "CHIMPnSALMON"
+      },
+      {
+        "twitch": "Fenali",
+        "game": "fenali",
+        "displayed": "Fenali"
       }
     ]
   }
