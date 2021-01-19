@@ -152,7 +152,7 @@
 
   .content p {
     display: block;
-    max-width: 1000px;
+    max-width: 800px;
   }
 
   .content > section {
