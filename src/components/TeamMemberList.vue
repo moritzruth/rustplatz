@@ -4,7 +4,7 @@
       <div>
         <span
           v-if="item === 'ONLINE'"
-          class="separator online"
+          class="separator text-green-400"
           :data-was-shown="last.showOnline"
           :data-show="showOnline"
         >
@@ -12,7 +12,7 @@
         </span>
         <span
           v-else-if="item === 'OFFLINE'"
-          class="separator offline"
+          class="separator text-red-400"
           :data-was-shown="last.showOffline"
           :data-show="showOffline"
         >
@@ -21,12 +21,16 @@
         <a
           v-else
           :href="`https://twitch.tv/${getMemberProperty(item, 'twitch')}`"
-          class="team-member"
+          class="text-gray-200 flex space-x-1 group"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {{ getMemberProperty(item, 'displayed') }}
-          <ExternalLinkIcon size="15" stroke-width="4"/>
+          <span>{{ getMemberProperty(item, "displayed") }}</span>
+          <ExternalLinkIcon
+            class="opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+            size="15"
+            stroke-width="4"
+          />
         </a>
       </div>
     </template>
@@ -38,53 +42,16 @@
     transition: 1s ease transform;
   }
 
-  .team-members-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .team-member {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: inherit;
-    text-decoration: none;
-    margin-right: 5px;
-  }
-
-  .team-member .feather {
-    opacity: 0;
-    transition: 200ms ease opacity;
-  }
-
-  .team-member:hover .feather {
-    opacity: 1;
-  }
-
   .separator {
-    display: block;
-    font-size: 1.1em;
-    margin-top: 0.4em;
-    text-transform: uppercase;
-
-    transition: 500ms ease opacity;
-    opacity: 0;
-  }
-
-  .online {
-    color: #7EFF93;
-  }
-
-  .offline {
-    color: #F25C78;
+    @apply block text-lg mt-3 uppercase transition-opacity opacity-0 duration-500
   }
 
   .separator[data-show="true"][data-was-shown="false"] {
-    animation: 1s ease fade-in normal both;
+    animation: 500ms ease fade-in normal both;
   }
 
   .separator[data-show="false"][data-was-shown="true"] {
-    animation: 1s ease fade-in reverse both;
+    animation: 500ms ease fade-in reverse both;
   }
 
   .separator[data-show="true"][data-was-shown="true"] {

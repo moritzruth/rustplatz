@@ -30,9 +30,6 @@
           new TWEEN.Tween(this.tweened)
             .to({ value }, 1500)
             .easing(TWEEN.Easing.Sinusoidal.InOut)
-            .onUpdate(() => {
-
-            })
             .start()
         }
       }

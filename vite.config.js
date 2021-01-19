@@ -10,5 +10,8 @@ export default {
     rollupOptions: {
       external: ["modern-normalize"]
     }
+  },
+  optimizeDeps: {
+    exclude: ["node-fetch", "twitch", "twitch-auth"]
   }
 }

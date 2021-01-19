@@ -1,10 +1,13 @@
 <template>
-  <div class="project-logo" aria-label="Rust-Platz">
-    <div class="logo-container">
-      <img class="rust-logo" src="../assets/rust.svg" alt="Logo von Rust">
+  <div
+    class="project-logo flex justify-center items-center flex-col md:flex-row md:space-x-7 mx-auto"
+    aria-label="Rust-Platz"
+  >
+    <div class="flex-grow">
+      <img class="ml-auto project-logo__rust-logo" src="../assets/rust.svg" alt="Logo von Rust">
     </div>
-    <div class="separator"/>
-    <div class="text">
+    <div class="h-3 mt-3 -mb-5 md:m-0 md:h-40 project-logo__separator"/>
+    <div class="flex-grow font-bold uppercase">
       Platz
     </div>
   </div>
@@ -12,71 +15,39 @@
 
 <style scoped>
   .project-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     filter: brightness(140%);
-    transform: translateX(40px);
-  }
-
-  .logo-container {
-    flex-grow: 1;
-  }
-
-  .rust-logo {
-    width: 400px;
-    margin-left: auto;
-    display: block;
-  }
-
-  .separator {
-    width: 30px;
-    height: 200px;
-    margin: 0 60px;
-    background: #999999;
-  }
-
-  .text {
     color: #999999;
-    font-size: 8rem;
-    flex-grow: 1;
-    font-weight: bold;
-
-    text-transform: uppercase;
+    font-size: 5rem;
   }
 
-  @media (max-width: 1200px) {
+  .project-logo__rust-logo {
+    width: 300px;
+  }
+
+  .project-logo__separator {
+    background: #999999;
+    width: 300px;
+  }
+
+  @screen md {
     .project-logo {
       transform: translateX(-5px);
-    }
-
-    .rust-logo {
-      width: 300px;
-    }
-
-    .text {
       font-size: 5rem;
+    }
+
+    .project-logo__separator {
+      @apply w-6;
     }
   }
 
-  @media (max-width: 860px) {
+  @screen xl {
     .project-logo {
-      flex-direction: column;
-      transform: none;
+      transform: translateX(40px);
+      font-size: 8rem;
     }
 
-    .separator {
-      height: 10px;
-      width: 300px;
-      margin: 25px 0 5px;
-    }
-
-    .rust-logo {
-      width: 300px;
-    }
-
-    .text {
-      font-size: 5rem;
+    .project-logo__rust-logo {
+      width: 400px;
     }
   }
 </style>

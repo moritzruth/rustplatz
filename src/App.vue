@@ -1,22 +1,28 @@
 <template>
-  <header>
+  <header class="pt-10 px-8">
     <ProjectLogo/>
-    <div class="project-description">
+    <div class="text-2xl text-center mt-5 md:mt-10">
       Rust-Streamerserver von Bonjwa, RocketBeans und Dhalucard
     </div>
+    <div class="text-center mt-4 text-base">
+      <p>Seite von <a href="https://twitter.com/moritz_ruth">@moritz_ruth</a>.</p>
+      <p class="text">
+        Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast.
+      </p>
+    </div>
+  </header>
+  <main class="p-5 text-lg space-y-8">
     <transition name="slide-y">
-      <div v-if="viewers > 1000" class="viewers-container">
-        <div class="viewers">
-          <span class="heading">total viewers</span>
-          <span class="value"><TweenedNumber :value="viewers"/></span>
+      <div v-if="viewers > 1000" class="app__viewers-container mt-5 max-w-full overflow-hidden">
+        <div class="max-w-sm h-full mx-auto default-border p-5 text-center">
+          <span class="font-bold text-3xl block mt-1">total viewers</span>
+          <span class="block text-5xl text-green-400 mt-6"><TweenedNumber :value="viewers"/></span>
         </div>
       </div>
     </transition>
-  </header>
-  <main class="content">
-    <section>
+    <section class="max-w-7xl w-full mx-auto">
       <h1 class="heading">Informationen</h1>
-      <ul>
+      <ul class="list-disc pl-4">
         <li>Der Server ist täglich von 15 Uhr bis 3 Uhr (morgens) online.</li>
         <li>Andere Spieler zu töten ist nur mit Role-Play erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
@@ -26,49 +32,38 @@
       </ul>
     </section>
     <section>
-      <h1 class="heading">Teams</h1>
-      <div v-if="data === null" class="loading-text">
+      <div class="max-w-7xl w-full mx-auto">
+        <h1 class="heading">Teams</h1>
+      </div>
+      <div v-if="data === null" class="text-2xl max-w-7xl w-full mx-auto">
         Lädt...
       </div>
-      <div v-else class="teams">
-        <TeamCard v-for="(team, index) in data.teams" :key="index" :team="team"/>
+      <div v-else class="md:p-2">
+        <TeamsList :teams="data.teams"/>
       </div>
-      <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
+      <p class="mt-5 max-w-7xl w-full mx-auto">
+        Aktualisiert sich alle 60 Sekunden automatisch.
+      </p>
     </section>
-    <section class="donation-text">
+    <section class="text-lg max-w-7xl w-full mx-auto">
       <p>
         Diese Seite kostet mich monatlich ca. 20€. Über
         <a href="http://m0.is/donate">eine kleine Spende</a>
         würde ich mich deshalb sehr freuen :)<br>
       </p>
       <p>Genügend Spenden würden außerdem Folgendes ermöglichen:</p>
-      <ul>
+      <ul class="p-5 list-disc">
         <li>Aktualisieren der Informationen in kürzeren Zeitabständen [20,62€/Monat]</li>
         <li>Kurze Domain (rstpltz.gg) [99,90€/Jahr]</li>
         <li>Live-Benachrichtigungen [?]</li>
       </ul>
     </section>
-    <section>
-      <p>
-        Sende mir Feature-Vorschläge, Team-Änderungen und alles andere gerne per Twitter:
-        <a href="https://twitter.com/moritz_ruth">@moritz_ruth</a>
-      </p>
-    </section>
-    <div class="donation" :class="showDonation && 'show'">
-      <a href="http://m0.is/donate" class="box" tabindex="-1">
-        Diese Seite kostet mich monatlich ca. 20€. Über
-        <a href="http://m0.is/donate">eine kleine Spende</a>
-        würde ich mich deshalb sehr freuen :)
-      </a>
-      <button class="close" @click="showDonation = false">
-        Schließen
-      </button>
-    </div>
   </main>
-  <footer class="footer">
-    Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a> |
+  <footer class="flex flex-col text-center px-4 py-2">
+    <span>Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a>.</span>
     <a href="https://github.com/moritzruth/rustplatz">Source Code</a>
   </footer>
+  <DonationAlert v-model="showDonationAlert"/>
 </template>
 
 <style>
@@ -92,198 +87,52 @@
     background: rgba(242, 92, 120, 0.7);
   }
 
-  html {
-    font-size: 16px;
-  }
-
   body {
-    background: #212121;
-    color: #E9E9E9;
-    padding: 40px;
-
-    font-family: "Goldman", sans-serif;
-    overflow-x: hidden;
-  }
-
-  .donation {
-    font-size: 1.1rem;
-
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 300px;
-
-    opacity: 0;
-    transition: opacity 200ms ease;
-  }
-
-  .donation.show {
-    opacity: 1;
-    transition-duration: 2s;
-  }
-
-  .donation .box {
-    border: 4px dashed #7EFF93;
-    padding: 10px;
-    background: rgba(33, 33, 33, 0.5);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px 0 black;
-    color: inherit;
-  }
-
-  .donation .close {
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    border: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    padding: 1px 8px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white
-  }
-
-  .content {
-    max-width: 100%;
-    width: 1500px;
-    margin: 0 auto;
-    font-size: 1.3rem;
-  }
-
-  .content p {
-    display: block;
-    max-width: 800px;
-  }
-
-  .content > section {
-    margin-bottom: 2em;
-  }
-
-  .project-description {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1.5rem;
-  }
-
-  .viewers-container {
-    height: 145px;
-    width: 400px;
-    margin: 20px auto;
-    max-width: 100%;
-  }
-
-  .viewers {
-    height: 100%;
-    text-align: center;
-    border: 4px dashed #C95847;
-    overflow: hidden;
-  }
-
-  .viewers > .heading {
-    margin-top: 1.4rem;
-    font-size: 1.5rem;
-    display: block;
-    margin-bottom: 0;
-  }
-
-  .viewers > .value {
-    font-size: 4rem;
-    display: block;
-    color: #7EFF93;
-    margin-bottom: -10px;
-  }
-
-  .heading {
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-
-  .loading-text {
-    height: 400px;
-    font-size: 2rem;
-  }
-
-  .teams {
-    column-count: 3;
-    column-gap: 30px;
-  }
-
-  .team-card-container {
-    break-inside: avoid;
-  }
-
-  @media (max-width: 1500px) {
-    .teams {
-      column-count: 2;
-    }
-  }
-
-  @media (max-width: 800px) {
-    html {
-      font-size: 15px;
-    }
-
-    body {
-      padding: 40px 20px;
-    }
-
-    .teams {
-      column-count: 1;
-    }
-
-    .heading {
-      font-size: 2.4rem;
-    }
-  }
-
-  .donation-text {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 600px) {
-    .donation {
-      display: none;
-    }
-  }
-
-  ul {
-    padding-left: 30px;
-  }
-
-  .footer {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
+    @apply bg-gray-900 text-gray-200 overflow-x-hidden;
   }
 
   a {
-    display: inline-block;
-    text-decoration: none;
-    color: #7EFF93;
+    @apply text-green-400;
+  }
+
+  .backdrop-blur {
+    backdrop-filter: blur(10px);
+  }
+
+  .default-border {
+    @apply border-4 border-dashed border-red-500;
+  }
+
+  .heading {
+    @apply text-3xl md:text-5xl font-bold mb-5;
+  }
+
+  .app__viewers-container {
+    height: 145px;
   }
 </style>
 
 <script>
   import ProjectLogo from "./components/ProjectLogo.vue"
-  import TeamCard from "./components/TeamCard.vue"
   import TweenedNumber from "./components/TweenedNumber.vue"
+  import TeamsList from "./components/TeamsList.vue"
+  import DonationAlert from "./components/DonationAlert.vue"
 
   const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",
-    components: { TweenedNumber, TeamCard, ProjectLogo },
+    components: { DonationAlert, TeamsList, TweenedNumber, ProjectLogo },
     data: () => ({
       data: null,
-      showDonation: false
+      showDonationAlert: false
     }),
     computed: {
       viewers: vm => vm.data === null ? 0 : vm.data.totalViewers
     },
     async created() {
       await this.loop()
-      if (this.data.totalViewers > 1000) this.showDonation = true
+      if (this.data.totalViewers > 1000) this.showDonationAlert = true
     },
     methods: {
       async loop() {
