@@ -41,7 +41,7 @@
       </p>
       <p class="donation">
         rustplatz.m0.is kostet mich monatlich ca. 20 €. Über
-        <a href="https://www.buymeacoffee.com/moritzruth">eine kleine Spende</a>
+        <a href="http://m0.is/donate">eine kleine Spende</a>
         würde ich mich deshalb sehr freuen :)
       </p>
     </section>
