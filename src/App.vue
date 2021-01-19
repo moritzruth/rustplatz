@@ -53,9 +53,7 @@
       </p>
       <p>Genügend Spenden würden außerdem Folgendes ermöglichen:</p>
       <ul class="p-5 list-disc">
-        <li>Aktualisieren der Informationen in kürzeren Zeitabständen [20,62€/Monat]</li>
-        <li>Kurze Domain (rstpltz.gg) [99,90€/Jahr]</li>
-        <li>Live-Benachrichtigungen [?]</li>
+        <li>Neue Adresse (rustplatz.gg) [99,90€/Jahr]</li>
       </ul>
     </section>
   </main>
