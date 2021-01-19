@@ -51,10 +51,6 @@
         <a href="http://m0.is/donate">eine kleine Spende</a>
         würde ich mich deshalb sehr freuen :)<br>
       </p>
-      <p>Genügend Spenden würden außerdem Folgendes ermöglichen:</p>
-      <ul class="p-5 list-disc">
-        <li>Neue Adresse (rustplatz.gg) [99,90€/Jahr]</li>
-      </ul>
     </section>
   </main>
   <footer class="flex flex-col text-center px-4 py-2">
