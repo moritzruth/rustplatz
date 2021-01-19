@@ -21,6 +21,6 @@ export const getFakeData = async () => {
     }),
     totalViewers: Math.floor(Math.random() * 100000) + 50001
     // totalViewers: 999999
-    // totalViewers: 0
+    // totalViewers: 1000
   }
 }

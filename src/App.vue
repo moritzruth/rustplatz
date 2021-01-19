@@ -34,17 +34,36 @@
         <TeamCard v-for="(team, index) in data.teams" :key="index" :team="team"/>
       </div>
       <p>Aktualisiert sich alle 60 Sekunden automatisch.</p>
+    </section>
+    <section class="donation-text">
       <p>
-        Update: Inzwischen werden Spieler eines Twitch-Kanals nur noch als online angezeigt, wenn sie tatsächlich auf
-        dem Server online sind. Das hat leider zur Folge, dass die Liste immer gegen 15 Uhr (Server-Start) etwas
-        verzögert reagiert.
-      </p>
-      <p class="donation">
-        rustplatz.m0.is kostet mich monatlich ca. 20 €. Über
+        Diese Seite kostet mich monatlich ca. 20€. Über
         <a href="http://m0.is/donate">eine kleine Spende</a>
-        würde ich mich deshalb sehr freuen :)
+        würde ich mich deshalb sehr freuen :)<br>
+      </p>
+      <p>Genügend Spenden würden außerdem Folgendes ermöglichen:</p>
+      <ul>
+        <li>Aktualisieren der Informationen in kürzeren Zeitabständen [20,62€/Monat]</li>
+        <li>Kurze Domain (rstpltz.gg) [99,90€/Jahr]</li>
+        <li>Live-Benachrichtigungen [?]</li>
+      </ul>
+    </section>
+    <section>
+      <p>
+        Sende mir Feature-Vorschläge, Team-Änderungen und alles andere gerne per Twitter:
+        <a href="https://twitter.com/moritz_ruth">@moritz_ruth</a>
       </p>
     </section>
+    <div class="donation" :class="showDonation && 'show'">
+      <a href="http://m0.is/donate" class="box" tabindex="-1">
+        Diese Seite kostet mich monatlich ca. 20€. Über
+        <a href="http://m0.is/donate">eine kleine Spende</a>
+        würde ich mich deshalb sehr freuen :)
+      </a>
+      <button class="close" @click="showDonation = false">
+        Schließen
+      </button>
+    </div>
   </main>
   <footer class="footer">
     Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a> |
@@ -87,7 +106,41 @@
   }
 
   .donation {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+
+  .donation.show {
+    opacity: 1;
+    transition-duration: 2s;
+  }
+
+  .donation .box {
+    border: 4px dashed #7EFF93;
+    padding: 10px;
+    background: rgba(33, 33, 33, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px 0 black;
+    color: inherit;
+  }
+
+  .donation .close {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 1px 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white
   }
 
   .content {
@@ -184,12 +237,22 @@
     }
   }
 
+  .donation-text {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .donation {
+      display: none;
+    }
+  }
+
   ul {
     padding-left: 30px;
   }
 
   .footer {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
     text-align: center;
   }
@@ -212,13 +275,15 @@
     name: "App",
     components: { TweenedNumber, TeamCard, ProjectLogo },
     data: () => ({
-      data: null
+      data: null,
+      showDonation: false
     }),
     computed: {
       viewers: vm => vm.data === null ? 0 : vm.data.totalViewers
     },
     async created() {
       await this.loop()
+      if (this.data.totalViewers > 1000) this.showDonation = true
     },
     methods: {
       async loop() {
