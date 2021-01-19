@@ -260,7 +260,7 @@
       "KROGMANN",
       {
         "twitch": "UnstoppaBell",
-        "game": "Giggles",
+        "game": "BellBell",
         "displayed": "UnstoppaBell"
       },
       "DoomDesign"
@@ -385,7 +385,12 @@
         "game": "hasi_ttv",
         "displayed": "Hasi"
       },
-      "JenNyan"
+      "JenNyan",
+      {
+        "twitch": "TORRO",
+        "game": "Torro",
+        "displayed": "Torro"
+      }
     ]
   },
   {
