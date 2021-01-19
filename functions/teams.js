@@ -78,7 +78,7 @@ exports.handler = async function handler() {
     statusCode: 200,
     body: JSON.stringify(await run()),
     headers: {
-      "Cache-Control": "public, max-age=60"
+      "Cache-Control": "public, max-age=90"
     }
   }
 }
