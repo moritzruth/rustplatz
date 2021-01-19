@@ -75,8 +75,6 @@ async function run() {
   }
 }
 
-run().then(console.log).catch(console.error)
-
 exports.handler = async function handler() {
   return {
     statusCode: 200,
