@@ -88,7 +88,7 @@
   }
 
   body {
-    @apply bg-gray-900 text-gray-200;
+    @apply bg-gray-900 text-gray-200 overflow-x-hidden;
   }
 
   a {
