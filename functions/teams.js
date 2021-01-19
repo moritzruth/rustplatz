@@ -44,17 +44,16 @@ async function getActiveStreamsAndTotalViewers(channelNames) {
 }
 
 async function run() {
+  const onlinePlayers = await getOnlinePlayers()
+
   const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(rawTeams
     .flatMap(team => team.members)
+    .filter(member => onlinePlayers.has(getMemberProperty(member, "game")))
     .map(member => getMemberProperty(member, "twitch")))
-
-  const onlinePlayers = await getOnlinePlayers()
 
   const teams = []
   for (const team of rawTeams) {
-    const onlineMembers = team.members
-      .filter(member => streams.has(getMemberProperty(member, "twitch")) &&
-        onlinePlayers.has(getMemberProperty(member, "game")))
+    const onlineMembers = team.members.filter(member => streams.has(getMemberProperty(member, "twitch")))
 
     teams.push({
       name: team.name,
@@ -68,10 +67,6 @@ async function run() {
     totalViewers
   }
 }
-
-(async () => {
-  console.log(await run())
-})()
 
 exports.handler = async function handler() {
   return {
