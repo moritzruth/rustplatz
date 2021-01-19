@@ -398,7 +398,16 @@
     "members": [
       "Shushu",
       "teischEnte",
-      "CrunchyCupcakex3"
+      {
+        "twitch": "CrunchyCupcakex3",
+        "game": "CrunchyCupcake",
+        "displayed": "Crunchy"
+      },
+      {
+        "twitch": "CHIMPnSALMON",
+        "game": "Lachsmann",
+        "displayed": "CHIMPnSALMON"
+      }
     ]
   }
 ]
