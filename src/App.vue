@@ -126,7 +126,7 @@
     },
     async created() {
       await this.loop()
-      if (this.data.totalViewers > 1000) this.showDonationAlert = true
+      this.showDonationAlert = true
     },
     methods: {
       async loop() {
@@ -136,9 +136,22 @@
         }, UPDATE_INTERVAL)
       },
       async fetchTeams() {
-        this.data = process.env.NODE_ENV === "development"
-          ? await import("./assets/fake-data").then(m => m.getFakeData())
-          : await (await fetch("/.netlify/functions/teams")).json()
+        const hour = new Date().getHours()
+
+        if (hour >= 15 || hour < 3) {
+          this.data = process.env.NODE_ENV === "development"
+            ? await import("./assets/fake-data").then(m => m.getFakeData())
+            : await (await fetch("/.netlify/functions/teams")).json()
+        } else {
+          this.data = {
+            teams: (await import("../teams.json")).default.map(team => ({
+              name: team.name,
+              online: [],
+              offline: team.members
+            })),
+            totalViewers: 0
+          }
+        }
       }
     }
   }
