@@ -2,3 +2,11 @@
   functions = "functions"
   publish = "dist"
   command = "yarn build"
+
+[[redirects]]
+from = "https://rustplatz.m0.is/*"
+to = "https://rustplatz.live"
+
+[[redirects]]
+from = "https://rustplatz.live/*"
+to = "https://rustplatz.live"
