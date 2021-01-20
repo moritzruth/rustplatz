@@ -4,5 +4,5 @@
   command = "yarn build"
 
 [[redirects]]
-from = "https://rustplatz.m0.is/*"
-to = "https://rustplatz.live"
+  from = "https://rustplatz.m0.is/*"
+  to = "https://rustplatz.live"

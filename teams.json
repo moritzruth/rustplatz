@@ -50,6 +50,11 @@
         "twitch": "Mowkyfox",
         "game": "Mowk",
         "displayed": "Mowkyfox"
+      },
+      {
+        "twitch": "Gnu_Live",
+        "game": "SaftigesGnu",
+        "displayed": "SaftigesGnu (Praktikant)"
       }
     ]
   },
@@ -394,9 +399,45 @@
     ]
   },
   {
-    "name": "(Kein Team)",
+    "name": "Trödel-Trupp",
+    "members": [
+      {
+        "twitch": "DieBrian",
+        "game": "DieBrian (GER)",
+        "displayed": "DieBrian"
+      },
+      {
+        "twitch": "Scheppertlive",
+        "game": "SchEppertLIVE",
+        "displayed": "Scheppertlive"
+      }
+    ]
+  },
+  {
+    "name": "(Kein Name)",
+    "members": [
+      {
+        "twitch": "Jack_Fleischhammer",
+        "game": "JackFleischhammer",
+        "displayed": "JackFleischhammer"
+      },
+      "Hirnsturz"
+    ]
+  },
+  {
+    "name": "(Kein Name)",
     "members": [
       "izzi",
+      {
+        "twitch": "DnerTV",
+        "game": "Dner",
+        "displayed": "Dner"
+      }
+    ]
+  },
+  {
+    "name": "(Kein Team)",
+    "members": [
       {
         "twitch": "kleinstadtstreamer",
         "game": "Kleinstadtstreamer",
@@ -436,7 +477,8 @@
         "twitch": "MikeLS_91",
         "game": "Mike Stiefelhagen",
         "displayed": "Mike Stiefelhagen"
-      }
+      },
+      "TheKraeuterbutter"
     ]
   },
   {
@@ -453,6 +495,11 @@
         "twitch": "Fenali",
         "game": "fenali",
         "displayed": "Fenali"
+      },
+      {
+        "twitch": "nichtdiemama",
+        "game": "NichtDieMama",
+        "displayed": "NichtDieMama"
       }
     ]
   }
