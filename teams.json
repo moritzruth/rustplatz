@@ -374,6 +374,26 @@
     ]
   },
   {
+    "name": "(Name unbekannt)",
+    "members": [
+      {
+        "twitch": "CrunchyCupcakex3",
+        "game": "CrunchyCupcake",
+        "displayed": "Crunchy"
+      },
+      {
+        "twitch": "Farbenfuchs",
+        "game": "Fuchsi",
+        "displayed": "Farbenfuchs"
+      },
+      {
+        "twitch": "nancywenz",
+        "game": "NancyWe",
+        "displayed": "Nancy Wenz"
+      }
+    ]
+  },
+  {
     "name": "(Kein Team)",
     "members": [
       "izzi",
@@ -424,11 +444,6 @@
     "members": [
       "Shushu",
       "teischEnte",
-      {
-        "twitch": "CrunchyCupcakex3",
-        "game": "CrunchyCupcake",
-        "displayed": "Crunchy"
-      },
       {
         "twitch": "CHIMPnSALMON",
         "game": "Lachsmann",
