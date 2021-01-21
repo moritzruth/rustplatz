@@ -114,14 +114,14 @@
         "displayed": "AsterPewPew"
       },
       {
-        "twitch": "RoyalPhunk",
-        "game": "PhunkRoyal",
-        "displayed": "PhunkRoyal"
-      },
-      {
         "twitch": "TouristHistories",
         "game": "TouristHistories",
         "displayed": "Touri"
+      },
+      {
+        "twitch": "CHIMPnSALMON",
+        "game": "Lachsmann",
+        "displayed": "CHIMPnSALMON"
       }
     ]
   },
@@ -176,7 +176,7 @@
       {
         "twitch": "RocketBeansTV",
         "game": "Boedefeld",
-        "displayed": "Niklas"
+        "displayed": "Nils"
       },
       {
         "twitch": "JustGiggles",
@@ -261,7 +261,7 @@
       "DoomDesign",
       {
         "twitch": "varion",
-        "game": "Varion",
+        "game": "flo",
         "displayed": "Varion"
       },
       {
@@ -484,6 +484,11 @@
         "twitch": "Fixx",
         "game": "FixxYT",
         "displayed": "Fixx"
+      },
+      {
+        "twitch": "RoyalPhunk",
+        "game": "PhunkRoyal",
+        "displayed": "PhunkRoyal"
       }
     ]
   },
@@ -492,11 +497,6 @@
     "members": [
       "Shushu",
       "teischEnte",
-      {
-        "twitch": "CHIMPnSALMON",
-        "game": "Lachsmann",
-        "displayed": "CHIMPnSALMON"
-      },
       {
         "twitch": "Fenali",
         "game": "fenali",

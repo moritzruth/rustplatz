@@ -7,11 +7,10 @@ Die Seite listet die Teams auf und zeigt, welche Streamer gerade mit Rust live s
 Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 
 ## In-Game Name nicht überprüft:
-- PhunkRoyal
 - Fishcop
 - KROGMANN
 - AndiDev
 - Sturmwaffel
 - Sterzik
 
-In Team "The Strangers" fehlen noch "Luna Lovegood" und "Opfermagnet" (In-Game Namen).
+In Team The Strangers fehlen noch Opfermagnet (In-Game).
