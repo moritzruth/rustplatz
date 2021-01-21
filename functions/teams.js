@@ -44,19 +44,25 @@ async function getActiveStreamsAndTotalViewers(channelNames) {
 }
 
 async function run() {
-  const onlinePlayers = await getOnlinePlayers()
-  let playingStreams
+  let skipOnline, onlinePlayers, playingStreams
 
-  if (onlinePlayers.size === 0) {
-    playingStreams = rawTeams
-      .flatMap(team => team.members)
-      .filter(member => onlinePlayers.has(getMemberProperty(member, "game")))
-      .map(member => getMemberProperty(member, "twitch"))
-  } else {
+  try {
+    onlinePlayers = await getOnlinePlayers()
+    skipOnline = onlinePlayers.size === 0
+  } catch {
+    skipOnline = true
+  }
+
+  if (skipOnline) {
     // BattleMetrics sent a false response
 
     playingStreams = rawTeams
       .flatMap(team => team.members)
+      .map(member => getMemberProperty(member, "twitch"))
+  } else {
+    playingStreams = rawTeams
+      .flatMap(team => team.members)
+      .filter(member => onlinePlayers.has(getMemberProperty(member, "game")))
       .map(member => getMemberProperty(member, "twitch"))
   }
 
