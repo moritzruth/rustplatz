@@ -4,7 +4,7 @@ const fetch = require("node-fetch")
 const rawTeams = require("../teams.json")
 
 const RUST_GAME_ID = 263490
-const { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET, BATTLE_METRICS_TOKEN, SKIP_ONLINE_CHECK } = process.env
+const { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET, BATTLE_METRICS_TOKEN } = process.env
 
 const BATTLE_METRICS_ENDPOINT = "https://api.battlemetrics.com/servers/9697587" +
   "?include=player&fields%5Bserver%5D=&relations%5Bserver%5D=&fields%5Bplayer%5D=name&relations%5Bplayer%5D="
@@ -44,27 +44,28 @@ async function getActiveStreamsAndTotalViewers(channelNames) {
 }
 
 async function run() {
-  let onlineStreams
+  const onlinePlayers = await getOnlinePlayers()
+  let playingStreams
 
-  if (SKIP_ONLINE_CHECK === "true") {
-    onlineStreams = rawTeams
-      .flatMap(team => team.members)
-      .map(member => getMemberProperty(member, "twitch"))
-  } else {
-    const onlinePlayers = await getOnlinePlayers()
-
-    onlineStreams = rawTeams
+  if (onlinePlayers.size === 0) {
+    playingStreams = rawTeams
       .flatMap(team => team.members)
       .filter(member => onlinePlayers.has(getMemberProperty(member, "game")))
       .map(member => getMemberProperty(member, "twitch"))
+  } else {
+    // BattleMetrics sent a false response
+
+    playingStreams = rawTeams
+      .flatMap(team => team.members)
+      .map(member => getMemberProperty(member, "twitch"))
   }
 
-  if (onlineStreams.length === 0) return {
+  if (playingStreams.length === 0) return {
     teams: rawTeams.map(team => ({ name: team.name, online: [], offline: team.members })),
     totalViewers: 0
   }
 
-  const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(onlineStreams)
+  const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(playingStreams)
 
   const teams = []
   for (const team of rawTeams) {
