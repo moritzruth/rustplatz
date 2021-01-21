@@ -186,21 +186,6 @@
     ]
   },
   {
-    "name": "Varion",
-    "members": [
-      {
-        "twitch": "varion",
-        "game": "Varion",
-        "displayed": "Varion"
-      },
-      {
-        "twitch": "lucky_iluke",
-        "game": "Lucky_iLuke",
-        "displayed": "Luk"
-      }
-    ]
-  },
-  {
     "name": "RUSTlos",
     "members": [
       {
@@ -268,7 +253,17 @@
         "game": "BellBell",
         "displayed": "UnstoppaBell"
       },
-      "DoomDesign"
+      "DoomDesign",
+      {
+        "twitch": "varion",
+        "game": "Varion",
+        "displayed": "Varion"
+      },
+      {
+        "twitch": "lucky_iluke",
+        "game": "Lucky_iLuke",
+        "displayed": "Luk"
+      }
     ]
   },
   {
