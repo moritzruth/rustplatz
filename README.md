@@ -9,7 +9,6 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 ## In-Game Name nicht überprüft:
 - Fishcop
 - KROGMANN
-- AndiDev
 - Sturmwaffel
 - Sterzik
 
