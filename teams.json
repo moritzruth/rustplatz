@@ -174,6 +174,11 @@
         "displayed": "Valentin"
       },
       {
+        "twitch": "RocketBeansTV",
+        "game": "Boedefeld",
+        "displayed": "Niklas"
+      },
+      {
         "twitch": "JustGiggles",
         "game": "Giggles",
         "displayed": "Kiara"
@@ -473,7 +478,13 @@
         "game": "Mike Stiefelhagen",
         "displayed": "Mike Stiefelhagen"
       },
-      "TheKraeuterbutter"
+      "TheKraeuterbutter",
+      "khaleesa96",
+      {
+        "twitch": "Fixx",
+        "game": "FixxYT",
+        "displayed": "Fixx"
+      }
     ]
   },
   {
