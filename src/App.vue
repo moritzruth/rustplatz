@@ -31,6 +31,10 @@
         <li>Der Server wird monatlich zurückgesetzt (bedingt durch Updates).</li>
       </ul>
     </section>
+    <div v-if="showPossibleIssueInfo" class="max-w-7xl w-full mx-auto text-2xl text-red-500 text-center">
+      Es sieht so aus, als hätte der Server gerade Probleme.<br>
+      Normalerweise erledigt sich das innerhalb weniger Minuten von alleine.
+    </div>
     <section>
       <div class="max-w-7xl w-full mx-auto">
         <h1 class="heading">Teams</h1>
@@ -119,7 +123,8 @@
     components: { DonationAlert, TeamsList, TweenedNumber, ProjectLogo },
     data: () => ({
       data: null,
-      showDonationAlert: false
+      showDonationAlert: false,
+      showPossibleIssueInfo: false
     }),
     computed: {
       viewers: vm => vm.data === null ? 0 : vm.data.totalViewers
@@ -142,6 +147,9 @@
           this.data = process.env.NODE_ENV === "development"
             ? await import("./assets/fake-data").then(m => m.getFakeData())
             : await (await fetch("/.netlify/functions/teams")).json()
+
+          // There is an issue
+          this.showPossibleIssueInfo = this.data.totalViewers === 0
         } else {
           this.data = {
             teams: (await import("../teams.json")).default.map(team => ({
@@ -151,6 +159,8 @@
             })),
             totalViewers: 0
           }
+
+          this.showPossibleIssueInfo = false
         }
       }
     }
