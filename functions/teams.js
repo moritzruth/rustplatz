@@ -27,14 +27,26 @@ async function getOnlinePlayers() {
 }
 
 async function getActiveStreamsAndTotalViewers(channelNames) {
-  const rustStreamsIterator = await twitchClient.helix.streams.getStreamsPaginated({
-    userName: channelNames,
-    game: RUST_GAME_ID.toString()
-  })
-
+  let i = 0
   const rustStreams = []
-  for await (const stream of rustStreamsIterator) {
-    rustStreams.push(stream)
+
+  // eslint-disable-next-line no-constant-condition
+  while (true) {
+    const part = channelNames.slice(i, i + 100)
+    if (part.length === 0) break
+
+    // eslint-disable-next-line no-await-in-loop
+    const iterator = await twitchClient.helix.streams.getStreamsPaginated({
+      userName: part,
+      game: RUST_GAME_ID.toString()
+    })
+
+    // eslint-disable-next-line no-await-in-loop
+    for await (const stream of iterator) {
+      rustStreams.push(stream)
+    }
+
+    i += 100
   }
 
   return {
