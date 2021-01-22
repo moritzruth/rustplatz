@@ -8,18 +8,22 @@
       <p>Seite von <a href="https://twitter.com/moritz_ruth">@moritz_ruth</a>.</p>
       <p class="text">
         Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast.
+        <br>
+        <strong>
+          Bitte sendet mir keine Anfragen, ob ihr mitspielen dürft. Das kann ich sowieso nicht entscheiden!
+        </strong>
       </p>
     </div>
   </header>
   <main class="p-5 text-lg space-y-8">
-    <transition name="slide-y">
-      <div v-if="viewers > 1000" class="app__viewers-container mt-5 max-w-full overflow-hidden">
-        <div class="max-w-sm h-full mx-auto default-border p-5 text-center">
-          <span class="font-bold text-3xl block mt-1">total viewers</span>
-          <span class="block text-5xl text-green-400 mt-6"><TweenedNumber :value="viewers"/></span>
-        </div>
-      </div>
-    </transition>
+    <section class="flex flex-col justify-center items-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+      <NumberBox title="Zuschauer" :show="viewers > 1000" class="w-72">
+        <TweenedNumber :value="viewers"/>
+      </NumberBox>
+      <NumberBox title="Online" :show="onlinePlayersCount > 0" class="w-64">
+        <TweenedNumber :value="onlinePlayersCount"/>/<TweenedNumber :value="totalPlayersCount"/>
+      </NumberBox>
+    </section>
     <section class="max-w-7xl w-full mx-auto">
       <h1 class="heading">Informationen</h1>
       <ul class="list-disc pl-4">
@@ -32,12 +36,15 @@
       </ul>
     </section>
     <div v-if="showPossibleIssueInfo" class="max-w-7xl w-full mx-auto text-2xl text-red-500 text-center">
-      Es sieht so aus, als hätte der Server gerade Probleme.<br>
+      Es sieht so aus, als hätte der Rust-Server gerade Probleme.<br>
       Normalerweise erledigt sich das innerhalb weniger Minuten von alleine.
     </div>
     <section>
       <div class="max-w-7xl w-full mx-auto">
-        <h1 class="heading">Teams</h1>
+        <h1 class="heading">
+          {{ data === null ? "" : data.teams.length - 2 }} Teams
+          <span v-if="data !== null" class="text-lg font-normal">({{ totalPlayersCount }} Spieler)</span>
+        </h1>
       </div>
       <div v-if="data === null" class="text-2xl max-w-7xl w-full mx-auto">
         Lädt...
@@ -65,22 +72,6 @@
 </template>
 
 <style>
-  .slide-y-enter-active,
-  .slide-y-leave-active {
-    transition: 1s ease-out;
-    transition-property: opacity, max-height;
-  }
-
-  .slide-y-enter-to, .slide-y-leave {
-    max-height: 145px;
-  }
-
-  .slide-y-enter-from,
-  .slide-y-leave-to {
-    opacity: 0;
-    max-height: 0;
-  }
-
   ::selection {
     background: rgba(242, 92, 120, 0.7);
   }
@@ -93,20 +84,8 @@
     @apply text-green-400;
   }
 
-  .backdrop-blur {
-    backdrop-filter: blur(10px);
-  }
-
-  .default-border {
-    @apply border-4 border-dashed border-red-500;
-  }
-
   .heading {
     @apply text-3xl md:text-5xl font-bold mb-5;
-  }
-
-  .app__viewers-container {
-    height: 145px;
   }
 </style>
 
@@ -115,19 +94,24 @@
   import TweenedNumber from "./components/TweenedNumber.vue"
   import TeamsList from "./components/TeamsList.vue"
   import DonationAlert from "./components/DonationAlert.vue"
+  import NumberBox from "./components/NumberBox.vue"
 
   const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",
-    components: { DonationAlert, TeamsList, TweenedNumber, ProjectLogo },
+    components: { NumberBox, DonationAlert, TeamsList, TweenedNumber, ProjectLogo },
     data: () => ({
       data: null,
       showDonationAlert: false,
       showPossibleIssueInfo: false
     }),
     computed: {
-      viewers: vm => vm.data === null ? 0 : vm.data.totalViewers
+      viewers: vm => vm.data === null ? 0 : vm.data.totalViewers,
+      totalPlayersCount: vm => vm.data === null
+        ? 0
+        : vm.data.teams.flatMap(team => [...team.online, ...team.offline]).length,
+      onlinePlayersCount: vm => vm.data === null ? 0 : vm.data.teams.flatMap(team => team.online).length
     },
     async created() {
       await this.loop()
@@ -148,7 +132,7 @@
             ? await import("./assets/fake-data").then(m => m.getFakeData())
             : await (await fetch("/.netlify/functions/teams")).json()
 
-          // There is an issue
+          // There seems to be an issue
           this.showPossibleIssueInfo = this.data.totalViewers === 0
         } else {
           this.data = {

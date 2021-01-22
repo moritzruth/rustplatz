@@ -1,4 +1,5 @@
 import "./assets/tailwind.css"
+import "./assets/transitions.css"
 
 import { createApp } from "vue"
 import App from "./App.vue"

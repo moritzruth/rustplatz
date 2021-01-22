@@ -1,6 +1,6 @@
 <template>
   <div
-    class="default-border p-4 md:p-8 transition duration-500 ease-in-out transform-gpu relative
+    class="theme-border p-4 md:p-8 transition duration-500 ease-in-out transform-gpu relative
            hover:scale-103 hover:shadow-2xl"
   >
     <span class="text-2xl">{{ team.name }}</span>

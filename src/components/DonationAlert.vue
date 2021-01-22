@@ -5,7 +5,7 @@
   >
     <a
       href="http://m0.is/donate"
-      class="block backdrop-blur default-border text-lg p-4 bg-gray-800 bg-opacity-60 text-gray-100 shadow-xl"
+      class="block backdrop-blur theme-border text-lg p-4 bg-gray-800 bg-opacity-60 text-gray-100 shadow-xl"
       tabindex="-1"
     >
       Diese Seite kostet mich monatlich ca. 20€. Über

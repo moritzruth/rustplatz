@@ -1,0 +1,15 @@
+.slide-y-enter-active,
+.slide-y-leave-active {
+  transition: 1s ease-out;
+  transition-property: opacity, max-height;
+}
+
+.slide-y-enter-to, .slide-y-leave {
+  max-height: 145px;
+}
+
+.slide-y-enter-from,
+.slide-y-leave-to {
+  opacity: 0;
+  max-height: 0;
+}
