@@ -195,7 +195,7 @@
     "members": [
       {
         "twitch": "knechtungtv",
-        "game": "KnechtungTV",
+        "game": "Nicht Knechti",
         "displayed": "knechtungtv"
       },
       "Divi",
@@ -495,14 +495,18 @@
         "displayed": "PhunkRoyal"
       },
       "Snowryo",
-      "StrikerCosplay"
+      "StrikerCosplay",
+      "EsIstDani",
+      {
+        "twitch": "Jay_Corner",
+        "game": "Herr Passalakis",
+        "displayed": "Jay_Corner"
+      }
     ]
   },
   {
     "name": "(Unbekannt)",
     "members": [
-      "Shushu",
-      "teischEnte",
       {
         "twitch": "Fenali",
         "game": "fenali",
