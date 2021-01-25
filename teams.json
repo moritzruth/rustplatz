@@ -121,7 +121,7 @@
       {
         "twitch": "CHIMPnSALMON",
         "game": "Lachsmann",
-        "displayed": "CHIMPnSALMON"
+        "displayed": "Lachsmann | CHIMPnSALMON"
       }
     ]
   },
@@ -383,11 +383,11 @@
     ]
   },
   {
-    "name": "(Name unbekannt)",
+    "name": "(Kein Name)",
     "members": [
       {
         "twitch": "CrunchyCupcakex3",
-        "game": "CrunchyCupcake",
+        "game": "Pater Crunchy",
         "displayed": "Crunchy"
       },
       {
@@ -418,14 +418,19 @@
     ]
   },
   {
-    "name": "(Kein Name)",
+    "name": "Hinkelstein Ltd",
     "members": [
       {
         "twitch": "Jack_Fleischhammer",
         "game": "JackFleischhammer",
         "displayed": "JackFleischhammer"
       },
-      "Hirnsturz"
+      "Hirnsturz",
+      {
+        "twitch": "wo_dan",
+        "game": "Wodan",
+        "displayed": "Wodan"
+      }
     ]
   },
   {
@@ -436,6 +441,23 @@
         "twitch": "DnerTV",
         "game": "Dner",
         "displayed": "Dner"
+      }
+    ]
+  },
+  {
+    "name": "Among RUST",
+    "members": [
+      {
+        "twitch": "Gustaf Gabel",
+        "game": "GustafGabel",
+        "displayed": "Gustaf Gabel"
+      },
+      "Quiin",
+      "DTROiiX",
+      {
+        "twitch": "DerHardi",
+        "game": "Hardi",
+        "displayed": "Hardi"
       }
     ]
   },
