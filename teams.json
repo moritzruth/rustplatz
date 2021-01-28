@@ -2,7 +2,11 @@
   {
     "name": "fRUST",
     "members": [
-      "Dhalucard",
+      {
+        "twitch": "Dhalucard",
+        "game": "Detective Dhalucard",
+        "displayed": "Dhalucard"
+      },
       {
         "twitch": "Bonjwa",
         "game": "Bonjwa.Mental",
@@ -222,7 +226,8 @@
         "twitch": "Zayuri",
         "game": "Luna Lovegood",
         "displayed": "Zayuri"
-      }
+      },
+      "Opfermagnet"
     ]
   },
   {
@@ -280,7 +285,7 @@
     "members": [
       {
         "twitch": "Bonjwa",
-        "game": "Kerrag",
+        "game": "Warlord Kerrag",
         "displayed": "Jens (Bonjwa)"
       }
     ]
@@ -528,6 +533,11 @@
         "twitch": "Paarzival",
         "game": "Parzival",
         "displayed": "Parzival"
+      },
+      {
+        "twitch": "DoktorFroid",
+        "game": "lefloid",
+        "displayed": "LeFloid (DoktorFroid)"
       }
     ]
   },

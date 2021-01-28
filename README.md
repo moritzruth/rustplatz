@@ -10,5 +10,3 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - Fishcop
 - Sturmwaffel
 - Sterzik
-
-In Team The Strangers fehlen noch Opfermagnet (In-Game).
