@@ -54,11 +54,6 @@
         "twitch": "Mowkyfox",
         "game": "Mowk",
         "displayed": "Mowkyfox"
-      },
-      {
-        "twitch": "Gnu_Live",
-        "game": "SaftigesGnu",
-        "displayed": "SaftigesGnu (Praktikant)"
       }
     ]
   },
@@ -75,8 +70,6 @@
         "game": "PietSmiet",
         "displayed": "Peter (PietSmiet)"
       },
-      "fisHC0p",
-      "aSmoogl",
       {
         "twitch": "DoktorFroid",
         "game": "powlster_",
@@ -92,10 +85,8 @@
   {
     "name": "4/6",
     "members": [
-      "Kapuzenwurm",
       "Juliversal",
       "Items4Sacred",
-      "Graenz",
       {
         "twitch": "BaluiLP",
         "game": "Balui",
@@ -222,11 +213,6 @@
         "displayed": "Zeno"
       },
       "Lumenti",
-      {
-        "twitch": "Zayuri",
-        "game": "Luna Lovegood",
-        "displayed": "Zayuri"
-      },
       "Opfermagnet"
     ]
   },
@@ -245,8 +231,7 @@
         "twitch": "kutcherlol",
         "game": "Philly Westside",
         "displayed": "kutcherlol"
-      },
-      "starletnova"
+      }
     ]
   },
   {
@@ -267,17 +252,7 @@
         "game": "BellBell",
         "displayed": "UnstoppaBell"
       },
-      "DoomDesign",
-      {
-        "twitch": "varion",
-        "game": "flo",
-        "displayed": "Varion"
-      },
-      {
-        "twitch": "lucky_iluke",
-        "game": "Lucky_iLuke",
-        "displayed": "Luk"
-      }
+      "DoomDesign"
     ]
   },
   {
@@ -294,17 +269,6 @@
     "name": "Small PP Club",
     "members": [
       "Mahluna",
-      "RvNxMango",
-      {
-        "twitch": "JuliMii",
-        "game": "Juli Mi",
-        "displayed": "JuliMii"
-      },
-      {
-        "twitch": "Solaaaa",
-        "game": "Solalul",
-        "displayed": "Solaaaa"
-      },
       {
         "twitch": "BurritoOfDoom",
         "game": "Burrito Of Doom",
@@ -342,11 +306,6 @@
     "name": "(Kein Name)",
     "members": [
       {
-        "twitch": "Ginoswelt",
-        "game": "Ginozockt",
-        "displayed": "Ginoswelt"
-      },
-      {
         "twitch": "beedTV",
         "game": "beed",
         "displayed": "beed"
@@ -357,11 +316,6 @@
   {
     "name": "Rustafari",
     "members": [
-      {
-        "twitch": "HighscoreHeroes",
-        "game": "HighscoreHero",
-        "displayed": "HighscoreHeroes"
-      },
       "Lime7ime"
     ]
   },
@@ -506,25 +460,12 @@
         "displayed": "Mike Stiefelhagen"
       },
       "TheKraeuterbutter",
-      "khaleesa96",
-      {
-        "twitch": "Fixx",
-        "game": "FixxYT",
-        "displayed": "Fixx"
-      },
       {
         "twitch": "RoyalPhunk",
         "game": "PhunkRoyal",
         "displayed": "PhunkRoyal"
       },
-      "Snowryo",
       "StrikerCosplay",
-      "EsIstDani",
-      {
-        "twitch": "Jay_Corner",
-        "game": "Herr Passalakis",
-        "displayed": "Jay_Corner"
-      },
       {
         "twitch": "Paarzival",
         "game": "Parzival",
