@@ -27,13 +27,16 @@
     <section class="max-w-7xl w-full mx-auto">
       <h1 class="heading">Informationen</h1>
       <ul class="list-disc pl-4">
-        <li>Der Server ist täglich von 15 Uhr bis 3 Uhr (morgens) online.</li>
+        <li>Der Server ist täglich von 15 Uhr bis 3 Uhr (morgens) online. (Nach dem Wipe: 19 Uhr bis 1 Uhr)</li>
         <li>Andere Spieler zu töten ist nur mit Role-Play erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
         <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
         <li>Teams umfassen maximal 6 Personen.</li>
-        <li>Der Server wird monatlich zurückgesetzt (bedingt durch Updates).</li>
       </ul>
+    </section>
+    <section class="max-w-7xl w-full mx-auto">
+      <h1 class="heading">Ereignisse</h1>
+      <EventsList/>
     </section>
     <div v-if="showPossibleIssueInfo" class="max-w-7xl w-full mx-auto text-2xl text-red-500 text-center">
       Es sieht so aus, als hätte der Rust-Server gerade Probleme.<br>
@@ -95,12 +98,13 @@
   import TeamsList from "./components/TeamsList.vue"
   import DonationAlert from "./components/DonationAlert.vue"
   import NumberBox from "./components/NumberBox.vue"
+  import EventsList from "./components/EventsList.vue"
 
   const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",
-    components: { NumberBox, DonationAlert, TeamsList, TweenedNumber, ProjectLogo },
+    components: { EventsList, NumberBox, DonationAlert, TeamsList, TweenedNumber, ProjectLogo },
     data: () => ({
       data: null,
       showDonationAlert: false,
