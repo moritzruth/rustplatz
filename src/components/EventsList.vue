@@ -18,7 +18,7 @@
       text: "Konzert von Balui und evtl. noch anderen"
     },
     {
-      date: "Samstag 3.2., 20 Uhr",
+      date: "Mittwoch 3.2., 20 Uhr",
       text: "Season-Finale, danach Wipe und Pause bis 7.2."
     }
   ]
