@@ -147,7 +147,7 @@
       async fetchTeams() {
         const hour = new Date().getHours()
 
-        if (hour >= 10 || hour < 3) {
+        if (hour >= 15 || hour < 3) {
           this.data = process.env.NODE_ENV === "development"
             ? await import("./assets/fake-data").then(m => m.getFakeData())
             : await (await fetch("/.netlify/functions/teams")).json()
