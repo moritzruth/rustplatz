@@ -24,6 +24,7 @@
           class="text-gray-200 flex space-x-1 group"
           target="_blank"
           rel="noopener noreferrer"
+          @click.passive="umami(getMemberProperty(item, 'twitch'), 'twitch')"
         >
           <span>{{ getMemberProperty(item, "displayed") }}</span>
           <ExternalLinkIcon

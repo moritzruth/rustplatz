@@ -1,8 +1,8 @@
 <template>
   <div class="teams-list space-y-8">
     <TeamCard
-      v-for="(team, index) in teams"
-      :key="index"
+      v-for="team in teams"
+      :key="team.id"
       class="teams-list__card"
       :team="team"
     />

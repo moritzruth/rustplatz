@@ -1,5 +1,6 @@
 [
   {
+    "id": "frust",
     "name": "fRUST",
     "members": [
       {
@@ -31,6 +32,7 @@
     ]
   },
   {
+    "id": "gemuese",
     "name": "GemüseGeschwister",
     "members": [
       {
@@ -58,6 +60,7 @@
     ]
   },
   {
+    "id": "pietsmiet",
     "name": "AlcatRUST",
     "members": [
       {
@@ -83,6 +86,7 @@
     ]
   },
   {
+    "id": "46",
     "name": "4/6",
     "members": [
       "Juliversal",
@@ -100,6 +104,7 @@
     ]
   },
   {
+    "id": "bluemchen",
     "name": "Blümchenpflücker",
     "members": [
       "Miamouz",
@@ -121,6 +126,7 @@
     ]
   },
   {
+    "id": "polizei",
     "name": "Polizei",
     "members": [
       {
@@ -161,6 +167,7 @@
     ]
   },
   {
+    "id": "rocketbeans",
     "name": "RocketBeans",
     "members": [
       {
@@ -186,6 +193,7 @@
     ]
   },
   {
+    "id": "rustlos",
     "name": "RUSTlos",
     "members": [
       {
@@ -205,6 +213,7 @@
     ]
   },
   {
+    "id": "strangers",
     "name": "The Strangers",
     "members": [
       {
@@ -217,6 +226,7 @@
     ]
   },
   {
+    "id": "bulettenfett",
     "name": "Superbekanntenkreis",
     "members": [
       "Vlesk",
@@ -235,6 +245,7 @@
     ]
   },
   {
+    "id": "anotherone",
     "name": "Another One Bites the Rust",
     "members": [
       {
@@ -256,7 +267,8 @@
     ]
   },
   {
-    "name": "KerragsWaffe(l)nHandel",
+    "id": "warlord",
+    "name": "KerragsWaffenHandel",
     "members": [
       {
         "twitch": "Bonjwa",
@@ -266,6 +278,7 @@
     ]
   },
   {
+    "id": "smallpp",
     "name": "Small PP Club",
     "members": [
       "Mahluna",
@@ -282,6 +295,7 @@
     ]
   },
   {
+    "id": "rcc",
     "name": "Rust Coast Customs",
     "members": [
       "edopeh",
@@ -303,6 +317,7 @@
     ]
   },
   {
+    "id": "beed",
     "name": "(Kein Name)",
     "members": [
       {
@@ -314,12 +329,14 @@
     ]
   },
   {
+    "id": "rustafari",
     "name": "Rustafari",
     "members": [
       "Lime7ime"
     ]
   },
   {
+    "id": "kontrust",
     "name": "KontRUSTprogramm",
     "members": [
       "Jiwa",
@@ -327,6 +344,7 @@
     ]
   },
   {
+    "id": "elektriker",
     "name": "Die Überbelichteten",
     "members": [
       {
@@ -338,6 +356,7 @@
     ]
   },
   {
+    "id": "crunchy",
     "name": "(Kein Name)",
     "members": [
       {
@@ -358,6 +377,7 @@
     ]
   },
   {
+    "id": "troedel",
     "name": "Trödel-Trupp",
     "members": [
       {
@@ -373,6 +393,7 @@
     ]
   },
   {
+    "id": "hinkelstein",
     "name": "Hinkelstein Ltd",
     "members": [
       {
@@ -389,6 +410,7 @@
     ]
   },
   {
+    "id": "izzi",
     "name": "(Kein Name)",
     "members": [
       "izzi",
@@ -400,6 +422,7 @@
     ]
   },
   {
+    "id": "amongrust",
     "name": "Among RUST",
     "members": [
       {
@@ -417,6 +440,7 @@
     ]
   },
   {
+    "id": "none",
     "name": "(Kein Team)",
     "members": [
       {
@@ -479,6 +503,7 @@
     ]
   },
   {
+    "id": "unknown",
     "name": "(Unbekannt)",
     "members": [
       {

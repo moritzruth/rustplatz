@@ -2,7 +2,11 @@
   "type": "array",
   "items": {
     "type": "object",
+    "required": ["id", "name", "members"],
     "properties": {
+      "id": {
+        "type": "string"
+      },
       "name": {
         "type": "string"
       },

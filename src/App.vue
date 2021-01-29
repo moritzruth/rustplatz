@@ -5,14 +5,9 @@
       Rust-Streamerserver von Bonjwa, RocketBeans und Dhalucard
     </div>
     <div class="text-center mt-4 text-base">
-      <p>Seite von <a href="https://twitter.com/moritz_ruth">@moritz_ruth</a>.</p>
-      <p class="text">
-        Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast.
-        <br>
-        <strong>
-          Bitte sendet mir keine Anfragen, ob ihr mitspielen dürft. Das kann ich sowieso nicht entscheiden!
-        </strong>
-      </p>
+      <p>Seite von <a href="https://twitter.com/moritz_ruth" class="text-blue-400">@moritz_ruth</a>.</p>
+      <p>Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast.</p>
+      <p>Bitte sendet mir keine Anfragen, ob ihr mitspielen dürft. Das kann ich sowieso nicht entscheiden!</p>
     </div>
   </header>
   <main class="p-5 text-lg space-y-8">
@@ -56,20 +51,23 @@
         <TeamsList :teams="data.teams"/>
       </div>
       <p class="mt-5 max-w-7xl w-full mx-auto">
-        Aktualisiert sich alle 60 Sekunden automatisch.
+        Die Liste aktualisiert sich automatisch.
       </p>
     </section>
     <section class="text-lg max-w-7xl w-full mx-auto">
       <p>
         Diese Seite kostet mich monatlich ca. 20€. Über
-        <a href="http://m0.is/donate">eine kleine Spende</a>
-        würde ich mich deshalb sehr freuen :)<br>
+        <a href="http://m0.is/donate" class="text-blue-400">eine kleine Spende</a>
+        würde ich mich deshalb sehr freuen.
       </p>
     </section>
   </main>
-  <footer class="flex flex-col text-center px-4 py-2">
-    <span>Inoffizielle Seite, erstellt von <a href="https://twitter.com/moritz_ruth">Moritz Ruth</a>.</span>
-    <a href="https://github.com/moritzruth/rustplatz">Source Code</a>
+  <footer
+    class="flex items-center justify-center flex-col space-y-3 py-8 mt-8 border-t border-blue-400 text-blue-400 text-xl
+           sm:flex-row sm:space-x-8 sm:space-y-0"
+  >
+    <a href="https://twitter.com/moritz_ruth">@moritz_ruth</a>
+    <a href="https://github.com/moritzruth/rustplatz">GitHub</a>
   </footer>
   <DonationAlert v-model="showDonationAlert"/>
 </template>
@@ -81,10 +79,6 @@
 
   body {
     @apply bg-gray-900 text-gray-200 overflow-x-hidden;
-  }
-
-  a {
-    @apply text-green-400;
   }
 
   .heading {
@@ -131,7 +125,7 @@
       async fetchTeams() {
         const hour = new Date().getHours()
 
-        if (hour >= 15 || hour < 3) {
+        if (hour >= 10 || hour < 3) {
           this.data = process.env.NODE_ENV === "development"
             ? await import("./assets/fake-data").then(m => m.getFakeData())
             : await (await fetch("/.netlify/functions/teams")).json()

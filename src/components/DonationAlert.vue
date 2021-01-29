@@ -5,12 +5,12 @@
   >
     <a
       href="http://m0.is/donate"
-      class="block backdrop-blur theme-border text-lg p-4 bg-gray-800 bg-opacity-60 text-gray-100 shadow-xl"
+      class="block backdrop-blur theme-border text-lg p-4 bg-gray-800 bg-opacity-40 text-gray-100 shadow-xl"
       tabindex="-1"
     >
-      Diese Seite kostet mich monatlich ca. 20€. Über
-      <a href="http://m0.is/donate">eine kleine Spende</a>
-      würde ich mich deshalb sehr freuen :)
+      Diese Seite kostet mich monatlich ca. 20€.<br> Über
+      <a href="http://m0.is/donate" class="text-blue-400">eine kleine Spende</a>
+      würde ich mich deshalb sehr freuen.
     </a>
     <button
       class="mt-3 block ml-auto border-0 text-base rounded px-3 py-1 bg-gray-800 bg-opacity-50 backdrop-blur"

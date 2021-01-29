@@ -1,13 +1,14 @@
 <template>
   <div
-    class="theme-border p-4 md:p-8 transition duration-500 ease-in-out transform-gpu relative
+    class="theme-border p-5 py-6 lg:p-8 transition duration-500 ease-in-out transform-gpu relative
            hover:scale-103 hover:shadow-2xl"
   >
-    <span class="text-2xl">{{ team.name }}</span>
+    <span class="text-2xl block">{{ team.name }}</span>
     <a
-      class="absolute bottom-2 right-2 opacity-0 transition-opacity duration-200"
+      class="absolute bottom-2 right-2 opacity-0 transition-opacity duration-200 text-green-400"
       :class="showMultitwitch && 'opacity-100'"
       :href="`https://multitwitch.tv/${onlineTwitchNames.join('/')}`"
+      @click.passive="umami(team.id, 'multitwitch')"
     >
       Multitwitch
     </a>
