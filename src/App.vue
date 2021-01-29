@@ -137,6 +137,7 @@
     methods: {
       toggleNames() {
         store.showInGameNames = !store.showInGameNames
+        this.umami(store.showInGameNames, "showInGameNames")
       },
       async loop() {
         await this.fetchTeams()

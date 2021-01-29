@@ -79,7 +79,7 @@ async function run() {
   }
 
   if (playingStreams.length === 0) return {
-    teams: rawTeams.map(team => ({ name: team.name, online: [], offline: team.members })),
+    teams: rawTeams.map(team => ({ ...team, online: [], offline: team.members })),
     totalViewers: 0
   }
 
@@ -90,7 +90,7 @@ async function run() {
     const onlineMembers = team.members.filter(member => streams.has(getMemberProperty(member, "twitch")))
 
     teams.push({
-      name: team.name,
+      ...team,
       online: onlineMembers,
       offline: team.members.filter(member => !onlineMembers.includes(member))
     })
