@@ -4,7 +4,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 export const getFakeData = async () => {
   const teams = (await import("../../teams.json")).default
 
-  await delay(1200)
+  // await delay(1200)
 
   return {
     teams: teams.map(team => {

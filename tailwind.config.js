@@ -24,6 +24,10 @@ module.exports = {
       "5xl": ["3rem", "2.4rem"]
     },
     extend: {
+      screens: {
+        "can-hover": { raw: "(hover: hover)" },
+        "cannot-hover": { raw: "(hover: none)" }
+      },
       scale: {
         103: "1.03"
       },

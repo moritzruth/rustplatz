@@ -2,5 +2,8 @@
   "extends": "awzzm-vue/v3",
   "globals": {
     "process": true
+  },
+  "rules": {
+    "no-extra-parens": "off"
   }
 }

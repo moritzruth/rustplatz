@@ -1,5 +1,5 @@
 <template>
-  <transition-group name="list" tag="div" class="team-members-list">
+  <transition-group name="list" tag="div" class="team-members-list space-y-0.5 can-hover:space-y-0">
     <template v-for="item in items" :key="getMemberProperty(item, 'displayed')">
       <div>
         <span
@@ -18,21 +18,7 @@
         >
           Offline
         </span>
-        <a
-          v-else
-          :href="`https://twitch.tv/${getMemberProperty(item, 'twitch')}`"
-          class="text-gray-200 flex space-x-1 group"
-          target="_blank"
-          rel="noopener noreferrer"
-          @click.passive="umami(getMemberProperty(item, 'twitch'), 'twitch')"
-        >
-          <span>{{ getMemberProperty(item, "displayed") }}</span>
-          <ExternalLinkIcon
-            class="opacity-0 transition-opacity duration-200 group-hover:opacity-100"
-            size="15"
-            stroke-width="4"
-          />
-        </a>
+        <TeamMember v-else :member="item"/>
       </div>
     </template>
   </transition-group>
@@ -75,12 +61,12 @@
 </style>
 
 <script>
-  import { ExternalLinkIcon } from "@zhuowenli/vue-feather-icons"
   import { getMemberProperty } from "../assets/get-member-property"
+  import TeamMember from "./TeamMember.vue"
 
   export default {
     name: "TeamMemberList",
-    components: { ExternalLinkIcon },
+    components: { TeamMember },
     props: {
       online: {
         type: Array,

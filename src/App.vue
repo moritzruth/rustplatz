@@ -38,11 +38,27 @@
       Normalerweise erledigt sich das innerhalb weniger Minuten von alleine.
     </div>
     <section>
-      <div class="max-w-7xl w-full mx-auto">
+      <div class="max-w-7xl w-full mx-auto pb-4">
         <h1 class="heading">
           {{ data === null ? "" : data.teams.length - 2 }} Teams
           <span v-if="data !== null" class="text-lg font-normal">({{ totalPlayersCount }} Spieler)</span>
         </h1>
+        <p class="cannot-hover:hidden">
+          Berühre
+          <InfoIcon class="inline mx-1" stroke-width="3" size="1.04x"/>
+          mit der Maus, um mehr Informationen zu einem Spieler anzuzeigen.
+        </p>
+        <p class="can-hover:hidden">
+          Tippe auf
+          <InfoIcon class="inline mx-1" stroke-width="3" size="1x"/>, um mehr Informationen zu einem Spieler anzuzeigen.
+        </p>
+        <button
+          class="mt-3 py-1 px-2 rounded-sm text-black transition duration-200 w-72"
+          :class="showInGameNames ? 'bg-yellow-400' : 'bg-yellow-200'"
+          @click="toggleNames()"
+        >
+          {{ showInGameNames ? "Normale Namen anzeigen" : "In-Game-Namen anzeigen" }}
+        </button>
       </div>
       <div v-if="data === null" class="text-2xl max-w-7xl w-full mx-auto">
         Lädt...
@@ -87,18 +103,20 @@
 </style>
 
 <script>
+  import { InfoIcon } from "@zhuowenli/vue-feather-icons"
   import ProjectLogo from "./components/ProjectLogo.vue"
   import TweenedNumber from "./components/TweenedNumber.vue"
   import TeamsList from "./components/TeamsList.vue"
   import DonationAlert from "./components/DonationAlert.vue"
   import NumberBox from "./components/NumberBox.vue"
   import EventsList from "./components/EventsList.vue"
+  import { store } from "./assets/globals.js"
 
   const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",
-    components: { EventsList, NumberBox, DonationAlert, TeamsList, TweenedNumber, ProjectLogo },
+    components: { EventsList, NumberBox, DonationAlert, TeamsList, TweenedNumber, ProjectLogo, InfoIcon },
     data: () => ({
       data: null,
       showDonationAlert: false,
@@ -109,13 +127,17 @@
       totalPlayersCount: vm => vm.data === null
         ? 0
         : vm.data.teams.flatMap(team => [...team.online, ...team.offline]).length,
-      onlinePlayersCount: vm => vm.data === null ? 0 : vm.data.teams.flatMap(team => team.online).length
+      onlinePlayersCount: vm => vm.data === null ? 0 : vm.data.teams.flatMap(team => team.online).length,
+      showInGameNames: () => store.showInGameNames
     },
     async created() {
       await this.loop()
       this.showDonationAlert = true
     },
     methods: {
+      toggleNames() {
+        store.showInGameNames = !store.showInGameNames
+      },
       async loop() {
         await this.fetchTeams()
         setTimeout(() => {
