@@ -15,7 +15,7 @@
     },
     {
       date: "Samstag 30.1., 22 Uhr",
-      text: "Konzert von Balui und evtl. noch anderen"
+      text: "Konzert von u. a. Balui und dem Rächer"
     },
     {
       date: "Mittwoch 3.2., 20 Uhr",
