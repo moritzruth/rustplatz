@@ -10,7 +10,7 @@
 <script>
   const EVENTS = [
     {
-      date: "Samstag 30.1., 21 Uhr",
+      date: "Sonntag 31.1., 22 Uhr",
       text: "Autorennen"
     },
     {
