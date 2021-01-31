@@ -1,0 +1,505 @@
+{
+  "teams": [
+    {
+      "id": "frust",
+      "name": "fRUST",
+      "members": [
+        {
+          "twitch": "Dhalucard",
+          "game": "Detective Dhalucard",
+          "displayed": "Dhalucard"
+        },
+        {
+          "twitch": "Bonjwa",
+          "game": "Bonjwa.Mental",
+          "displayed": "Matteo (Bonjwa)"
+        },
+        {
+          "twitch": "Bonjwa",
+          "game": "Redpanda",
+          "displayed": "Leon (Bonjwa)"
+        },
+        {
+          "twitch": "DadoschYT",
+          "game": "Dadosch",
+          "displayed": "Dadosch"
+        },
+        {
+          "twitch": "GippiGaming",
+          "game": "Gippi :3",
+          "displayed": "Gippi"
+        },
+        "TrilluXe"
+      ]
+    },
+    {
+      "id": "gemuese",
+      "name": "GemüseGeschwister",
+      "members": [
+        {
+          "twitch": "AnniTheDuck",
+          "game": "Anni The Duck",
+          "displayed": "AnniTheDuck"
+        },
+        "Kalle",
+        "Shurjoka",
+        {
+          "twitch": "BehaartMitBart",
+          "game": "Bart",
+          "displayed": "BehaartMitBart"
+        },
+        {
+          "twitch": "einPapo",
+          "game": "Papo",
+          "displayed": "einPapo"
+        },
+        {
+          "twitch": "Mowkyfox",
+          "game": "Mowk",
+          "displayed": "Mowkyfox"
+        }
+      ]
+    },
+    {
+      "id": "pietsmiet",
+      "name": "AlcatRUST",
+      "members": [
+        {
+          "twitch": "PietSmiet",
+          "game": "Sep",
+          "displayed": "Sep (PietSmiet)"
+        },
+        {
+          "twitch": "PietSmiet",
+          "game": "PietSmiet",
+          "displayed": "Peter (PietSmiet)"
+        },
+        {
+          "twitch": "DoktorFroid",
+          "game": "powlster_",
+          "displayed": "Paul (DoktorFroid)"
+        },
+        {
+          "twitch": "LOST",
+          "game": "Lost",
+          "displayed": "LOST"
+        }
+      ]
+    },
+    {
+      "id": "46",
+      "name": "4/6",
+      "members": [
+        "Juliversal",
+        "Items4Sacred",
+        {
+          "twitch": "BaluiLP",
+          "game": "Balui",
+          "displayed": "Balui"
+        },
+        {
+          "twitch": "Sofa__Gaming",
+          "game": "Kundran",
+          "displayed": "Kundran"
+        }
+      ]
+    },
+    {
+      "id": "bluemchen",
+      "name": "Blümchenpflücker",
+      "members": [
+        "Miamouz",
+        {
+          "twitch": "AsterPewPew",
+          "game": "Aster",
+          "displayed": "AsterPewPew"
+        },
+        {
+          "twitch": "TouristHistories",
+          "game": "TouristHistories",
+          "displayed": "Touri"
+        },
+        {
+          "twitch": "CHIMPnSALMON",
+          "game": "Lachsmann",
+          "displayed": "CHIMPnSALMON"
+        }
+      ]
+    },
+    {
+      "id": "polizei",
+      "name": "Polizei",
+      "members": [
+        {
+          "twitch": "Moondye7",
+          "game": "Pozilei_Moondye7",
+          "displayed": "Moondye7"
+        },
+        {
+          "twitch": "MAiHOPAWANGO",
+          "game": "Polizei_Maihopawango",
+          "displayed": "MAiHOPAWANGO"
+        },
+        {
+          "twitch": "itzz_chrizz",
+          "game": "Polizei_ItzzChrizZ",
+          "displayed": "itzz_chrizz"
+        },
+        {
+          "twitch": "GThang",
+          "game": "Polizei_G Thang",
+          "displayed": "GThang"
+        },
+        {
+          "twitch": "PATTIIIIIIII",
+          "game": "Polizei_PATTIIIIIIII",
+          "displayed": "PATTIIIIIIII"
+        },
+        {
+          "twitch": "Bonjwa",
+          "game": "Poldizei_Honor",
+          "displayed": "Niklas (Bonjwa)"
+        },
+        {
+          "twitch": "ItsVeX",
+          "game": "Herr VeXXer",
+          "displayed": "ItsVeX"
+        }
+      ]
+    },
+    {
+      "id": "rocketbeans",
+      "name": "RocketBeans",
+      "members": [
+        {
+          "twitch": "RocketBeansTV",
+          "game": "Valentin",
+          "displayed": "Valentin"
+        },
+        {
+          "twitch": "RocketBeansTV",
+          "game": "Boedefeld",
+          "displayed": "Nils"
+        },
+        {
+          "twitch": "JustGiggles",
+          "game": "Giggles",
+          "displayed": "Kiara"
+        },
+        {
+          "twitch": "PixelViet",
+          "game": "Viet",
+          "displayed": "Viet"
+        }
+      ]
+    },
+    {
+      "id": "rustlos",
+      "name": "RUSTlos",
+      "members": [
+        {
+          "twitch": "knechtungtv",
+          "game": "Nicht Knechti",
+          "displayed": "knechtungtv"
+        },
+        "Divi",
+        {
+          "twitch": "DoktorFroid",
+          "game": "Der Olli",
+          "displayed": "Olli (DoktorFroid)"
+        },
+        "KugelmagnetEddie",
+        "LaraLoft",
+        "NieRaus"
+      ]
+    },
+    {
+      "id": "strangers",
+      "name": "The Strangers",
+      "members": [
+        {
+          "twitch": "ZENO",
+          "game": "Zeno",
+          "displayed": "Zeno"
+        },
+        "Lumenti",
+        "Opfermagnet"
+      ]
+    },
+    {
+      "id": "bulettenfett",
+      "name": "Superbekanntenkreis",
+      "members": [
+        "Vlesk",
+        "Baso",
+        {
+          "twitch": "veylt",
+          "game": "mina (veylt)",
+          "displayed": "veylt"
+        },
+        "Shantao",
+        {
+          "twitch": "kutcherlol",
+          "game": "Philly Westside",
+          "displayed": "kutcherlol"
+        }
+      ]
+    },
+    {
+      "id": "anotherone",
+      "name": "Another One Bites the Rust",
+      "members": [
+        {
+          "twitch": "timobornheim",
+          "game": "bornheimer",
+          "displayed": "timobornheim"
+        },
+        {
+          "twitch": "KROGMANN",
+          "game": "Krogmeister",
+          "displayed": "KROGMANN"
+        },
+        {
+          "twitch": "UnstoppaBell",
+          "game": "BellBell",
+          "displayed": "UnstoppaBell"
+        },
+        "DoomDesign"
+      ]
+    },
+    {
+      "id": "warlord",
+      "name": "KerragsWaffenHandel",
+      "members": [
+        {
+          "twitch": "Bonjwa",
+          "game": "Warlord Kerrag",
+          "displayed": "Jens (Bonjwa)"
+        }
+      ]
+    },
+    {
+      "id": "smallpp",
+      "name": "Small PP Club",
+      "members": [
+        "Mahluna",
+        {
+          "twitch": "BurritoOfDoom",
+          "game": "Burrito Of Doom",
+          "displayed": "BurritoOfDoom"
+        }
+      ]
+    },
+    {
+      "id": "rcc",
+      "name": "Rust Coast Customs",
+      "members": [
+        "edopeh",
+        {
+          "twitch": "BeamTwitch",
+          "game": "Beam",
+          "displayed": "Beam"
+        },
+        {
+          "twitch": "Radlerauge",
+          "game": "radlerauge",
+          "displayed": "Radlerauge"
+        },
+        {
+          "twitch": "kaaaay",
+          "game": "kay",
+          "displayed": "kaaaay"
+        }
+      ]
+    },
+    {
+      "id": "beed",
+      "name": "(Kein Name)",
+      "members": [
+        {
+          "twitch": "beedTV",
+          "game": "beed",
+          "displayed": "beed"
+        },
+        "Niisa"
+      ]
+    },
+    {
+      "id": "rustafari",
+      "name": "Rustafari",
+      "members": [
+        "Lime7ime"
+      ]
+    },
+    {
+      "id": "kontrust",
+      "name": "KontRUSTprogramm",
+      "members": [
+        "Jiwa",
+        "AmateurBOHNE"
+      ]
+    },
+    {
+      "id": "elektriker",
+      "name": "Die Überbelichteten",
+      "members": [
+        {
+          "twitch": "hc_diZee",
+          "game": "Willy Wetzlav",
+          "displayed": "hc_diZee"
+        },
+        "CHEFKOCHx"
+      ]
+    },
+    {
+      "id": "crunchy",
+      "name": "(Kein Name)",
+      "members": [
+        {
+          "twitch": "CrunchyCupcakex3",
+          "game": "Pater Crunchy",
+          "displayed": "Crunchy"
+        },
+        {
+          "twitch": "Farbenfuchs",
+          "game": "Fuchsi",
+          "displayed": "Farbenfuchs"
+        }
+      ]
+    },
+    {
+      "id": "troedel",
+      "name": "Trödel-Trupp",
+      "members": [
+        {
+          "twitch": "DieBrian",
+          "game": "DieBrian (GER)",
+          "displayed": "DieBrian"
+        },
+        {
+          "twitch": "Scheppertlive",
+          "game": "SchEppertLIVE",
+          "displayed": "Scheppertlive"
+        }
+      ]
+    },
+    {
+      "id": "hinkelstein",
+      "name": "Hinkelstein Ltd",
+      "members": [
+        {
+          "twitch": "Jack_Fleischhammer",
+          "game": "JackFleischhammer",
+          "displayed": "JackFleischhammer"
+        },
+        "Hirnsturz",
+        {
+          "twitch": "wo_dan",
+          "game": "Wodan",
+          "displayed": "Wodan"
+        }
+      ]
+    },
+    {
+      "id": "izzi",
+      "name": "(Kein Name)",
+      "members": [
+        "izzi",
+        {
+          "twitch": "DnerTV",
+          "game": "Dner",
+          "displayed": "Dner"
+        }
+      ]
+    },
+    {
+      "id": "amongrust",
+      "name": "Among RUST",
+      "members": [
+        {
+          "twitch": "GustafGabel",
+          "game": "GustafGabel",
+          "displayed": "Gustaf Gabel"
+        },
+        "Quiin",
+        "DTROiiX",
+        {
+          "twitch": "DerHardi",
+          "game": "Hardi",
+          "displayed": "Hardi"
+        }
+      ]
+    },
+    {
+      "id": "none",
+      "name": "(Kein Team)",
+      "members": [
+        {
+          "twitch": "kleinstadtstreamer",
+          "game": "Kleinstadtstreamer",
+          "displayed": "Kleinstadtstreamer"
+        },
+        {
+          "twitch": "AndiDev",
+          "game": "Andi",
+          "displayed": "AndiDev"
+        },
+        {
+          "twitch": "MaxiMcFlyy",
+          "game": "MaxiMcFly",
+          "displayed": "MaxiMcFly"
+        },
+        "Smithhiller",
+        "Sturmwaffel",
+        "Sterzik",
+        "ThanhSchaefer",
+        {
+          "twitch": "Hasi",
+          "game": "hasi_ttv",
+          "displayed": "Hasi"
+        },
+        "JenNyan",
+        {
+          "twitch": "TORRO",
+          "game": "Torro",
+          "displayed": "Torro"
+        },
+        {
+          "twitch": "MikeLS_91",
+          "game": "Mike Stiefelhagen",
+          "displayed": "Mike Stiefelhagen"
+        },
+        "TheKraeuterbutter",
+        {
+          "twitch": "RoyalPhunk",
+          "game": "PhunkRoyal",
+          "displayed": "PhunkRoyal"
+        },
+        "StrikerCosplay",
+        {
+          "twitch": "Paarzival",
+          "game": "Parzival",
+          "displayed": "Parzival"
+        },
+        {
+          "twitch": "DoktorFroid",
+          "game": "lefloid",
+          "displayed": "LeFloid (DoktorFroid)"
+        },
+        "Schiven"
+      ]
+    },
+    {
+      "id": "unknown",
+      "name": "(Unbekannt)",
+      "members": [
+        {
+          "twitch": "nichtdiemama",
+          "game": "NichtDieMama",
+          "displayed": "NichtDieMama"
+        }
+      ]
+    }
+  ],
+  "nextSeasonDate": null
+}

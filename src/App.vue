@@ -33,10 +33,6 @@
       <h1 class="heading">Ereignisse</h1>
       <EventsList/>
     </section>
-    <div v-if="showPossibleIssueInfo" class="max-w-7xl w-full mx-auto text-2xl text-red-500 text-center">
-      Es sieht so aus, als hätte der Rust-Server gerade Probleme.<br>
-      Normalerweise erledigt sich das innerhalb weniger Minuten von alleine.
-    </div>
     <section>
       <div class="max-w-7xl w-full mx-auto pb-4">
         <h1 class="heading">
@@ -63,7 +59,7 @@
       <div v-if="data === null" class="text-2xl max-w-7xl w-full mx-auto">
         Lädt...
       </div>
-      <div v-else class="md:p-2">
+      <div v-else>
         <TeamsList :teams="data.teams"/>
       </div>
       <p class="mt-5 max-w-7xl w-full mx-auto">
@@ -88,6 +84,7 @@
     <a href="https://github.com/moritzruth/rustplatz">GitHub</a>
   </footer>
   <DonationAlert v-model="showDonationAlert"/>
+  <SeasonBreakOverlay :date="nextSeasonDate"/>
 </template>
 
 <style>
@@ -113,18 +110,23 @@
   import NumberBox from "./components/NumberBox.vue"
   import EventsList from "./components/EventsList.vue"
   import { store } from "./assets/globals.js"
+  import SeasonBreakOverlay from "./components/SeasonBreakOverlay.vue"
+  import { nextSeasonDate as staticNextSeasonDate } from "./assets/static-data.json"
 
   const UPDATE_INTERVAL = 60 * 1000
 
   export default {
     name: "App",
-    components: { EventsList, NumberBox, DonationAlert, TeamsList, TweenedNumber, ProjectLogo, InfoIcon },
+    components: {
+      SeasonBreakOverlay, EventsList, NumberBox, DonationAlert, TeamsList, TweenedNumber, ProjectLogo, InfoIcon
+    },
     data: () => ({
       data: null,
       showDonationAlert: false,
-      showPossibleIssueInfo: false
+      nextSeasonDateString: staticNextSeasonDate
     }),
     computed: {
+      nextSeasonDate: vm => vm.nextSeasonDateString === null ? null : new Date(vm.nextSeasonDateString),
       viewers: vm => vm.data === null ? 0 : vm.data.totalViewers,
       totalPlayersCount: vm => vm.data === null
         ? 0
@@ -132,9 +134,18 @@
       onlinePlayersCount: vm => vm.data === null ? 0 : vm.data.teams.flatMap(team => team.online).length,
       showInGameNames: () => store.showInGameNames
     },
+    watch: {
+      nextSeasonDate: {
+        immediate: true,
+        handler() {
+          document.body.classList.toggle("overflow-y-hidden", this.nextSeasonDate !== null)
+        }
+      }
+    },
     async created() {
       await this.loop()
       this.showDonationAlert = true
+      console.log(`Fetch interval: ${UPDATE_INTERVAL}`)
     },
     methods: {
       toggleNames() {
@@ -142,33 +153,51 @@
         this.umami(store.showInGameNames, "showInGameNames")
       },
       async loop() {
-        await this.fetchTeams()
+        await this.fetchData()
         setTimeout(() => {
           this.loop()
         }, UPDATE_INTERVAL)
       },
-      async fetchTeams() {
-        const hour = new Date().getHours()
-
-        if (hour >= 15 || hour < 3) {
+      async fetchData() {
+        const fetchLive = async () => {
+          console.log("Fetching live data...")
           this.data = process.env.NODE_ENV === "development"
             ? await import("./assets/fake-data").then(m => m.getFakeData())
-            : await (await fetch("/.netlify/functions/teams")).json()
+            : await (await fetch("/.netlify/functions/data")).json()
 
-          // There seems to be an issue
-          this.showPossibleIssueInfo = this.data.totalViewers === 0
-        } else {
+          this.nextSeasonDateString = this.data.nextSeasonDate
+        }
+
+        const setEmptyData = () => {
+          console.log("Setting data to empty...")
+
           this.data = {
-            teams: (await import("../teams.json")).default.map(team => ({
+            teams: [],
+            totalViewers: 0
+          }
+        }
+
+        const setOfflineData = async () => {
+          console.log("Fetching/Using offline data...")
+          const data = await import("../data.json")
+
+          this.data = {
+            teams: data.teams.map(team => ({
               name: team.name,
               online: [],
               offline: team.members
             })),
             totalViewers: 0
           }
-
-          this.showPossibleIssueInfo = false
         }
+
+        if (this.nextSeasonDate === null) {
+          const hour = new Date().getHours()
+
+          if (hour >= 15 || hour < 3) await fetchLive()
+          else await setOfflineData()
+        } else if (this.nextSeasonDate.getTime() <= Date.now()) await fetchLive()
+        else setEmptyData()
       }
     }
   }

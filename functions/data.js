@@ -1,7 +1,7 @@
 const { ClientCredentialsAuthProvider } = require("twitch-auth")
 const { ApiClient } = require("twitch")
 const fetch = require("node-fetch")
-const rawTeams = require("../teams.json")
+const rawData = require("../data.json")
 
 const RUST_GAME_ID = 263490
 const { TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET, BATTLE_METRICS_TOKEN } = process.env
@@ -68,25 +68,25 @@ async function run() {
   if (skipOnline) {
     // BattleMetrics sent a false response
 
-    playingStreams = rawTeams
+    playingStreams = rawData.teams
       .flatMap(team => team.members)
       .map(member => getMemberProperty(member, "twitch"))
   } else {
-    playingStreams = rawTeams
+    playingStreams = rawData.teams
       .flatMap(team => team.members)
       .filter(member => onlinePlayers.has(getMemberProperty(member, "game")))
       .map(member => getMemberProperty(member, "twitch"))
   }
 
   if (playingStreams.length === 0) return {
-    teams: rawTeams.map(team => ({ ...team, online: [], offline: team.members })),
+    teams: rawData.teams.map(team => ({ ...team, online: [], offline: team.members })),
     totalViewers: 0
   }
 
   const { streams, totalViewers } = await getActiveStreamsAndTotalViewers(playingStreams)
 
   const teams = []
-  for (const team of rawTeams) {
+  for (const team of rawData.teams) {
     const onlineMembers = team.members.filter(member => streams.has(getMemberProperty(member, "twitch")))
 
     teams.push({
@@ -97,6 +97,7 @@ async function run() {
   }
 
   return {
+    ...rawData,
     teams,
     totalViewers
   }

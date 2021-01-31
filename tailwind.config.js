@@ -21,7 +21,8 @@ module.exports = {
       "2xl": ["1.5rem", "1.25rem"],
       "3xl": ["1.875rem", "1.5rem"],
       "4xl": ["2.25rem", "1.9rem"],
-      "5xl": ["3rem", "2.4rem"]
+      "5xl": ["3rem", "2.4rem"],
+      "big": ["5rem", "3.5rem"]
     },
     extend: {
       screens: {

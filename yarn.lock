@@ -307,6 +307,21 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.0.5.tgz"
   integrity sha512-gYsNoGkWejBxNO6SNRjOh/xKeZ0H0V+TFzaPzODfBjkAIb0aQgBuixC1brandC/CDJy1wYPwSoYrXpvul7m6yw==
 
+"@vueuse/core@^4.0.11":
+  version "4.0.11"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-4.0.11.tgz#783c824d18296f82a2c28756e67b129b22a3e9f3"
+  integrity sha512-wvfcSqMZLo0568T2rIIS4QtCAQsNz+vuoqCLgwuVxoBMr9WrMJWJEkdIxoH5+hj/YXSWYFvwTQdBto4a5S1Iuw==
+  dependencies:
+    "@vueuse/shared" "4.0.11"
+    vue-demi latest
+
+"@vueuse/shared@4.0.11":
+  version "4.0.11"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-4.0.11.tgz#3188b6a9854b7db68c53a8eb3fcbb9a8adbf087b"
+  integrity sha512-r6Hm35lsByliKtIr6/fuqo+kpbb6324nGEgu0KLMApeLfOutQKXYEAuGD81cnXAPKTHunRO0dNH8+GGRp5uPxg==
+  dependencies:
+    vue-demi latest
+
 "@zhuowenli/vue-feather-icons@^5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@zhuowenli/vue-feather-icons/-/vue-feather-icons-5.0.2.tgz"
@@ -2448,6 +2463,11 @@ vite@^2.0.0-beta.12:
     rollup "^2.35.1"
   optionalDependencies:
     fsevents "~2.1.2"
+
+vue-demi@latest:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.6.0.tgz#e314282f704cb449119b9fd002cbbc0e39f591fe"
+  integrity sha512-8GEJa0mHJpYJeGeq5fD1pJct2kfdl30PHfmL1NaJ97mgKPyKojlIRt/3inGBK4Y0ylCI6T5vOo3chwpqDOq/Hw==
 
 vue-eslint-parser@^7.3.0:
   version "7.3.0"
