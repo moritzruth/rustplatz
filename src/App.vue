@@ -67,7 +67,9 @@
         <TeamsList :teams="data.teams"/>
       </div>
       <p class="mt-5 max-w-7xl w-full mx-auto">
-        Die Liste aktualisiert sich automatisch.
+        Die Liste aktualisiert sich automatisch. Spieler werden entfernt, wenn sie in den letzten 7 Tagen gestreamt
+        haben, jedoch kein Rust-Stream darunter war. Allerdings gibt es Ausnahmen.
+        Nach dem Wipe wird das anders sein und auch Spieler, die nicht streamen, bleiben auf der Liste.
       </p>
     </section>
     <section class="text-lg max-w-7xl w-full mx-auto">

@@ -286,11 +286,6 @@
         "twitch": "BurritoOfDoom",
         "game": "Burrito Of Doom",
         "displayed": "BurritoOfDoom"
-      },
-      {
-        "twitch": "Broeki1",
-        "game": "Broeki",
-        "displayed": "Broeki"
       }
     ]
   },
@@ -368,11 +363,6 @@
         "twitch": "Farbenfuchs",
         "game": "Fuchsi",
         "displayed": "Farbenfuchs"
-      },
-      {
-        "twitch": "nancywenz",
-        "game": "NancyWe",
-        "displayed": "Nancy Wenz"
       }
     ]
   },
@@ -463,11 +453,6 @@
       "Sterzik",
       "ThanhSchaefer",
       {
-        "twitch": "maxim",
-        "game": "Maxim",
-        "displayed": "Maxim"
-      },
-      {
         "twitch": "Hasi",
         "game": "hasi_ttv",
         "displayed": "Hasi"
@@ -499,18 +484,14 @@
         "twitch": "DoktorFroid",
         "game": "lefloid",
         "displayed": "LeFloid (DoktorFroid)"
-      }
+      },
+      "Schiven"
     ]
   },
   {
     "id": "unknown",
     "name": "(Unbekannt)",
     "members": [
-      {
-        "twitch": "Fenali",
-        "game": "fenali",
-        "displayed": "Fenali"
-      },
       {
         "twitch": "nichtdiemama",
         "game": "NichtDieMama",
