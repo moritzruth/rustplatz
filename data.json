@@ -280,7 +280,7 @@
     },
     {
       "id": "smallpp",
-      "name": "Small PP Club",
+      "name": "Small PP Gang",
       "members": [
         "Mahluna",
         {
@@ -486,7 +486,12 @@
           "game": "lefloid",
           "displayed": "LeFloid (DoktorFroid)"
         },
-        "Schiven"
+        "Schiven",
+        {
+          "twitch": "BukkitFAQ",
+          "game": "Kroll",
+          "displayed": "BukkitFAQ"
+        }
       ]
     },
     {
