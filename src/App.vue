@@ -7,7 +7,7 @@
     <div class="text-center mt-4 text-base">
       <p>Seite von <a href="https://twitter.com/moritz_ruth" class="text-blue-400">@moritz_ruth</a>.</p>
       <p>Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast.</p>
-      <p>Bitte sendet mir keine Anfragen, ob ihr mitspielen dürft. Das kann ich sowieso nicht entscheiden!</p>
+      <p>Anfragen, ob ihr mitspielen dürft, werden ignoriert.</p>
     </div>
   </header>
   <main class="p-5 text-lg space-y-8">
@@ -22,7 +22,7 @@
     <section class="max-w-7xl w-full mx-auto">
       <h1 class="heading">Informationen</h1>
       <ul class="list-disc pl-4">
-        <li>Der Server ist täglich von 15 Uhr bis 3 Uhr (morgens) online. (Nach dem Wipe: 19 Uhr bis 1 Uhr)</li>
+        <li>Der Server ist täglich von 18 Uhr bis 1 Uhr (morgens) online (Ab 14.2.: 19 Uhr bis 1 Uhr).</li>
         <li>Andere Spieler zu töten ist nur mit Role-Play erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
         <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
@@ -194,7 +194,7 @@
         if (this.nextSeasonDate === null) {
           const hour = new Date().getHours()
 
-          if (hour >= 15 || hour < 3) await fetchLive()
+          if (hour >= 18 || hour < 2) await fetchLive()
           else await setOfflineData()
         } else if (this.nextSeasonDate.getTime() <= Date.now()) await fetchLive()
         else setEmptyData()

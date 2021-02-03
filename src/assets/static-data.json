@@ -1,9 +1,4 @@
 {
-  "events": [
-    {
-      "date": "Mittwoch 3.2., 20 Uhr",
-      "text": "Season-Finale, danach Wipe und Pause bis 7.2."
-    }
-  ],
-  "nextSeasonDate": null
+  "events": [],
+  "nextSeasonDate": "2021-02-07T17:00:00Z"
 }
