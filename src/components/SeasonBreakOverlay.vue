@@ -13,10 +13,11 @@
         Season 2 hat begonnen.
       </div>
     </transition>
-    <p class="text-base absolute bottom-0 p-10 text-center">
-      Für Mitspieler: Meldet euch gerne schon vor dem Restart
+    <p class="text-base absolute bottom-0 p-10 text-center invisible xl:visible">
+      Für <strong>offizielle</strong> Mitspieler: Meldet euch gerne schon vor dem Restart
       <a href="https://twitter.com/moritz_ruth" class="text-blue-400">bei mir</a>, damit ihr von Anfang an auf der
-      Liste steht.
+      Liste steht.<br>
+      Fragt mich nicht, ob ihr mitspielen dürft! Ich kann das nicht entscheiden, ich mache nur diese Webseite!
     </p>
   </div>
 </template>
