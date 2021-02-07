@@ -11,7 +11,6 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - Socaberg
 - TinaBumBina
 - derShakes
-- hc_diZee
 - copeylius
 - juliaoertgen
 - Cirouss
@@ -19,9 +18,7 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - Lumenti
 - Opfermagnet
 - JuliJones
-- Balui
 - PATTIIIIIIII
 - Trymacs
-- Rumathra
 
 `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.
