@@ -21,7 +21,7 @@
     <section class="max-w-7xl w-full mx-auto">
       <h1 class="heading">Informationen</h1>
       <ul class="list-disc pl-4">
-        <li>Der Server ist täglich von 18 Uhr bis 1 Uhr (morgens) online (Ab 14.2.: 19 Uhr bis 1 Uhr).</li>
+        <li>Der Server ist täglich von 17 Uhr bis 1 Uhr (morgens) online (Ab 14.2.: 19 Uhr bis 1 Uhr).</li>
         <li>Andere Spieler zu töten ist nur mit Role-Play erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
         <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
@@ -142,14 +142,13 @@
       }
     },
     async created() {
+      console.log(`Fetch interval: ${UPDATE_INTERVAL}`)
       await this.loop()
       this.showDonationAlert = true
-      console.log(`Fetch interval: ${UPDATE_INTERVAL}`)
     },
     methods: {
       toggleNames() {
         store.showInGameNames = !store.showInGameNames
-        this.umami(store.showInGameNames, "showInGameNames")
       },
       async loop() {
         await this.fetchData()
@@ -193,7 +192,7 @@
         if (this.nextSeasonDate === null) {
           const hour = new Date().getHours()
 
-          if (hour >= 18 || hour < 2) await fetchLive()
+          if (hour >= 17 || hour < 1) await fetchLive()
           else await setOfflineData()
         } else if (this.nextSeasonDate.getTime() <= Date.now()) await fetchLive()
         else setEmptyData()
