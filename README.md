@@ -19,5 +19,6 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - Lumenti
 - Opfermagnet
 - JuliJones
+- Balui
 
 `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.

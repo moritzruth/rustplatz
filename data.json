@@ -4,7 +4,41 @@
       "id": "polizei",
       "name": "Polizei",
       "members": [
-        "Dhalucard",
+        {
+          "displayed": "Dhalucard",
+          "twitch": "Dhalucard",
+          "game": "Hauptkommissar Dhalucard"
+        },
+        {
+          "displayed": "MaxiMcFly",
+          "twitch": "MaxiMcFlyy",
+          "game": "MaxiMcFly"
+        },
+        {
+          "displayed": "Gippi",
+          "twitch": "GippiGaming",
+          "game": "Kommissar Gippi"
+        },
+        {
+          "displayed": "Kundran",
+          "twitch": "Kundran",
+          "game": "Kommissar Kundran"
+        },
+        {
+          "displayed": "Balui",
+          "twitch": "BaluiLP",
+          "game": "Balui"
+        },
+        {
+          "twitch": "DadoschYT",
+          "game": "Inspektor Dadosch",
+          "displayed": "Dadosch"
+        },
+        {
+          "twitch": "Juliversal",
+          "game": "Inspektor Juliversal",
+          "displayed": "Juliversal"
+        },
         "TrilluXe"
       ]
     },
@@ -35,25 +69,25 @@
       "name": "Die Spezialisten",
       "members": [
         {
+          "displayed": "Zeno",
           "twitch": "ZENO",
-          "game": "Zaccaria Ernesto N. Ortega",
-          "displayed": "Zeno"
+          "game": "Zaccaria Ernesto N. Ortega"
         },
         {
+          "displayed": "Zayuri",
           "twitch": "Zayuri",
-          "game": "Mace",
-          "displayed": "Zayuri"
+          "game": "Mace"
         },
         "Lumenti",
         {
+          "displayed": "Opfermagnet",
           "twitch": "Opfermagnet",
-          "game": "Samy",
-          "displayed": "Opfermagnet"
+          "game": "Samy"
         },
         {
+          "displayed": "JuliJones",
           "twitch": "JuliJones",
-          "game": "Juli",
-          "displayed": "JuliJones"
+          "game": "Juli"
         }
       ]
     },
@@ -88,77 +122,73 @@
         "Shurjoka",
         "Milschbaum",
         {
+          "displayed": "DieBrian",
           "twitch": "DieBrian",
-          "game": "DieBrian (GER)",
-          "displayed": "DieBrian"
+          "game": "DieBrian (GER)"
         },
         "Niisa",
         "TinaBumBina",
         {
+          "displayed": "Matteo (Bonjwa)",
           "twitch": "Bonjwa",
-          "game": "Bonjwa.Mental",
-          "displayed": "Matteo (Bonjwa)"
+          "game": "Bonjwa.Mental"
         },
         "TouristHistories",
         {
+          "displayed": "Kiara",
           "twitch": "JustGiggles",
-          "game": "Giggles",
-          "displayed": "Kiara"
+          "game": "Giggles"
         },
         {
+          "displayed": "SchEppert",
           "twitch": "scheppertlive2",
-          "game": "SchEppertLIVE",
-          "displayed": "SchEppert"
+          "game": "SchEppertLIVE"
         },
         {
+          "displayed": "Viet",
           "twitch": "PixelViet",
-          "game": "Viet",
-          "displayed": "Viet"
+          "game": "Viet"
         },
         "derShakes",
         {
+          "displayed": "Kleinstadtstreamer",
           "twitch": "kleinstadtstreamer",
-          "game": "Kleinstadtstreamer",
-          "displayed": "Kleinstadtstreamer"
+          "game": "Kleinstadtstreamer"
         },
         {
+          "displayed": "hc_diZee",
           "twitch": "hc_diZee",
-          "game": "Dieter Fötzli Schlotzen",
-          "displayed": "hc_diZee"
+          "game": "Dieter Fötzli Schlotzen"
         },
         "Smithhiller",
         {
+          "displayed": "Copeylius",
           "twitch": "copeylius",
-          "game": "Copeylius",
-          "displayed": "Copeylius"
-        },
-        {
-          "twitch": "MaxiMcFlyy",
-          "game": "MaxiMcFly",
-          "displayed": "MaxiMcFly"
+          "game": "Copeylius"
         },
         "juliaoertgen",
         {
+          "displayed": "CHIMPnSALMON",
           "twitch": "CHIMPnSALMON",
-          "game": "Lachsmann",
-          "displayed": "CHIMPnSALMON"
+          "game": "Lachsmann"
         },
         {
+          "displayed": "Parzival",
           "twitch": "Paarzival",
-          "game": "Parzival",
-          "displayed": "Parzival"
+          "game": "Parzival"
         },
         {
+          "displayed": "BurritoOfDoom",
           "twitch": "BurritoOfDoom",
-          "game": "Burrito Of Doom",
-          "displayed": "BurritoOfDoom"
+          "game": "Burrito Of Doom"
         },
         {
+          "displayed": "PhunkRoyal",
           "twitch": "RoyalPhunk",
-          "game": "PhunkRoyal",
-          "displayed": "PhunkRoyal"
+          "game": "PhunkRoyal"
         },
-        "Cirouss"
+        "Cirouss",
+        "Sintica"
       ]
     }
   ],

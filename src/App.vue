@@ -7,7 +7,6 @@
     <div class="text-center mt-4 text-base">
       <p>Seite von <a href="https://twitter.com/moritz_ruth" class="text-blue-400">@moritz_ruth</a>.</p>
       <p>Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast.</p>
-      <p>Anfragen, ob ihr mitspielen dürft, werden ignoriert.</p>
     </div>
   </header>
   <main class="p-5 text-lg space-y-8">
@@ -63,9 +62,8 @@
         <TeamsList :teams="data.teams"/>
       </div>
       <p class="mt-5 max-w-7xl w-full mx-auto">
-        Die Liste aktualisiert sich automatisch. Spieler werden entfernt, wenn sie in den letzten 7 Tagen gestreamt
-        haben, jedoch kein Rust-Stream darunter war. Allerdings gibt es Ausnahmen.
-        Nach dem Wipe wird das anders sein und auch Spieler, die nicht streamen, bleiben auf der Liste.
+        Die Liste aktualisiert sich automatisch. In den ersten paar Tagen kann es sein, dass noch Teilnehmer auf der
+        Liste fehlen!
       </p>
     </section>
     <section class="text-lg max-w-7xl w-full mx-auto">
