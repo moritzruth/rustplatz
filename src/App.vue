@@ -26,6 +26,7 @@
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
         <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
         <li>Teams umfassen maximal 6 Personen.</li>
+        <li>Große, ungenutzte Gebäude werden vom Bauamt abgerissen.</li>
       </ul>
     </section>
     <section class="max-w-7xl w-full mx-auto">
