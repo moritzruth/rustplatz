@@ -27,7 +27,7 @@
         {
           "displayed": "Balui",
           "twitch": "BaluiLP",
-          "game": "Balui"
+          "game": "Ex-Kommisar Balui"
         },
         {
           "twitch": "DadoschYT",
@@ -51,7 +51,7 @@
         {
           "displayed": "BellBell",
           "twitch": "UnstoppaBell",
-          "game": "BellBell"
+          "game": "Bell"
         },
         "DonaSpock"
       ]
@@ -60,7 +60,11 @@
       "id": "rusterds",
       "name": "Inglorious RUSTerds",
       "members": [
-        "Lime7ime",
+        {
+          "displayed": "Lime7ime",
+          "twitch": "Lime7ime",
+          "game": "Lime"
+        },
         "Socaberg"
       ]
     },
@@ -82,7 +86,7 @@
         {
           "displayed": "Opfermagnet",
           "twitch": "Opfermagnet",
-          "game": "Samy"
+          "game": "Zamentha"
         },
         {
           "displayed": "JuliJones",
@@ -248,6 +252,29 @@
       ]
     },
     {
+      "id": "tina",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "TinaBumBina",
+          "twitch": "TinaBumBina",
+          "game": "Tina2Strong"
+        }
+      ]
+    },
+    {
+      "id": "trymacs",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "Trymacs",
+          "twitch": "Trymacs_Twitch",
+          "game": "Trymacs"
+        },
+        "Rumathra"
+      ]
+    },
+    {
       "id": "none",
       "name": "(Kein Team)",
       "members": [
@@ -269,7 +296,7 @@
         },
         "JenNyan",
         {
-          "displayed": "Der eiserne Rächer",
+          "displayed": "Der Eiserne Rächer",
           "twitch": "TORRO",
           "game": "Eiserner Rächer Torro"
         },
@@ -340,8 +367,6 @@
         },
         "Cirouss",
         "Sintica",
-        "Trymacs",
-        "Rumathra",
         {
           "displayed": "Stegi",
           "twitch": "stegi",
@@ -413,7 +438,8 @@
           "displayed": "Crunchy",
           "twitch": "CrunchyCupcakex3",
           "game": "CrunchyCupcakex3"
-        }
+        },
+        "DestroyBlader"
       ]
     }
   ],
