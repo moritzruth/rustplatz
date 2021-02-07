@@ -53,7 +53,12 @@
           "twitch": "UnstoppaBell",
           "game": "Bell"
         },
-        "DonaSpock"
+        "DonaSpock",
+        {
+          "twitch": "timobornheim",
+          "displayed": "timobornheim",
+          "game": "bornheimer"
+        }
       ]
     },
     {
@@ -82,7 +87,11 @@
           "twitch": "Zayuri",
           "game": "Mace"
         },
-        "Lumenti",
+        {
+          "displayed": "Lumenti",
+          "twitch": "Lumenti",
+          "game": "Die Gräfin | Lumenti"
+        },
         {
           "displayed": "Opfermagnet",
           "twitch": "Opfermagnet",
@@ -199,6 +208,11 @@
           "displayed": "GThang",
           "twitch": "GThang",
           "game": "G Thang"
+        },
+        {
+          "displayed": "Moondye7",
+          "twitch": "Moondye7",
+          "game": "Boobietrap"
         }
       ]
     },
@@ -345,6 +359,22 @@
       ]
     },
     {
+      "id": "doktorfroid",
+      "name": "(Kein Team)",
+      "members": [
+        {
+          "displayed": "Paul (DoktorFroid)",
+          "game": "Powl Ster",
+          "twitch": "DoktorFroid"
+        },
+        {
+          "displayed": "Olli (DoktorFroid)",
+          "game": "Der Olli",
+          "twitch": "DoktorFroid"
+        }
+      ]
+    },
+    {
       "id": "unknown",
       "name": "(Unbekannt)",
       "members": [
@@ -435,11 +465,6 @@
           "twitch": "knechtungtv",
           "game": "Schoddi"
         },
-        {
-          "twitch": "timobornheim",
-          "game": "bornheimer",
-          "displayed": "timobornheim"
-        },
         "einfacheva",
         {
           "displayed": "AnkLP",
@@ -470,13 +495,24 @@
           "game": "Harri"
         },
         "MoinGonschi",
+        "CocoBane",
+        "KavalierPirat",
+        {
+          "displayed": "Jack Fleischhammer",
+          "twitch": "Jack_Fleischhammer",
+          "game": "JackFleischhammer"
+        },
+        {
+          "displayed": "AsterPewPew",
+          "twitch": "AsterPewPew",
+          "game": "Newboy"
+        },
         "Tinkerleo",
         {
           "displayed": "Krogmann",
           "twitch": "KROGMANN",
           "game": "MASERATI MIKE | KROGI"
-        },
-        "CocoBane"
+        }
       ]
     }
   ],
