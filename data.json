@@ -126,8 +126,7 @@
           "displayed": "Shantao",
           "twitch": "Shantao",
           "game": "Shantao"
-        },
-        "PATTIIIIIIII"
+        }
       ]
     },
     {
@@ -152,6 +151,64 @@
       ]
     },
     {
+      "id": "divi",
+      "name": "(Name unbekannt)",
+      "members": [
+        "Divi",
+        {
+          "displayed": "MAiHOPAWANGO",
+          "twitch": "MAiHOPAWANGO",
+          "game": "Maihopawango"
+        },
+        "Items4Sacred",
+        {
+          "displayed": "TheKraeuterbutter",
+          "twitch": "TheKraeuterbutter",
+          "game": "Vladimir Popowitch"
+        }
+      ]
+    },
+    {
+      "id": "chrizz",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "itzz_chrizz",
+          "twitch": "itzz_chrizz",
+          "game": "ChrizZ"
+        },
+        {
+          "displayed": "PATTIIIIIIII",
+          "twitch": "PATTIIIIIIII",
+          "game": "Tröten PATTIIIIIIII"
+        },
+        {
+          "displayed": "GThang",
+          "twitch": "GThang",
+          "game": "G Thang"
+        }
+      ]
+    },
+    {
+      "id": "rocketbeans",
+      "name": "RocketBeans",
+      "members": [
+        {
+          "twitch": "RocketBeansTV",
+          "displayed": "Nils",
+          "game": "Boedefeld"
+        }
+      ]
+    },
+    {
+      "id": "kugelmagnet",
+      "name": "(Name unbekannt)",
+      "members": [
+        "ChrizzPlay",
+        "KugelmagnetEddie"
+      ]
+    },
+    {
       "id": "none",
       "name": "(Kein Team)",
       "members": [
@@ -166,6 +223,11 @@
       "id": "unknown",
       "name": "(Unbekannt)",
       "members": [
+        {
+          "displayed": "kay",
+          "twitch": "kaaaay",
+          "game": "kay"
+        },
         "JenNyan",
         {
           "displayed": "Der eiserne Rächer",
@@ -260,7 +322,37 @@
           "displayed": "Mowkyfox",
           "twitch": "Mowkyfox",
           "game": "Mowky"
-        }
+        },
+        "Jay_Corner",
+        {
+          "displayed": "beed",
+          "twitch": "beedTV",
+          "game": "beed"
+        },
+        "Necr1te",
+        "iamThanh",
+        {
+          "displayed": "DurdenGaming",
+          "twitch": "DurdenGaming",
+          "game": "Der Kurier"
+        },
+        {
+          "twitch": "Hasi",
+          "game": "hasi_ttv",
+          "displayed": "Hasi"
+        },
+        {
+          "twitch": "AndiDev",
+          "game": "Andi",
+          "displayed": "AndiDev"
+        },
+        "Miamouz",
+        {
+          "displayed": "Ranzratte",
+          "twitch": "RanzratteLive",
+          "game": "Herr Baumann"
+        },
+        "izzi"
       ]
     }
   ],

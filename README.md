@@ -14,7 +14,6 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - hc_diZee
 - copeylius
 - juliaoertgen
-- Cirouss
 - Zayuri
 - Lumenti
 - Opfermagnet
@@ -23,5 +22,9 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - PATTIIIIIIII
 - Trymacs
 - Rumathra
+- Jay_Corner
+- beed
+- Necr1te
+- iamThanh
 
 `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.
