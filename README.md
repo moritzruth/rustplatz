@@ -17,7 +17,6 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - SaeriFae
 - nichtdiemama
 - Crunchy
-- Niklas (Bonjwa)
 
 ## Notizen
 
