@@ -20,8 +20,6 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - Opfermagnet
 - JuliJones
 - Balui
-- Vlesk
-- Shantao
 - PATTIIIIIIII
 - Trymacs
 - Rumathra
