@@ -26,5 +26,9 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - beed
 - Necr1te
 - iamThanh
+- einfacheva
+- SaeriFae
+- nichtdiemama
+- Crunchy
 
 `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.

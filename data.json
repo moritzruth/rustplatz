@@ -205,7 +205,46 @@
       "name": "(Name unbekannt)",
       "members": [
         "ChrizzPlay",
-        "KugelmagnetEddie"
+        "KugelmagnetEddie",
+        {
+          "displayed": "NieRaus",
+          "twitch": "NieRaus",
+          "game": "Jurist NieRaus"
+        }
+      ]
+    },
+    {
+      "id": "gorg",
+      "name": "(Name unbekannt)",
+      "members": [
+        "Gorg",
+        {
+          "displayed": "Tendro",
+          "twitch": "derTendro",
+          "game": "Tendro"
+        },
+        {
+          "displayed": "derShakes",
+          "twitch": "derShakes",
+          "game": "Schagges"
+        }
+      ]
+    },
+    {
+      "id": "senpai",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "SenpaiMelone",
+          "twitch": "SenpaiMelone",
+          "game": "Senpai"
+        },
+        {
+          "displayed": "Soulthief",
+          "twitch": "Soulthief1991",
+          "game": "Soulthief"
+        },
+        "StrikerCosplay"
       ]
     },
     {
@@ -243,11 +282,7 @@
         "TrilluXe",
         "Shurjoka",
         "Milschbaum",
-        {
-          "displayed": "DieBrian",
-          "twitch": "DieBrian",
-          "game": "DieBrian (GER)"
-        },
+        "DieBrian",
         "Niisa",
         "TinaBumBina",
         {
@@ -266,12 +301,6 @@
           "twitch": "scheppertlive2",
           "game": "SchEppertLIVE"
         },
-        {
-          "displayed": "Viet",
-          "twitch": "PixelViet",
-          "game": "Viet"
-        },
-        "derShakes",
         {
           "displayed": "Kleinstadtstreamer",
           "twitch": "kleinstadtstreamer",
@@ -352,7 +381,39 @@
           "twitch": "RanzratteLive",
           "game": "Herr Baumann"
         },
-        "izzi"
+        "izzi",
+        {
+          "displayed": "Knechtung",
+          "twitch": "knechtungtv",
+          "game": "Schoddi"
+        },
+        {
+          "twitch": "timobornheim",
+          "game": "bornheimer",
+          "displayed": "timobornheim"
+        },
+        "einfacheva",
+        {
+          "displayed": "AnkLP",
+          "twitch": "AnkLP",
+          "game": "Ank"
+        },
+        "SaeriFae",
+        "Yuyuriko",
+        "DoomDesign",
+        {
+          "displayed": "Viet",
+          "twitch": "PixelViet",
+          "game": "Anh Viet"
+        },
+        "Lai2lex",
+        "nichtdiemama",
+        "Quiin",
+        {
+          "displayed": "Crunchy",
+          "twitch": "CrunchyCupcakex3",
+          "game": "CrunchyCupcakex3"
+        }
       ]
     }
   ],
