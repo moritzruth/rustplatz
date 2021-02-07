@@ -125,11 +125,20 @@
           "twitch": "Vlesk",
           "game": "Vlesk"
         },
-        "Baso",
+        {
+          "displayed": "Baso",
+          "twitch": "Baso",
+          "game": "Cherri"
+        },
         {
           "displayed": "Shantao",
           "twitch": "Shantao",
           "game": "Shantao"
+        },
+        {
+          "displayed": "Parzival",
+          "twitch": "Paarzival",
+          "game": "Parzival"
         }
       ]
     },
@@ -257,8 +266,8 @@
       "members": [
         {
           "displayed": "Trymacs",
-          "twitch": "Trymacs_Twitch",
-          "game": "Trymacs"
+          "twitch": "Trymacs",
+          "game": "Trymacs_Twitch"
         },
         "Rumathra"
       ]
@@ -374,11 +383,6 @@
           "displayed": "CHIMPnSALMON",
           "twitch": "CHIMPnSALMON",
           "game": "Lachsmann"
-        },
-        {
-          "displayed": "Parzival",
-          "twitch": "Paarzival",
-          "game": "Parzival"
         },
         {
           "displayed": "PhunkRoyal",
