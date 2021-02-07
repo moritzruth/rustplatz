@@ -68,7 +68,7 @@
     </section>
     <section class="text-lg max-w-7xl w-full mx-auto">
       <p>
-        Diese Seite kostet mich monatlich ca. 20€. Über
+        Diese Seite kostet mich monatlich ca. 20 €. Über
         <a href="http://m0.is/donate" class="text-blue-400">eine kleine Spende</a>
         würde ich mich deshalb sehr freuen.
       </p>

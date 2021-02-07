@@ -20,5 +20,10 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - Opfermagnet
 - JuliJones
 - Balui
+- Vlesk
+- Shantao
+- PATTIIIIIIII
+- Trymacs
+- Rumathra
 
 `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.

@@ -92,6 +92,24 @@
       ]
     },
     {
+      "id": "vlesk",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "Vlesk",
+          "twitch": "Vlesk",
+          "game": "Vlesk"
+        },
+        "Baso",
+        {
+          "displayed": "Shantao",
+          "twitch": "Shantao",
+          "game": "Shantao"
+        },
+        "PATTIIIIIIII"
+      ]
+    },
+    {
       "id": "none",
       "name": "(Kein Team)",
       "members": [
@@ -188,9 +206,11 @@
           "game": "PhunkRoyal"
         },
         "Cirouss",
-        "Sintica"
+        "Sintica",
+        "Trymacs",
+        "Rumathra"
       ]
     }
   ],
-  "nextSeasonDate": "2021-02-07T17:00:00Z"
+  "nextSeasonDate": null
 }
