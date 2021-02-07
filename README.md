@@ -17,7 +17,9 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - SaeriFae
 - nichtdiemama
 - Crunchy
+- Niklas (Bonjwa)
 
-`scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.
+## Notizen
 
-Balui hat Kommissar falsch geschrieben, das wird er eventuell bald korrigieren.
+- `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.
+- Balui hat Kommissar falsch geschrieben, das wird er eventuell bald korrigieren.

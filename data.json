@@ -252,17 +252,6 @@
       ]
     },
     {
-      "id": "tina",
-      "name": "(Name unbekannt)",
-      "members": [
-        {
-          "displayed": "TinaBumBina",
-          "twitch": "TinaBumBina",
-          "game": "Tina2Strong"
-        }
-      ]
-    },
-    {
       "id": "trymacs",
       "name": "(Name unbekannt)",
       "members": [
@@ -272,6 +261,67 @@
           "game": "Trymacs"
         },
         "Rumathra"
+      ]
+    },
+    {
+      "id": "schlotzen",
+      "name": "Familie Schlotzen",
+      "members": [
+        {
+          "displayed": "Der Eiserne Rächer",
+          "twitch": "TORRO",
+          "game": "Eiserner Rächer Schlotzen"
+        },
+        "JenNyan",
+        {
+          "displayed": "hc_diZee",
+          "twitch": "hc_diZee",
+          "game": "Dieter Fötzli Schlotzen"
+        }
+      ]
+    },
+    {
+      "id": "brian",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "SchEppert",
+          "twitch": "scheppertlive2",
+          "game": "SchEppertLIVE"
+        },
+        "DieBrian"
+      ]
+    },
+    {
+      "id": "mowky",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "Mowkyfox",
+          "twitch": "Mowkyfox",
+          "game": "Mowky"
+        },
+        {
+          "displayed": "BurritoOfDoom",
+          "twitch": "BurritoOfDoom",
+          "game": "Burrito Of Doom"
+        }
+      ]
+    },
+    {
+      "id": "mia",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "Miamouz",
+          "twitch": "Miamouz",
+          "game": "Doc Jackie | Miamouz"
+        },
+        {
+          "displayed": "TouristHistories",
+          "twitch": "TouristHistories",
+          "game": "Polly | Touri"
+        }
       ]
     },
     {
@@ -294,49 +344,24 @@
           "twitch": "kaaaay",
           "game": "kay"
         },
-        "JenNyan",
-        {
-          "displayed": "Der Eiserne Rächer",
-          "twitch": "TORRO",
-          "game": "Eiserner Rächer Torro"
-        },
-        {
-          "displayed": "Jens (Bonjwa)",
-          "twitch": "Bonjwa",
-          "game": "Warlord Kerrag"
-        },
         "LaraLoft",
-        "TrilluXe",
         "Shurjoka",
         "Milschbaum",
-        "DieBrian",
         "Niisa",
-        "TinaBumBina",
         {
           "displayed": "Matteo (Bonjwa)",
           "twitch": "Bonjwa",
           "game": "Bonjwa.Mental"
         },
-        "TouristHistories",
         {
           "displayed": "Kiara",
           "twitch": "JustGiggles",
           "game": "Giggles"
         },
         {
-          "displayed": "SchEppert",
-          "twitch": "scheppertlive2",
-          "game": "SchEppertLIVE"
-        },
-        {
           "displayed": "Kleinstadtstreamer",
           "twitch": "kleinstadtstreamer",
           "game": "Kleinstadtstreamer"
-        },
-        {
-          "displayed": "hc_diZee",
-          "twitch": "hc_diZee",
-          "game": "Dieter Fötzli Schlotzen"
         },
         "Smithhiller",
         {
@@ -356,11 +381,6 @@
           "game": "Parzival"
         },
         {
-          "displayed": "BurritoOfDoom",
-          "twitch": "BurritoOfDoom",
-          "game": "Burrito Of Doom"
-        },
-        {
           "displayed": "PhunkRoyal",
           "twitch": "RoyalPhunk",
           "game": "PhunkRoyal"
@@ -371,11 +391,6 @@
           "displayed": "Stegi",
           "twitch": "stegi",
           "game": "Stegi"
-        },
-        {
-          "displayed": "Mowkyfox",
-          "twitch": "Mowkyfox",
-          "game": "Mowky"
         },
         "Jay_Corner",
         {
@@ -400,7 +415,6 @@
           "game": "Andi",
           "displayed": "AndiDev"
         },
-        "Miamouz",
         {
           "displayed": "Ranzratte",
           "twitch": "RanzratteLive",
@@ -439,7 +453,14 @@
           "twitch": "CrunchyCupcakex3",
           "game": "CrunchyCupcakex3"
         },
-        "DestroyBlader"
+        "DestroyBlader",
+        "SeBo_0815",
+        {
+          "displayed": "Niklas (Bonjwa)",
+          "twitch": "Bonjwa",
+          "game": "Harri"
+        },
+        "MoinGonschi"
       ]
     }
   ],
