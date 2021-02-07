@@ -108,7 +108,7 @@
     },
     {
       "id": "kutcher",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "meenz",
@@ -144,7 +144,7 @@
     },
     {
       "id": "edopeh",
-      "name": "(Name unbekannt)",
+      "name": "Rust Coast Customs",
       "members": [
         {
           "displayed": "edopeh",
@@ -165,7 +165,7 @@
     },
     {
       "id": "divi",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         "Divi",
         {
@@ -183,7 +183,7 @@
     },
     {
       "id": "chrizz",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "itzz_chrizz",
@@ -215,20 +215,20 @@
     },
     {
       "id": "kugelmagnet",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         "ChrizzPlay",
         "KugelmagnetEddie",
         {
           "displayed": "NieRaus",
           "twitch": "NieRaus",
-          "game": "Jurist NieRaus"
+          "game": "Dr. Jur. NieRaus"
         }
       ]
     },
     {
       "id": "gorg",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         "Gorg",
         {
@@ -245,7 +245,7 @@
     },
     {
       "id": "senpai",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "SenpaiMelone",
@@ -291,7 +291,7 @@
     },
     {
       "id": "brian",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "SchEppert",
@@ -303,7 +303,7 @@
     },
     {
       "id": "mowky",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "Mowkyfox",
@@ -319,7 +319,7 @@
     },
     {
       "id": "mia",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "Miamouz",
@@ -360,7 +360,7 @@
         {
           "displayed": "Matteo (Bonjwa)",
           "twitch": "Bonjwa",
-          "game": "Bonjwa.Mental"
+          "game": "Judge Mental"
         },
         {
           "displayed": "Kiara",
@@ -469,7 +469,14 @@
           "twitch": "Bonjwa",
           "game": "Harri"
         },
-        "MoinGonschi"
+        "MoinGonschi",
+        "Tinkerleo",
+        {
+          "displayed": "Krogmann",
+          "twitch": "KROGMANN",
+          "game": "MASERATI MIKE | KROGI"
+        },
+        "CocoBane"
       ]
     }
   ],
