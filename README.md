@@ -10,13 +10,7 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - copeylius
 - juliaoertgen
 - JuliJones
-- Jay_Corner
-- beed
-- Necr1te
-- einfacheva
-- SaeriFae
-- nichtdiemama
-- Crunchy
+- Kalle
 
 ## Notizen
 

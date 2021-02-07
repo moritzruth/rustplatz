@@ -295,7 +295,11 @@
           "twitch": "TORRO",
           "game": "Eiserner Rächer Schlotzen"
         },
-        "JenNyan",
+        {
+          "displayed": "Jen",
+          "twitch": "JenNyan",
+          "game": "JenNyan Schlotzen"
+        },
         {
           "displayed": "hc_diZee",
           "twitch": "hc_diZee",
@@ -360,7 +364,7 @@
     },
     {
       "id": "doktorfroid",
-      "name": "(Kein Team)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "Paul (DoktorFroid)",
@@ -375,6 +379,34 @@
       ]
     },
     {
+      "id": "kalle",
+      "name": "Kanzlei Kuk",
+      "members": [
+        "Shurjoka",
+        {
+          "displayed": "Kalle",
+          "game": "Kalle Koschinski",
+          "twitch": "Kalle"
+        }
+      ]
+    },
+    {
+      "id": "beed",
+      "name": "(Kein Name)",
+      "members": [
+        {
+          "displayed": "PhunkRoyal",
+          "twitch": "RoyalPhunk",
+          "game": "Rocco Rosslowski"
+        },
+        {
+          "displayed": "beed",
+          "twitch": "beedTV",
+          "game": "beed"
+        }
+      ]
+    },
+    {
       "id": "unknown",
       "name": "(Unbekannt)",
       "members": [
@@ -384,7 +416,6 @@
           "game": "kay"
         },
         "LaraLoft",
-        "Shurjoka",
         "Milschbaum",
         "Niisa",
         {
@@ -414,11 +445,6 @@
           "twitch": "CHIMPnSALMON",
           "game": "Lachsmann"
         },
-        {
-          "displayed": "PhunkRoyal",
-          "twitch": "RoyalPhunk",
-          "game": "PhunkRoyal"
-        },
         "Cirouss",
         "Sintica",
         {
@@ -431,13 +457,16 @@
           "twitch": "Bonjwa",
           "game": "Prakti Panda"
         },
-        "Jay_Corner",
         {
-          "displayed": "beed",
-          "twitch": "beedTV",
-          "game": "beed"
+          "displayed": "Jay_Corner",
+          "twitch": "Jay_Corner",
+          "game": "Oscar Bolento"
         },
-        "Necr1te",
+        {
+          "displayed": "Necr1te",
+          "twitch": "Necr1te",
+          "game": "necr1te"
+        },
         "iamThanh",
         {
           "displayed": "DurdenGaming",
@@ -465,13 +494,21 @@
           "twitch": "knechtungtv",
           "game": "Schoddi"
         },
-        "einfacheva",
+        {
+          "displayed": "einfacheva",
+          "twitch": "einfacheva",
+          "game": "Maggy"
+        },
         {
           "displayed": "AnkLP",
           "twitch": "AnkLP",
           "game": "Ank"
         },
-        "SaeriFae",
+        {
+          "displayed": "SaeriFae",
+          "twitch": "SaeriFae",
+          "game": "ALIEN [SaeriFae]"
+        },
         "Yuyuriko",
         "DoomDesign",
         {
@@ -480,12 +517,16 @@
           "game": "Anh Viet"
         },
         "Lai2lex",
-        "nichtdiemama",
+        {
+          "displayed": "nichtdiemama",
+          "twitch": "nichtdiemama",
+          "game": "NichtDieMama"
+        },
         "Quiin",
         {
           "displayed": "Crunchy",
           "twitch": "CrunchyCupcakex3",
-          "game": "CrunchyCupcakex3"
+          "game": "Verwirrte Kranschie"
         },
         "DestroyBlader",
         "SeBo_0815",
@@ -503,7 +544,7 @@
           "game": "JackFleischhammer"
         },
         {
-          "displayed": "AsterPewPew",
+          "displayed": "Aster",
           "twitch": "AsterPewPew",
           "game": "Newboy"
         },
