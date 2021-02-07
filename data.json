@@ -92,9 +92,30 @@
       ]
     },
     {
-      "id": "vlesk",
+      "id": "militär",
+      "name": "Militär / Airborne",
+      "members": [
+        {
+          "displayed": "General",
+          "game": "General",
+          "twitch": "Bonjwa"
+        }
+      ]
+    },
+    {
+      "id": "kutcher",
       "name": "(Name unbekannt)",
       "members": [
+        {
+          "displayed": "meenz",
+          "game": "meenz",
+          "twitch": "heymeenz"
+        },
+        {
+          "displayed": "Kutcher",
+          "game": "Philly Westside",
+          "twitch": "kutcherlol"
+        },
         {
           "displayed": "Vlesk",
           "twitch": "Vlesk",
@@ -208,7 +229,17 @@
         "Cirouss",
         "Sintica",
         "Trymacs",
-        "Rumathra"
+        "Rumathra",
+        {
+          "displayed": "Stegi",
+          "twitch": "stegi",
+          "game": "Stegi"
+        },
+        {
+          "displayed": "Mowkyfox",
+          "twitch": "Mowkyfox",
+          "game": "Mowky"
+        }
       ]
     }
   ],
