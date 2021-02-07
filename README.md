@@ -13,5 +13,11 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 - derShakes
 - hc_diZee
 - copeylius
+- juliaoertgen
+- Cirouss
+- Zayuri
+- Lumenti
+- Opfermagnet
+- JuliJones
 
 `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er Zugriff hat.

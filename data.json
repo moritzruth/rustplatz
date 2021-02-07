@@ -9,13 +9,13 @@
       ]
     },
     {
-      "id": "söldner",
-      "name": "Söldnertrupp",
+      "id": "jiwa",
+      "name": "(Kein Name)",
       "members": [
         "Jiwa",
         "AmateurBOHNE",
         {
-          "displayed": "UnstoppaBell",
+          "displayed": "BellBell",
           "twitch": "UnstoppaBell",
           "game": "BellBell"
         },
@@ -28,6 +28,33 @@
       "members": [
         "Lime7ime",
         "Socaberg"
+      ]
+    },
+    {
+      "id": "spezialisten",
+      "name": "Die Spezialisten",
+      "members": [
+        {
+          "twitch": "ZENO",
+          "game": "Zaccaria Ernesto N. Ortega",
+          "displayed": "Zeno"
+        },
+        {
+          "twitch": "Zayuri",
+          "game": "Mace",
+          "displayed": "Zayuri"
+        },
+        "Lumenti",
+        {
+          "twitch": "Opfermagnet",
+          "game": "Samy",
+          "displayed": "Opfermagnet"
+        },
+        {
+          "twitch": "JuliJones",
+          "game": "Juli",
+          "displayed": "JuliJones"
+        }
       ]
     },
     {
@@ -90,11 +117,6 @@
         },
         "derShakes",
         {
-          "twitch": "ZENO",
-          "game": "Zeno",
-          "displayed": "Zeno"
-        },
-        {
           "twitch": "kleinstadtstreamer",
           "game": "Kleinstadtstreamer",
           "displayed": "Kleinstadtstreamer"
@@ -114,7 +136,29 @@
           "twitch": "MaxiMcFlyy",
           "game": "MaxiMcFly",
           "displayed": "MaxiMcFly"
-        }
+        },
+        "juliaoertgen",
+        {
+          "twitch": "CHIMPnSALMON",
+          "game": "Lachsmann",
+          "displayed": "CHIMPnSALMON"
+        },
+        {
+          "twitch": "Paarzival",
+          "game": "Parzival",
+          "displayed": "Parzival"
+        },
+        {
+          "twitch": "BurritoOfDoom",
+          "game": "Burrito Of Doom",
+          "displayed": "BurritoOfDoom"
+        },
+        {
+          "twitch": "RoyalPhunk",
+          "game": "PhunkRoyal",
+          "displayed": "PhunkRoyal"
+        },
+        "Cirouss"
       ]
     }
   ],
