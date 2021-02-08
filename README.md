@@ -8,9 +8,7 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 
 ## In-Game Name nicht überprüft
 - copeylius
-- juliaoertgen
 - JuliJones
-- Kalle
 
 ## Notizen
 
