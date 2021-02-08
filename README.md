@@ -30,3 +30,4 @@ Bitte beachte folgendes, wenn du einen Pull Request erstellst:
 
 - `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er wieder Zugriff hat.
 - Balui hat Kommissar falsch geschrieben, das wird er eventuell bald korrigieren.
+- DoomDesign hat gesagt, dass er bald einem Team beitreten wird.

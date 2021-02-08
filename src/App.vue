@@ -6,7 +6,7 @@
     </div>
     <div class="text-center mt-4 text-base">
       <p>Seite von <a href="https://twitter.com/moritz_ruth" class="text-blue-400">@moritz_ruth</a>.</p>
-      <p>Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast.</p>
+      <p>Schreibe mir gerne eine Twitter-Nachricht, wenn du ein Anliegen hast. KEINE BEWERBUNGEN!</p>
     </div>
   </header>
   <main class="p-5 text-lg space-y-8">

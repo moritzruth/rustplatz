@@ -169,6 +169,11 @@
           "displayed": "Radlerauge",
           "twitch": "Radlerauge",
           "game": "Sir Radler"
+        },
+        {
+          "displayed": "kay",
+          "twitch": "kaaaay",
+          "game": "kay"
         }
       ]
     },
@@ -304,6 +309,16 @@
           "displayed": "hc_diZee",
           "twitch": "hc_diZee",
           "game": "Dieter Fötzli Schlotzen"
+        },
+        {
+          "displayed": "Ranzratte",
+          "twitch": "RanzratteLive",
+          "game": "Herr Baumann"
+        },
+        {
+          "displayed": "LOST",
+          "twitch": "LOST",
+          "game": "Lost"
         }
       ]
     },
@@ -348,17 +363,6 @@
           "displayed": "TouristHistories",
           "twitch": "TouristHistories",
           "game": "Polly | Touri"
-        }
-      ]
-    },
-    {
-      "id": "none",
-      "name": "(Kein Team)",
-      "members": [
-        {
-          "displayed": "Owlliwanda",
-          "game": "Die freundliche Hexe Owlliwanda",
-          "twitch": "Owlliwanda"
         }
       ]
     },
@@ -408,14 +412,19 @@
     },
     {
       "id": "browny",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
-        "GERBrowny"
+        "GERBrowny",
+        {
+          "twitch": "AndiDev",
+          "game": "Andi",
+          "displayed": "AndiDev"
+        }
       ]
     },
     {
       "id": "mike",
-      "name": "(Name unbekannt)",
+      "name": "(Kein Name)",
       "members": [
         {
           "displayed": "Mike Stiefelhagen",
@@ -430,26 +439,94 @@
       ]
     },
     {
-      "id": "unknown",
-      "name": "(Unbekannt)",
+      "id": "malibu",
+      "name": "(Kein Name)",
       "members": [
-        {
-          "displayed": "kay",
-          "twitch": "kaaaay",
-          "game": "kay"
-        },
-        "LaraLoft",
-        "Milschbaum",
+        "MalibuLaura"
+      ]
+    },
+    {
+      "id": "niisa",
+      "name": "(Name unbekannt)",
+      "members": [
         "Niisa",
         {
-          "displayed": "Matteo (Bonjwa)",
+          "displayed": "? (Bonjwa)",
           "twitch": "Bonjwa",
-          "game": "Judge Mental"
-        },
+          "game": "Prakti Panda"
+        }
+      ]
+    },
+    {
+      "id": "rustafari",
+      "name": "Rustafari",
+      "members": [
+        "Cirouss"
+      ]
+    },
+    {
+      "id": "sintica",
+      "name": "(Name unbekannt)",
+      "members": [
+        "Sintica",
+        "Tinkerleo"
+      ]
+    },
+    {
+      "id": "hornisse",
+      "name": "(Name unbekannt)",
+      "members": [
+        "Hornisse86",
         {
-          "displayed": "Kiara",
-          "twitch": "JustGiggles",
-          "game": "Giggles"
+          "displayed": "Necr1te",
+          "twitch": "Necr1te",
+          "game": "necr1te"
+        }
+      ]
+    },
+    {
+      "id": "nichtdiemama",
+      "name": "(Kein Name)",
+      "members": [
+        {
+          "displayed": "NichtDieMama",
+          "twitch": "nichtdiemama",
+          "game": "NichtDieMama"
+        },
+        "Yuyuriko"
+      ]
+    },
+    {
+      "id": "kekw",
+      "name": "KEKW",
+      "members": [
+        {
+          "displayed": "DestroyBlader",
+          "twitch": "DestroyBlader",
+          "game": "Armin Blader"
+        },
+        "teischEnte"
+      ]
+    },
+    {
+      "id": "jack",
+      "name": "(Kein Name)",
+      "members": [
+        {
+          "displayed": "Jack Fleischhammer",
+          "twitch": "Jack_Fleischhammer",
+          "game": "JackFleischhammer"
+        }
+      ]
+    },
+    {
+      "id": "none",
+      "name": "(Kein Team)",
+      "members": [
+        {
+          "displayed": "Owlliwanda",
+          "game": "Die freundliche Hexe Owlliwanda",
+          "twitch": "Owlliwanda"
         },
         {
           "displayed": "Kleinstadtstreamer",
@@ -467,13 +544,42 @@
           "twitch": "juliaoertgen",
           "game": "Julia Pegasus"
         },
+        "iamThanh",
+        {
+          "displayed": "AnkLP",
+          "twitch": "AnkLP",
+          "game": "Ank"
+        },
+        "Lai2lex",
+        "DoomDesign",
+        {
+          "displayed": "Gerrit",
+          "twitch": "Gerrit",
+          "game": "gerrit"
+        }
+      ]
+    },
+    {
+      "id": "unknown",
+      "name": "(Unbekannt)",
+      "members": [
+        "LaraLoft",
+        "Milschbaum",
+        {
+          "displayed": "Matteo (Bonjwa)",
+          "twitch": "Bonjwa",
+          "game": "Judge Mental"
+        },
+        {
+          "displayed": "Kiara",
+          "twitch": "JustGiggles",
+          "game": "Giggles"
+        },
         {
           "displayed": "CHIMPnSALMON",
           "twitch": "CHIMPnSALMON",
           "game": "Lachsmann"
         },
-        "Cirouss",
-        "Sintica",
         {
           "displayed": "Stegi",
           "twitch": "stegi",
@@ -490,12 +596,6 @@
           "game": "Oscar Bolento"
         },
         {
-          "displayed": "Necr1te",
-          "twitch": "Necr1te",
-          "game": "necr1te"
-        },
-        "iamThanh",
-        {
           "displayed": "DurdenGaming",
           "twitch": "DurdenGaming",
           "game": "Der Kurier"
@@ -504,16 +604,6 @@
           "twitch": "Hasi",
           "game": "hasi_ttv",
           "displayed": "Hasi"
-        },
-        {
-          "twitch": "AndiDev",
-          "game": "Andi",
-          "displayed": "AndiDev"
-        },
-        {
-          "displayed": "Ranzratte",
-          "twitch": "RanzratteLive",
-          "game": "Herr Baumann"
         },
         "izzi",
         {
@@ -527,27 +617,14 @@
           "game": "Maggy"
         },
         {
-          "displayed": "AnkLP",
-          "twitch": "AnkLP",
-          "game": "Ank"
-        },
-        {
           "displayed": "SaeriFae",
           "twitch": "SaeriFae",
           "game": "ALIEN [SaeriFae]"
         },
-        "Yuyuriko",
-        "DoomDesign",
         {
           "displayed": "Viet",
           "twitch": "PixelViet",
-          "game": "Anh Viet"
-        },
-        "Lai2lex",
-        {
-          "displayed": "nichtdiemama",
-          "twitch": "nichtdiemama",
-          "game": "NichtDieMama"
+          "game": "Viet"
         },
         "Quiin",
         {
@@ -555,7 +632,6 @@
           "twitch": "CrunchyCupcakex3",
           "game": "Verwirrte Kranschie"
         },
-        "DestroyBlader",
         "SeBo_0815",
         {
           "displayed": "Niklas (Bonjwa)",
@@ -566,25 +642,14 @@
         "CocoBane",
         "KavalierPirat",
         {
-          "displayed": "Jack Fleischhammer",
-          "twitch": "Jack_Fleischhammer",
-          "game": "JackFleischhammer"
-        },
-        {
           "displayed": "Aster",
           "twitch": "AsterPewPew",
           "game": "Newboy"
         },
-        "Tinkerleo",
         {
           "displayed": "Krogmann",
           "twitch": "KROGMANN",
           "game": "MASERATI MIKE | KROGI"
-        },
-        {
-          "displayed": "LOST",
-          "twitch": "LOST",
-          "game": "Lost"
         },
         "Flocke",
         "Schiven",
@@ -593,7 +658,12 @@
           "twitch": "TauTau_der_Pandaoesi",
           "game": "TauTau"
         },
-        "suuN"
+        "suuN",
+        {
+          "displayed": "ThePianoDragon",
+          "twitch": "ThePianoDragon_",
+          "game": "ThePianoDragon"
+        }
       ]
     }
   ],
