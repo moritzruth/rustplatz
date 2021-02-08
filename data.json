@@ -109,7 +109,7 @@
       "name": "Militär / Airborne",
       "members": [
         {
-          "displayed": "General",
+          "displayed": "Jens (Bonjwa)",
           "game": "General",
           "twitch": "Bonjwa"
         }
@@ -306,14 +306,14 @@
           "game": "JenNyan Schlotzen"
         },
         {
-          "displayed": "hc_diZee",
+          "displayed": "diZee",
           "twitch": "hc_diZee",
           "game": "Dieter Fötzli Schlotzen"
         },
         {
           "displayed": "Ranzratte",
           "twitch": "RanzratteLive",
-          "game": "Herr Baumann"
+          "game": "Herr Baumann (Ranzratte)"
         },
         {
           "displayed": "LOST",
@@ -341,7 +341,7 @@
         {
           "displayed": "Mowkyfox",
           "twitch": "Mowkyfox",
-          "game": "Mowky"
+          "game": "Herrin Mowky"
         },
         {
           "displayed": "BurritoOfDoom",
@@ -451,7 +451,7 @@
       "members": [
         "Niisa",
         {
-          "displayed": "? (Bonjwa)",
+          "displayed": "Leon (Bonjwa)",
           "twitch": "Bonjwa",
           "game": "Prakti Panda"
         }
@@ -533,7 +533,11 @@
           "twitch": "kleinstadtstreamer",
           "game": "Kleinstadtstreamer"
         },
-        "Smithhiller",
+        {
+          "displayed": "Smithhiller",
+          "twitch": "Smithhiller",
+          "game": "Jay | Smithhiller"
+        },
         {
           "displayed": "Copeylius",
           "twitch": "copeylius",
@@ -556,6 +560,11 @@
           "displayed": "Gerrit",
           "twitch": "Gerrit",
           "game": "gerrit"
+        },
+        {
+          "displayed": "Matteo (Bonjwa)",
+          "twitch": "Bonjwa",
+          "game": "Judge Mental"
         }
       ]
     },
@@ -566,29 +575,24 @@
         "LaraLoft",
         "Milschbaum",
         {
-          "displayed": "Matteo (Bonjwa)",
-          "twitch": "Bonjwa",
-          "game": "Judge Mental"
-        },
-        {
           "displayed": "Kiara",
           "twitch": "JustGiggles",
           "game": "Giggles"
         },
         {
-          "displayed": "CHIMPnSALMON",
+          "displayed": "Salmon (CHIMPnSALMON)",
           "twitch": "CHIMPnSALMON",
           "game": "Lachsmann"
+        },
+        {
+          "displayed": "Chimp (CHIMPnSALMON)",
+          "twitch": "CHIMPnSALMON",
+          "game": "Pix Kabelmann"
         },
         {
           "displayed": "Stegi",
           "twitch": "stegi",
           "game": "Stegi"
-        },
-        {
-          "displayed": "Leon (Bonjwa)",
-          "twitch": "Bonjwa",
-          "game": "Prakti Panda"
         },
         {
           "displayed": "Jay_Corner",
@@ -658,12 +662,18 @@
           "twitch": "TauTau_der_Pandaoesi",
           "game": "TauTau"
         },
-        "suuN",
+        {
+          "displayed": "suuN",
+          "twitch": "suuN",
+          "game": "Horst Blubberwasser | suuN"
+        },
         {
           "displayed": "ThePianoDragon",
           "twitch": "ThePianoDragon_",
           "game": "ThePianoDragon"
-        }
+        },
+        "TinaBumBina",
+        "Farbenfuchs"
       ]
     }
   ],
