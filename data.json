@@ -44,7 +44,7 @@
     },
     {
       "id": "jiwa",
-      "name": "(Kein Name)",
+      "name": "Söldnergruppe",
       "members": [
         "Jiwa",
         "AmateurBOHNE",
@@ -407,6 +407,29 @@
       ]
     },
     {
+      "id": "browny",
+      "name": "(Name unbekannt)",
+      "members": [
+        "GERBrowny"
+      ]
+    },
+    {
+      "id": "mike",
+      "name": "(Name unbekannt)",
+      "members": [
+        {
+          "displayed": "Mike Stiefelhagen",
+          "twitch": "MikeLS_91",
+          "game": "Mike Stiefelhagen"
+        },
+        {
+          "displayed": "Bambi",
+          "twitch": "Bambi9477",
+          "game": "Bambi"
+        }
+      ]
+    },
+    {
       "id": "unknown",
       "name": "(Unbekannt)",
       "members": [
@@ -558,7 +581,19 @@
           "twitch": "KROGMANN",
           "game": "MASERATI MIKE | KROGI"
         },
-        "Lost"
+        {
+          "displayed": "LOST",
+          "twitch": "LOST",
+          "game": "Lost"
+        },
+        "Flocke",
+        "Schiven",
+        {
+          "displayed": "TauTau",
+          "twitch": "TauTau_der_Pandaoesi",
+          "game": "TauTau"
+        },
+        "suuN"
       ]
     }
   ],
