@@ -236,7 +236,7 @@
         {
           "displayed": "NieRaus",
           "twitch": "NieRaus",
-          "game": "Dr. Jur. NieRaus"
+          "game": "Staatsanwalt Dr. Jur. NieRaus"
         }
       ]
     },
@@ -385,7 +385,7 @@
         "Shurjoka",
         {
           "displayed": "Kalle",
-          "game": "Kalle Koschinski",
+          "game": "Kalle",
           "twitch": "Kalle"
         }
       ]
@@ -439,7 +439,11 @@
           "twitch": "copeylius",
           "game": "Copeylius"
         },
-        "juliaoertgen",
+        {
+          "displayed": "juliaoertgen",
+          "twitch": "juliaoertgen",
+          "game": "Julia Pegasus"
+        },
         {
           "displayed": "CHIMPnSALMON",
           "twitch": "CHIMPnSALMON",
@@ -553,7 +557,8 @@
           "displayed": "Krogmann",
           "twitch": "KROGMANN",
           "game": "MASERATI MIKE | KROGI"
-        }
+        },
+        "Lost"
       ]
     }
   ],
