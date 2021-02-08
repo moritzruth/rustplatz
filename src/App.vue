@@ -157,8 +157,6 @@
 
           const delta = Date.now() - this.lastFetchTime
           const timeUntilNextFetch = UPDATE_INTERVAL - delta
-          console.log(delta)
-          console.log(timeUntilNextFetch)
 
           if (timeUntilNextFetch <= 0) {
             console.log("Fetching now because document became visible and last fetch is too old")
