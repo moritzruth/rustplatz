@@ -122,7 +122,9 @@
     data: () => ({
       data: null,
       showDonationAlert: false,
-      nextSeasonDateString: staticNextSeasonDate
+      nextSeasonDateString: staticNextSeasonDate,
+      loopTimeoutID: null,
+      lastFetchTime: Date.now()
     }),
     computed: {
       nextSeasonDate: vm => vm.nextSeasonDateString === null ? null : new Date(vm.nextSeasonDateString),
@@ -145,18 +147,46 @@
       console.log(`Fetch interval: ${UPDATE_INTERVAL}`)
       await this.loop()
       this.showDonationAlert = true
+
+      document.addEventListener("visibilitychange", async () => {
+        if (document.hidden) {
+          console.log("Breaking fetch loop because document is hidden")
+          this.breakLoop()
+        } else {
+          this.breakLoop()
+
+          const delta = Date.now() - this.lastFetchTime
+          const timeUntilNextFetch = UPDATE_INTERVAL - delta
+          console.log(delta)
+          console.log(timeUntilNextFetch)
+
+          if (timeUntilNextFetch <= 0) {
+            console.log("Fetching now because document became visible and last fetch is too old")
+            await this.loop()
+          } else {
+            this.loopTimeoutID = setTimeout(this.loop, timeUntilNextFetch)
+            console.log("Restarting fetch loop because document became visible")
+          }
+        }
+      })
     },
     methods: {
       toggleNames() {
         store.showInGameNames = !store.showInGameNames
       },
+      breakLoop() {
+        if (this.loopTimeoutID !== null) clearTimeout(this.loopTimeoutID)
+        this.loopTimeoutID = null
+      },
       async loop() {
+        this.breakLoop()
+
+        this.loopTimeoutID = setTimeout(this.loop, UPDATE_INTERVAL)
         await this.fetchData()
-        setTimeout(() => {
-          this.loop()
-        }, UPDATE_INTERVAL)
       },
       async fetchData() {
+        this.lastFetchTime = Date.now()
+
         const fetchLive = async () => {
           console.log("Fetching live data...")
           this.data = process.env.NODE_ENV === "development"
