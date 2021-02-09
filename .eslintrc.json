@@ -1,9 +1,4 @@
 {
-  "extends": "awzzm-vue/v3",
-  "globals": {
-    "process": true
-  },
-  "rules": {
-    "no-extra-parens": "off"
-  }
+  "root": true,
+  "extends": "awzzm-vue/v3"
 }
