@@ -56,7 +56,7 @@ async function run() {
       name: team.name,
       live: currentlyStreamingMembers,
       offline: team.members.filter(member => !currentlyStreamingMembers.includes(member)),
-      nonStreamers: team.nonStreamerMembers ?? []
+      nonStreamers: team.nonStreamerMembers === undefined ? [] : team.nonStreamerMembers
     })
   }
 
