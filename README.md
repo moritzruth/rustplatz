@@ -19,12 +19,10 @@ Bitte beachte folgendes, wenn du einen Pull Request erstellst:
   füge ihn trotzdem hinzu und schreibe seinen Namen in die Liste unter diesem Text.
 
 ## In-Game Name nicht überprüft
-- copeylius
 - JuliJones
-- Flocke
-- GERBrowny
-- TauTau
 - Farbenfuchs
+- Dave (eventuell ist er doch Streamer)
+- TrilluXe
 
 ## Notizen
 
