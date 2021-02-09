@@ -1,29 +1,33 @@
 <template>
-  <a
-    :href="`https://twitch.tv/${getMemberProperty(member, 'twitch')}`"
-    class="text-gray-200 flex space-x-2 overflow-hidden relative"
-    target="_blank"
-    rel="noopener noreferrer"
-    @click.passive="umami(getMemberProperty(member, 'twitch'), 'twitch')"
-  >
-    <span>{{ getMemberProperty(member, showInGameNames ? "game" : "displayed") }}</span>
-    <InfoIcon
-      v-if="additionalInfo !== null"
-      ref="infoIconElement"
-      tabindex="0"
-      stroke-width="3"
-      size="1x"
-      class="relative can-hover:top-0.5 text-xl can-hover:text-base"
-      @click.prevent="() => {}"
-    />
-    <span class="absolute top-full mt-2">{{ getMemberProperty(member, "game") }}</span>
-  </a>
+  <template v-if="isStreamer">
+    <a
+      :href="`https://twitch.tv/${getMemberProperty(member, 'twitch')}`"
+      class="text-gray-200 flex space-x-2 can-hover:space-x-1 overflow-hidden relative whitespace-nowrap"
+      target="_blank"
+      rel="noopener noreferrer"
+      @click.passive="umami(getMemberProperty(member, 'twitch'), 'twitch')"
+    >
+      <span class="overflow-ellipsis overflow-hidden">
+        {{ getMemberProperty(member, showInGameNames ? "game" : "displayed") }}
+      </span>
+      <InfoIcon
+        v-if="additionalInfo !== null"
+        ref="infoIconElement"
+        tabindex="0"
+        stroke-width="3"
+        size="1x"
+        class="flex-shrink-0 relative can-hover:top-0.5 text-xl can-hover:text-base"
+        @click.prevent
+      />
+    </a>
+  </template>
+  <span v-else class="overflow-ellipsis overflow-hidden">{{ member }}</span>
 </template>
 
 <script>
   import { InfoIcon } from "@zhuowenli/vue-feather-icons"
   import tippy from "tippy.js"
-  import { ref, computed, watch, watchEffect, toRef } from "vue"
+  import { ref, computed, watch, watchEffect, toRef, onBeforeUnmount } from "vue"
   import { getMemberProperty } from "../assets/get-member-property.js"
   import "tippy.js/dist/tippy.css"
   import { store } from "../assets/globals.js"
@@ -36,7 +40,8 @@
         type: null,
         validate: value => typeof value === "string" || typeof value === "object",
         required: true
-      }
+      },
+      isStreamer: Boolean
     },
     setup(props) {
       const infoIconElement = ref(null)
@@ -66,6 +71,10 @@
           content: additionalInfo.value,
           allowHTML: true
         })
+      })
+
+      onBeforeUnmount(() => {
+        tooltip.value?.destroy()
       })
 
       return {

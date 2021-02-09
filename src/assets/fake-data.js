@@ -14,9 +14,11 @@ export const getFakeData = async () => {
       // (which will not happen with the real data)
 
       return {
-        ...team,
-        online: team.members.slice(0, lastOnlineIndex),
-        offline: team.members.slice(lastOnlineIndex)
+        id: team.id,
+        name: team.name,
+        live: team.members.slice(0, lastOnlineIndex),
+        offline: team.members.slice(lastOnlineIndex),
+        nonStreamers: team.nonStreamerMembers ?? []
       }
     }),
     nextSeasonDate: null,

@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "teams": {
@@ -19,6 +20,7 @@
               "oneOf": [
                 {
                   "type": "object",
+                  "required": ["twitch", "game", "displayed"],
                   "properties": {
                     "twitch": {
                       "type": "string"
@@ -35,6 +37,12 @@
                   "type": "string"
                 }
               ]
+            }
+          },
+          "nonStreamerMembers": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           }
         }

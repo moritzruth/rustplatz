@@ -14,8 +14,8 @@
       <NumberBox title="Zuschauer" :show="viewers > 1000" class="w-72">
         <TweenedNumber :value="viewers"/>
       </NumberBox>
-      <NumberBox title="Online" :show="onlinePlayersCount > 0" class="w-64">
-        <TweenedNumber :value="onlinePlayersCount"/>/<TweenedNumber :value="totalPlayersCount"/>
+      <NumberBox title="Online" :show="activeStreamersCount > 0" class="w-64">
+        <TweenedNumber :value="activeStreamersCount"/>/<TweenedNumber :value="totalStreamersCount"/>
       </NumberBox>
     </section>
     <section class="max-w-7xl w-full mx-auto">
@@ -37,7 +37,7 @@
       <div class="max-w-7xl w-full mx-auto pb-4">
         <h1 class="heading">
           {{ data === null ? "" : data.teams.length - 2 }} Teams
-          <span v-if="data !== null" class="text-lg font-normal">({{ totalPlayersCount }} Spieler)</span>
+          <span v-if="data !== null" class="text-lg font-normal">({{ totalStreamersCount }} Spieler)</span>
         </h1>
         <p class="cannot-hover:hidden">
           Berühre
@@ -128,11 +128,10 @@
     }),
     computed: {
       nextSeasonDate: vm => vm.nextSeasonDateString === null ? null : new Date(vm.nextSeasonDateString),
-      viewers: vm => vm.data === null ? 0 : vm.data.totalViewers,
-      totalPlayersCount: vm => vm.data === null
-        ? 0
-        : vm.data.teams.flatMap(team => [...team.online, ...team.offline]).length,
-      onlinePlayersCount: vm => vm.data === null ? 0 : vm.data.teams.flatMap(team => team.online).length,
+      viewers: vm => vm.data?.totalViewers ?? 0,
+      totalStreamersCount: vm => vm.data
+        ?.teams?.reduce((accumulator, team) => accumulator + team.live.length + team.offline.length, 0) ?? 0,
+      activeStreamersCount: vm => vm.data?.teams?.reduce((accumulator, team) => accumulator + team.live.length, 0) ?? 0,
       showInGameNames: () => store.showInGameNames
     },
     watch: {
@@ -210,8 +209,9 @@
           this.data = {
             teams: data.teams.map(team => ({
               name: team.name,
-              online: [],
-              offline: team.members
+              live: [],
+              offline: team.members,
+              nonStreamers: team.nonStreamerMembers ?? []
             })),
             totalViewers: 0
           }
@@ -220,7 +220,7 @@
         if (this.nextSeasonDate === null) {
           const hour = new Date().getHours()
 
-          if (hour >= 17 || hour < 1) await fetchLive()
+          if (hour >= 13 || hour < 1) await fetchLive()
           else await setOfflineData()
         } else if (this.nextSeasonDate.getTime() <= Date.now()) await fetchLive()
         else setEmptyData()

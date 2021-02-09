@@ -1,21 +1,22 @@
 <template>
   <div
-    class="theme-border p-5 py-6 lg:p-8 transition duration-500 ease-in-out transform-gpu relative
-           hover:scale-103 hover:shadow-2xl"
+    class="theme-border p-5 py-6 lg:p-7 transition duration-500 ease-in-out transform-gpu relative
+           hover:scale-101 can-hover:hover:scale-103 hover:shadow-2xl"
   >
     <span class="text-2xl block">{{ team.name }}</span>
     <a
-      class="absolute bottom-2 right-2 opacity-0 transition-opacity duration-200 text-green-400"
+      class="absolute bottom-2 right-2 opacity-0 transition-opacity duration-200 text-green-400 text-base"
       :class="showMultitwitch && 'opacity-100'"
       :href="`https://multitwitch.tv/${onlineTwitchNames.join('/')}`"
       @click.passive="umami(team.id, 'multitwitch')"
     >
-      Multitwitch
+      MULTI
     </a>
     <TeamMemberList
       class="transition-all duration-1000 ease-in-out"
-      :online="team.online"
+      :live="team.live"
       :offline="team.offline"
+      :non-streamers="team.nonStreamers"
       :style="{ marginBottom }"
     />
   </div>
@@ -35,12 +36,14 @@
       }
     },
     computed: {
-      onlineTwitchNames: vm => [...new Set(vm.team.online.map(member => getMemberProperty(member, "twitch")))],
+      onlineTwitchNames: vm => [...new Set(vm.team.live.map(member => getMemberProperty(member, "twitch")))],
       showMultitwitch: vm => vm.onlineTwitchNames.length > 1,
       marginBottom() {
-        let value = 0
-        if (this.team.offline.length === 0 || this.team.online.length === 0) value -= 35
-        return value + "px"
+        const missing = [this.team.offline, this.team.live, this.team.nonStreamers]
+          .map(list => list.length === 0)
+          .filter(v => v).length
+
+        return (missing * -35) + "px"
       }
     }
   }

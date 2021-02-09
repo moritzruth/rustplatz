@@ -30,6 +30,7 @@ module.exports = {
         "cannot-hover": { raw: "(hover: none)" }
       },
       scale: {
+        101: "1.01",
         103: "1.03"
       },
       fontFamily: {
