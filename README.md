@@ -24,7 +24,7 @@ Bitte beachte folgendes, wenn du einen Pull Request erstellst:
 - Flocke
 - GERBrowny
 - TauTau
-- suuN
+- Farbenfuchs
 
 ## Notizen
 
