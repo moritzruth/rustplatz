@@ -39,7 +39,11 @@
           "game": "Inspektor Juliversal",
           "displayed": "Juliversal"
         },
-        "TrilluXe"
+        {
+          "twitch": "TrilluXe",
+          "game": "Fleet Commander TrilluXe",
+          "displayed": "TrilluXe"
+        }
       ]
     },
     {
@@ -191,7 +195,7 @@
         {
           "displayed": "TheKraeuterbutter",
           "twitch": "TheKraeuterbutter",
-          "game": "Vladimir Popowitch"
+          "game": "V. Popowitch | thekraeuterbutter"
         }
       ]
     },
@@ -362,7 +366,7 @@
         {
           "displayed": "TouristHistories",
           "twitch": "TouristHistories",
-          "game": "Polly | Touri"
+          "game": "Frollein B. Amte | Bauamt"
         }
       ]
     },
@@ -414,7 +418,11 @@
       "id": "browny",
       "name": "(Kein Name)",
       "members": [
-        "GERBrowny",
+        {
+          "twitch": "GERBrowny",
+          "game": "Browny White (GERBrowny)",
+          "displayed": "GERBrowny"
+        },
         {
           "twitch": "AndiDev",
           "game": "Andi",
@@ -520,7 +528,8 @@
       ],
       "nonStreamerMembers": [
         "Bandit Bob",
-        "SteelAngel13"
+        "SteelAngel13",
+        "Dave"
       ]
     },
     {
@@ -601,7 +610,7 @@
         {
           "displayed": "Jay_Corner",
           "twitch": "Jay_Corner",
-          "game": "Oscar Bolento"
+          "game": "Ostblocklatino"
         },
         {
           "displayed": "DurdenGaming",
@@ -677,7 +686,12 @@
           "game": "ThePianoDragon"
         },
         "TinaBumBina",
-        "Farbenfuchs"
+        "Farbenfuchs",
+        {
+          "displayed": "fisHC0p",
+          "twitch": "fisHC0p",
+          "game": "Eckart"
+        }
       ]
     }
   ],
