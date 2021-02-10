@@ -94,7 +94,7 @@
         {
           "displayed": "Lumenti",
           "twitch": "Lumenti",
-          "game": "Die Gräfin | Lumenti"
+          "game": "Die Gräfin"
         },
         {
           "displayed": "Opfermagnet",
@@ -195,7 +195,7 @@
         {
           "displayed": "TheKraeuterbutter",
           "twitch": "TheKraeuterbutter",
-          "game": "V. Popowitch | thekraeuterbutter"
+          "game": "V. Popowitch"
         }
       ]
     },
@@ -317,7 +317,7 @@
         {
           "displayed": "Ranzratte",
           "twitch": "RanzratteLive",
-          "game": "Herr Baumann (Ranzratte)"
+          "game": "Herr Baumann"
         },
         {
           "displayed": "LOST",
@@ -356,18 +356,26 @@
     },
     {
       "id": "mia",
-      "name": "(Kein Name)",
+      "name": "5G Trailerpark",
       "members": [
         {
           "displayed": "Miamouz",
           "twitch": "Miamouz",
-          "game": "Doc Jackie | Miamouz"
+          "game": "Doc Jackie"
         },
         {
           "displayed": "TouristHistories",
           "twitch": "TouristHistories",
           "game": "Frollein B. Amte | Bauamt"
+        },
+        {
+          "displayed": "Krogmann",
+          "twitch": "KROGMANN",
+          "game": "MASERATI MIKE"
         }
+      ],
+      "nonStreamerMembers": [
+        "Pallas"
       ]
     },
     {
@@ -598,7 +606,7 @@
           "game": "Lachsmann"
         },
         {
-          "displayed": "Chimp (CHIMPnSALMON)",
+          "displayed": "Pix (CHIMPnSALMON)",
           "twitch": "CHIMPnSALMON",
           "game": "Pix Kabelmann"
         },
@@ -636,7 +644,7 @@
         {
           "displayed": "SaeriFae",
           "twitch": "SaeriFae",
-          "game": "ALIEN [SaeriFae]"
+          "game": "ALIEN"
         },
         {
           "displayed": "Viet",
@@ -663,11 +671,6 @@
           "twitch": "AsterPewPew",
           "game": "Newboy"
         },
-        {
-          "displayed": "Krogmann",
-          "twitch": "KROGMANN",
-          "game": "MASERATI MIKE | KROGI"
-        },
         "Flocke",
         "Schiven",
         {
@@ -678,7 +681,7 @@
         {
           "displayed": "suuN",
           "twitch": "suuN",
-          "game": "Horst Blubberwasser | suuN"
+          "game": "Horst Blubberwasser"
         },
         {
           "displayed": "ThePianoDragon",

@@ -17,6 +17,10 @@ Bitte beachte folgendes, wenn du einen Pull Request erstellst:
   wird dieser für alle drei Werte benutzt.
 - Wenn du weißt, dass ein Streamer mitspielt, jedoch noch nicht seinen In-Game-Namen herausfinden konntest,
   füge ihn trotzdem hinzu und schreibe seinen Namen in die Liste unter diesem Text.
+- Wenn der RP-Charakter einen anderen Namen hat als der Spieler selbst und der eigentliche Name des Spielers im
+  In-Game-Namen enthalten ist, lass den Teil weg.  
+  Beispiel: Statt `V. Popowitch | thekraeuterbutter` nur `V. Popowitch`,
+  aber trotzdem `Hauptkommissar Dhalucard` und nicht `Hauptkommissar`.
 
 ## In-Game Name nicht überprüft
 - JuliJones
