@@ -57,11 +57,15 @@
           "twitch": "UnstoppaBell",
           "game": "Bell"
         },
-        "DonaSpock",
+        {
+          "displayed": "DonaSpock",
+          "twitch": "DonaSpock",
+          "game": "twitch.tv/elorond"
+        },
         {
           "twitch": "timobornheim",
           "displayed": "timobornheim",
-          "game": "bornheimer"
+          "game": "Bornheimski"
         }
       ]
     },
@@ -72,7 +76,7 @@
         {
           "displayed": "Lime7ime",
           "twitch": "Lime7ime",
-          "game": "Lime"
+          "game": "Cutthroat"
         },
         "Socaberg"
       ]
@@ -84,7 +88,7 @@
         {
           "displayed": "Zeno",
           "twitch": "ZENO",
-          "game": "Zaccaria Ernesto N. Ortega"
+          "game": "Emilio Ortega"
         },
         {
           "displayed": "Zayuri",
@@ -172,7 +176,7 @@
         {
           "displayed": "Radlerauge",
           "twitch": "Radlerauge",
-          "game": "Sir Radler"
+          "game": "Radler"
         },
         {
           "displayed": "kay",
@@ -186,6 +190,11 @@
       "name": "Nachtaktiv",
       "members": [
         "Divi",
+        {
+          "displayed": "Divi",
+          "twitch": "Divi",
+          "game": "Hexe Divi"
+        },
         {
           "displayed": "MAiHOPAWANGO",
           "twitch": "MAiHOPAWANGO",
@@ -240,7 +249,11 @@
       "id": "kugelmagnet",
       "name": "(Kein Name)",
       "members": [
-        "ChrizzPlay",
+        {
+          "displayed": "ChrizzPlay",
+          "twitch": "ChrizzPlay",
+          "game": "DER Opa!"
+        },
         "KugelmagnetEddie",
         {
           "displayed": "NieRaus",
@@ -292,7 +305,10 @@
           "twitch": "Trymacs",
           "game": "Trymacs_Twitch"
         },
-        "Rumathra"
+        "Rumathra",
+        "Filow",
+        "rewinside",
+        "SeBo_0815"
       ]
     },
     {
@@ -322,7 +338,7 @@
         {
           "displayed": "LOST",
           "twitch": "LOST",
-          "game": "Lost"
+          "game": "Lost Mc Schlotzen"
         }
       ]
     },
@@ -418,7 +434,7 @@
         {
           "displayed": "beed",
           "twitch": "beedTV",
-          "game": "beed"
+          "game": "Törtel beed"
         }
       ]
     },
@@ -458,7 +474,13 @@
       "id": "malibu",
       "name": "(Kein Name)",
       "members": [
-        "MalibuLaura"
+        "MalibuLaura",
+        "izzi",
+        {
+          "displayed": "Stegi",
+          "twitch": "stegi",
+          "game": "Stegi"
+        }
       ]
     },
     {
@@ -477,7 +499,11 @@
       "id": "rustafari",
       "name": "Rustafari",
       "members": [
-        "Cirouss"
+        {
+          "displayed": "Cirouss",
+          "twitch": "Cirouss",
+          "game": "Carlos Santiago"
+        }
       ]
     },
     {
@@ -552,7 +578,7 @@
         {
           "displayed": "Kleinstadtstreamer",
           "twitch": "kleinstadtstreamer",
-          "game": "Kleinstadtstreamer"
+          "game": "Texas Toni"
         },
         {
           "displayed": "Smithhiller",
@@ -611,11 +637,6 @@
           "game": "Pix Kabelmann"
         },
         {
-          "displayed": "Stegi",
-          "twitch": "stegi",
-          "game": "Stegi"
-        },
-        {
           "displayed": "Jay_Corner",
           "twitch": "Jay_Corner",
           "game": "Ostblocklatino"
@@ -630,7 +651,6 @@
           "game": "hasi_ttv",
           "displayed": "Hasi"
         },
-        "izzi",
         {
           "displayed": "Knechtung",
           "twitch": "knechtungtv",
@@ -657,7 +677,6 @@
           "twitch": "CrunchyCupcakex3",
           "game": "Verwirrte Kranschie"
         },
-        "SeBo_0815",
         {
           "displayed": "Niklas (Bonjwa)",
           "twitch": "Bonjwa",
@@ -694,6 +713,17 @@
           "displayed": "fisHC0p",
           "twitch": "fisHC0p",
           "game": "Eckart"
+        },
+        "Vahnilly",
+        {
+          "displayed": "BrotUndVideospiele",
+          "twitch": "BrotUndVideospiele",
+          "game": "Jules"
+        },
+        {
+          "displayed": "Missky walker",
+          "twitch": "Misskywalker",
+          "game": "Missky Walker"
         }
       ]
     }
