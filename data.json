@@ -612,6 +612,11 @@
           "displayed": "Matteo (Bonjwa)",
           "twitch": "Bonjwa",
           "game": "Judge Mental"
+        },
+        {
+          "displayed": "Pausenapfel",
+          "twitch": "Pausenapfel",
+          "game": "Tao"
         }
       ]
     },
@@ -621,7 +626,6 @@
       "members": [
         "LaraLoft",
         "Milschbaum",
-        "Pausenapfel",
         {
           "displayed": "Kiara",
           "twitch": "JustGiggles",
