@@ -26,6 +26,7 @@ Bitte beachte folgendes, wenn du einen Pull Request erstellst:
 - JuliJones
 - Dave (eventuell ist er doch Streamer)
 - Filow
+- Pausenapfel
 
 ## Notizen
 
