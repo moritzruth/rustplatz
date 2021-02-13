@@ -1,13 +1,4 @@
 {
-  "events": [
-    {
-      "date": "12.02, 20 Uhr",
-      "text": "Eröffnung '\"Zum rostigen Kumpel\""
-    },
-    {
-      "date": "12.02, 22 Uhr",
-      "text": "Frank Platinum's Late Night Show"
-    }
-  ],
+  "events": [],
   "nextSeasonDate": null
 }
