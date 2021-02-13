@@ -24,9 +24,8 @@ Bitte beachte folgendes, wenn du einen Pull Request erstellst:
 
 ## In-Game Name nicht überprüft
 - JuliJones
-- Farbenfuchs
 - Dave (eventuell ist er doch Streamer)
-- TrilluXe
+- Filow
 
 ## Notizen
 
