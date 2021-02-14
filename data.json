@@ -276,7 +276,8 @@
           "displayed": "derShakes",
           "twitch": "derShakes",
           "game": "Schagges"
-        }
+        },
+        "Dave"
       ]
     },
     {
@@ -348,8 +349,8 @@
       "members": [
         {
           "displayed": "SchEppert",
-          "twitch": "scheppertlive2",
-          "game": "SchEppertLIVE"
+          "twitch": "scheppertlive",
+          "game": "Herbert Scheppert"
         },
         "DieBrian"
       ]
@@ -417,7 +418,7 @@
         "Shurjoka",
         {
           "displayed": "Kalle",
-          "game": "Kalle",
+          "game": "Anwalt Koschinsky",
           "twitch": "Kalle"
         }
       ]
@@ -485,7 +486,7 @@
     },
     {
       "id": "niisa",
-      "name": "(Name unbekannt)",
+      "name": "Kanzlei Niisa",
       "members": [
         "Niisa",
         {
@@ -562,8 +563,7 @@
       ],
       "nonStreamerMembers": [
         "Bandit Bob",
-        "SteelAngel13",
-        "Dave"
+        "SteelAngel13"
       ]
     },
     {
@@ -609,7 +609,11 @@
           "game": "Ank"
         },
         "Lai2lex",
-        "DoomDesign",
+        {
+          "displayed": "DoomDesign",
+          "twitch": "DoomDesign",
+          "game": "Jean-Jacques"
+        },
         {
           "displayed": "Gerrit",
           "twitch": "Gerrit",
@@ -660,7 +664,7 @@
         },
         {
           "twitch": "Hasi",
-          "game": "hasi_ttv",
+          "game": "Hasi",
           "displayed": "Hasi"
         },
         {
@@ -735,6 +739,12 @@
           "displayed": "Missky walker",
           "twitch": "Misskywalker",
           "game": "Missky Walker"
+        },
+        "SmashLunatic",
+        {
+          "displayed": "EsIstDaniel",
+          "twitch": "EsIstDani",
+          "game": "Richter Engelhardt"
         }
       ]
     }
