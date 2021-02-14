@@ -8,9 +8,11 @@ Außerdem gibt es für jedes Team einen multitwitch.tv Link.
 
 ## Mithelfen
 
+### Teams
 Die Team-Daten sind in [`data.json`](./data.json) gespeichert.
 
 Bitte beachte folgendes, wenn du einen Pull Request erstellst:
+- Die ID eines Teams (`id`) wird nur intern verwendet und darf nicht mehr verändert werden, sobald das Team existiert. Der konkrete Wert ist egal, er muss allerdings einzigartig sein.
 - Der Twitch-Name muss exakt dem entsprechen, der auf twitch.tv angezeigt wird,
   d. h. **Groß- und Kleinschreibung muss beachtet werden**.
 - Wenn statt einem Objekt mit den Keys `displayed`, `twitch` und `game` ein String verwendet wird,
@@ -21,6 +23,28 @@ Bitte beachte folgendes, wenn du einen Pull Request erstellst:
   In-Game-Namen enthalten ist, lass den Teil weg.  
   Beispiel: Statt `V. Popowitch | thekraeuterbutter` nur `V. Popowitch`,
   aber trotzdem `Hauptkommissar Dhalucard` und nicht `Hauptkommissar`.
+
+### Ereignisse
+Ereignisse sind in [`src/assets/static-data.json`](./src/assets/static-data.json) gespeichert.
+
+Beispiel:
+```json
+{
+  "events": [
+    {
+      "date": "Dies ist das Datum. Es ist bewusst nur ein Text und kein Zeitstempel. Sollte möglichst kurz gehalten werden.",
+      "text": "Dies ist der Text, der unter dem Datum angezeigt wird."
+    },
+    {
+      "date": "Mittwoch 3.2., 20 Uhr",
+      "text": "Season-Finale, danach Wipe und Pause bis 7.2."
+    }
+  ],
+  "nextSeasonDate": null
+}
+```
+
+Ereignisse müssen manuell entfernt werden, sobald sie nicht mehr relevant sind.
 
 ## In-Game Name nicht überprüft
 - JuliJones
