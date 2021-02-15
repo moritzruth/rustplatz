@@ -50,10 +50,8 @@ Ereignisse müssen manuell entfernt werden, sobald sie nicht mehr relevant sind.
 - JuliJones
 - Dave (eventuell ist er doch Streamer)
 - Filow
-- Doom Design
 
 ## Notizen
 
-- `scheppertlive2` wird wieder auf `scheppertlive` streamen, sobald er wieder Zugriff hat.
 - Balui hat Kommissar falsch geschrieben, das wird er eventuell bald korrigieren.
 - DoomDesign hat gesagt, dass er bald einem Team beitreten wird.
