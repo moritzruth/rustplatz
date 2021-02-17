@@ -210,7 +210,7 @@
     },
     {
       "id": "chrizz",
-      "name": "(Kein Name)",
+      "name": "Spaßkasse",
       "members": [
         {
           "displayed": "itzz_chrizz",
@@ -241,7 +241,7 @@
         {
           "twitch": "RocketBeansTV",
           "displayed": "Nils",
-          "game": "Boedefeld"
+          "game": "Frank Platinum"
         }
       ]
     },
@@ -415,7 +415,11 @@
       "id": "kalle",
       "name": "Kanzlei Kuk",
       "members": [
-        "Shurjoka",
+        {
+          "displayed": "Shurjoka",
+          "game": "Frau Joka K.",
+          "twitch": "Shurjoka"
+        },
         {
           "displayed": "Kalle",
           "game": "Anwalt Koschinsky",
@@ -570,7 +574,23 @@
       "id": "frustlos",
       "name": "F-Rust-los wohnen",
       "members": [
-        "MoinGonschi"
+        "MoinGonschi",
+        {
+          "displayed": "AnkLP",
+          "twitch": "AnkLP",
+          "game": "Ank"
+        }
+      ]
+    },
+    {
+      "id": "alien",
+      "name": "Alien Nation",
+      "members": [
+        {
+          "displayed": "SaeriFae",
+          "twitch": "SaeriFae",
+          "game": "ALIEN"
+        }
       ]
     },
     {
@@ -595,7 +615,7 @@
         {
           "displayed": "Copeylius",
           "twitch": "copeylius",
-          "game": "Copeylius"
+          "game": "Dr. Copeylius"
         },
         {
           "displayed": "juliaoertgen",
@@ -603,11 +623,6 @@
           "game": "Julia Pegasus"
         },
         "iamThanh",
-        {
-          "displayed": "AnkLP",
-          "twitch": "AnkLP",
-          "game": "Ank"
-        },
         "Lai2lex",
         {
           "displayed": "DoomDesign",
@@ -640,7 +655,7 @@
         {
           "displayed": "Kiara",
           "twitch": "JustGiggles",
-          "game": "Giggles"
+          "game": "Captain Gigglebee"
         },
         {
           "displayed": "Salmon (CHIMPnSALMON)",
@@ -676,11 +691,6 @@
           "displayed": "einfacheva",
           "twitch": "einfacheva",
           "game": "Maggy"
-        },
-        {
-          "displayed": "SaeriFae",
-          "twitch": "SaeriFae",
-          "game": "ALIEN"
         },
         {
           "displayed": "Viet",
@@ -745,7 +755,18 @@
           "displayed": "EsIstDaniel",
           "twitch": "EsIstDani",
           "game": "Richter Engelhardt"
-        }
+        },
+        {
+          "displayed": "einPapo",
+          "twitch": "einPapo",
+          "game": "I.M.K.E"
+        },
+        {
+          "displayed": "sukidingels",
+          "twitch": "sukidingels",
+          "game": "Sukidingels"
+        },
+        "MarcoMeh"
       ]
     }
   ],
