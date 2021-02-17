@@ -21,7 +21,7 @@
     <section class="max-w-7xl w-full mx-auto">
       <h1 class="heading">Informationen</h1>
       <ul class="list-disc pl-4">
-        <li>Der Server ist täglich von 17 Uhr bis 1 Uhr (morgens) online (Ab 14.2.: 19 Uhr bis 1 Uhr).</li>
+        <li>Der Server ist täglich von 17 Uhr bis 1 Uhr (morgens) online.</li>
         <li>Andere Spieler zu töten ist nur mit Role-Play erlaubt, <b>außer</b> in den sog. KOS-Zonen.</li>
         <li>Um mitspielen zu können, muss ein Streamer von einem der Teilnehmer eingeladen werden.</li>
         <li>Es gibt keinen Global Text-Chat, dafür Team Text-Chat und In-Game Voice-Chat.</li>
