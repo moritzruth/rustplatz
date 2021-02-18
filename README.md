@@ -50,6 +50,7 @@ Ereignisse müssen manuell entfernt werden, sobald sie nicht mehr relevant sind.
 - JuliJones
 - Dave (eventuell ist er doch Streamer)
 - Filow
+- Copeylius
 
 ## Notizen
 
