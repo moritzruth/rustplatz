@@ -277,7 +277,11 @@
           "twitch": "derShakes",
           "game": "Schagges"
         },
-        "Dave"
+        {
+          "displayed": "Dave",
+          "twitch": "Death2Blade",
+          "game": "Dave"
+        }
       ]
     },
     {
