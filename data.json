@@ -189,7 +189,6 @@
       "id": "divi",
       "name": "Nachtaktiv",
       "members": [
-        "Divi",
         {
           "displayed": "Divi",
           "twitch": "Divi",
@@ -382,7 +381,7 @@
         {
           "displayed": "Miamouz",
           "twitch": "Miamouz",
-          "game": "Doc Jackie"
+          "game": "Doc Jackie & Clyde"
         },
         {
           "displayed": "TouristHistories",
@@ -512,6 +511,11 @@
           "displayed": "Cirouss",
           "twitch": "Cirouss",
           "game": "Carlos Santiago"
+        },
+        {
+          "displayed": "Farbenfuchs",
+          "twitch": "Farbenfuchs",
+          "game": "Doktor Fuchs"
         }
       ]
     },
@@ -737,7 +741,6 @@
           "game": "ThePianoDragon"
         },
         "TinaBumBina",
-        "Farbenfuchs",
         {
           "displayed": "fisHC0p",
           "twitch": "fisHC0p",
