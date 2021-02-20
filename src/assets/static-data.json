@@ -1,8 +1,12 @@
 {
   "events": [
     {
-      "date": "21.02, 20 Uhr",
-      "text": "Monsterland Eröffnung"
+      "date": "21.2., 20 Uhr",
+      "text": "Eröffnung: Monsterland"
+    },
+    {
+      "date": "22.2., 20:15 Uhr",
+      "text": "Win or Die"
     }
   ],
   "nextSeasonDate": null
