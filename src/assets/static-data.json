@@ -1,13 +1,26 @@
 {
   "events": [
     {
-      "date": "21.2., 20 Uhr",
-      "text": "Eröffnung: Monsterland"
-    },
-    {
       "date": "22.2., 20:15 Uhr",
       "text": "Win or Die"
-    }
+    },
+    {
+      "date": "23.2., 21:00 – 23:00 Uhr",
+      "text": "The Longest Night"
+    },
+    {
+      "date": "25.2., 20:00 – 01:00 Uhr",
+      "text": "Navy Raids"
+    },
+    {
+      "date": "27.2., 19:00 – 07:00 Uhr",
+      "text": "Purge"
+    },
+    {
+      "date": "27.2. – 29.2 , 17:00 – (+32h) Uhr",
+      "text": "Server 32h ON-LINE"
+    },
+    
   ],
   "nextSeasonDate": null
 }
