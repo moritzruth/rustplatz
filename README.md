@@ -49,8 +49,6 @@ Ereignisse müssen manuell entfernt werden, sobald sie nicht mehr relevant sind.
 ## In-Game Name nicht überprüft
 - JuliJones
 - Filow
-- Copeylius
-- Nirvian
 
 ## Notizen
 

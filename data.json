@@ -420,12 +420,12 @@
       "members": [
         {
           "displayed": "Shurjoka",
-          "game": "Frau Joka K.",
+          "game": "Shur-Joker",
           "twitch": "Shurjoka"
         },
         {
           "displayed": "Kalle",
-          "game": "Anwalt Koschinsky",
+          "game": "Kalle Koschinsky",
           "twitch": "Kalle"
         }
       ]
@@ -618,7 +618,7 @@
         {
           "displayed": "Smithhiller",
           "twitch": "Smithhiller",
-          "game": "Jay | Smithhiller"
+          "game": "Johnny"
         },
         {
           "displayed": "Copeylius",
@@ -779,7 +779,12 @@
           "game": "Sukidingels"
         },
         "MarcoMeh",
-        "Nirvian"
+        "Nirvian",
+        {
+          "displayed": "Nirvian",
+          "twitch": "Nirvian",
+          "game": "nirvian"
+        }
       ]
     }
   ],
