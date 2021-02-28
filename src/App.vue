@@ -220,8 +220,7 @@
         if (this.nextSeasonDate === null) {
           const hour = new Date().getHours()
 
-          // if (hour >= 17 || hour < 1) await fetchLive()
-          if (true) await fetchLive()
+          if (hour >= 17 || hour < 1) await fetchLive()
           else await setOfflineData()
         } else if (this.nextSeasonDate.getTime() <= Date.now()) await fetchLive()
         else setEmptyData()
