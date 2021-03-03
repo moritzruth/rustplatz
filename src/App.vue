@@ -34,7 +34,7 @@
         <h1 class="heading">Ereignisse</h1>
         <EventsList/>
       </section>
-      <section>
+      <section ref="teamsSection">
         <div class="max-w-7xl w-full mx-auto pb-4">
           <h1 class="heading">
             {{ data === null ? "" : data.teams.length - 2 }} Teams
@@ -88,7 +88,7 @@
     </footer>
     <DonationAlert v-model="showDonationAlert"/>
   </template>
-  <SeasonEndOverlay v-if="ended" :show="ended"/>
+  <SeasonEndOverlay :show="ended"/>
 </template>
 
 <style>
@@ -148,6 +148,7 @@
       this.showDonationAlert = true
 
       document.addEventListener("visibilitychange", async () => {
+        if (this.ended) return
         if (document.hidden) {
           console.log("Breaking fetch loop because document is hidden")
           this.breakLoop()
@@ -224,7 +225,19 @@
 
         this.ended = this.data.ended
         if (this.ended) {
-          window.scrollTo(0, 0)
+          window.scrollTo({
+            behavior: "smooth",
+            top: this.$refs.teamsSection.offsetTop,
+            left: 0
+          })
+
+          setTimeout(() => {
+            window.scrollTo({
+              behavior: "auto",
+              top: 0,
+              left: 0
+            })
+          }, 10 * 1000)
         }
       }
     }
