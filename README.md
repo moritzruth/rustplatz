@@ -1,10 +1,12 @@
 # RUSTplatz
-> (Inoffizielle) Website für das Rust-Projekt von Dhalucard, Bonjwa und RocketBeans
+> (Inoffizielle) Website für das Rust-Projekt von Dhalucard, Bonjwa und RocketBeansTV
 
 :fire: [**rustplatz.live**](https://rustplatz.live)
 
-Die Seite listet die Teams auf und zeigt, welche Streamer gerade mit Rust live sind.
-Außerdem gibt es für jedes Team einen multitwitch.tv Link.
+**Mit Season 2 endete am 3. März auch das Projekt an sich.**
+
+~Die Seite listet die Teams auf und zeigt, welche Streamer gerade mit Rust live sind.
+Außerdem gibt es für jedes Team einen multitwitch.tv Link.~
 
 ## Mithelfen
 
@@ -45,12 +47,3 @@ Beispiel:
 ```
 
 Ereignisse müssen manuell entfernt werden, sobald sie nicht mehr relevant sind.
-
-## In-Game Name nicht überprüft
-- JuliJones
-- Filow
-
-## Notizen
-
-- Balui hat Kommissar falsch geschrieben, das wird er eventuell bald korrigieren.
-- DoomDesign hat gesagt, dass er bald einem Team beitreten wird.
