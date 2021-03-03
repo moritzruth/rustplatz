@@ -33,7 +33,7 @@
           Season 2 endete am 3. März 2021.
         </p>
         <p>
-          Ich denke, ich spreche für die gesamte Community, wenn ich mich für diese unvergessliche Zeit bedanke.<br>
+          Ich denke, ich spreche für die gesamte Community, wenn ich mich für diese unvergessliche Zeit bedanke ❤️<br>
           — <a href="https://twitter.com/moritz_ruth" class="text-yellow-300">Moritz Ruth</a>
         </p>
       </section>
