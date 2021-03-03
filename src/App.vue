@@ -88,7 +88,7 @@
     </footer>
     <DonationAlert v-model="showDonationAlert"/>
   </template>
-  <SeasonEndOverlay :show="ended"/>
+  <SeasonEndOverlay v-if="ended" :show="ended"/>
 </template>
 
 <style>
