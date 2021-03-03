@@ -1,7 +1,7 @@
 <template>
   <div
-    class="wipe-overlay bg-black fixed top-0 left-0 w-screen h-screen flex items-center justify-center flex-col p-10
-           transition"
+    class="season-break-overlay bg-black fixed top-0 left-0 w-screen h-screen flex items-center justify-center flex-col
+           p-10 transition"
     :class="date === null ? 'opacity-0 pointer-events-none' : 'opacity-100'"
   >
     <transition name="fade" mode="out-in">
@@ -23,7 +23,7 @@
 </template>
 
 <style scoped>
-  .wipe-overlay {
+  .season-break-overlay {
     transition-duration: 5s;
   }
 </style>
@@ -33,7 +33,7 @@
   import { useRafFn } from "@vueuse/core"
 
   export default {
-    name: "WipeOverlay",
+    name: "SeasonBreakOverlay",
     props: {
       date: {
         type: null,

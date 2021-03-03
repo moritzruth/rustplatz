@@ -48,15 +48,8 @@
         }
       }
     },
-    "nextSeasonDate": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ]
+    "ended": {
+      "type": "boolean"
     }
   }
 }

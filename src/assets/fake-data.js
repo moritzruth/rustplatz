@@ -1,10 +1,12 @@
 // eslint-disable-next-line no-promise-executor-return
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
+let i = 0
 export const getFakeData = async () => {
   const { teams } = await import("../../data.json")
 
   // await delay(1200)
+  i++
 
   return {
     teams: teams.map(team => {
@@ -21,7 +23,7 @@ export const getFakeData = async () => {
         nonStreamers: team.nonStreamerMembers ?? []
       }
     }),
-    nextSeasonDate: null,
+    ended: i === 2,
     // totalViewers: Math.floor(Math.random() * 100000) + 50001
     totalViewers: 999999
     // totalViewers: 0
