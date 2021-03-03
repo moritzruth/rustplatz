@@ -61,7 +61,7 @@ async function run() {
   }
 
   return {
-    nextSeasonDate: rawData.nextSeasonDate,
+    ended: rawData.ended,
     teams,
     totalViewers
   }
